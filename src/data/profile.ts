@@ -1,0 +1,237 @@
+export const profile = {
+  name: "Muhammad Rizwan",
+  title: "Software Engineer",
+  tagline: "Full Stack & Mobile · Backend · AI Integrations",
+  location: "Lahore, Pakistan",
+  email: "muhammadrizwaneng@gmail.com",
+  phone: "+92 300 0795296",
+  linkedin: "https://linkedin.com/in/muhammad-rizwan-fullstack",
+  github: "https://github.com/muhammadrizwaneng",
+  githubUsername: "muhammadrizwaneng",
+  avatar: "https://avatars.githubusercontent.com/u/102026105?v=4",
+  summary:
+    "Software Engineer with 4+ years of experience building secure, scalable backend systems and cross-platform mobile applications. Specialized in Node.js, Next.js, Python (FastAPI/Flask), and React Native, with hands-on delivery of enterprise authentication, search, and AI-integrated products serving 15,000+ active users.",
+  stats: [
+    { label: "Years experience", value: "4+" },
+    { label: "Active users served", value: "15K+" },
+    { label: "API latency", value: "<200ms" },
+    { label: "Public repos", value: "36" },
+  ],
+};
+
+export type FeaturedProject = {
+  name: string;
+  summary: string;
+  stack: string[];
+  github?: string | null;
+  demo?: string | null;
+  featured?: boolean;
+};
+
+export const skillGroups = [
+  {
+    title: "Languages",
+    description: "Core languages for web, mobile, and data backends.",
+    items: ["Python", "JavaScript", "TypeScript", "SQL"],
+  },
+  {
+    title: "Frontend",
+    description: "Modern UI stacks for web and cross-platform mobile.",
+    items: ["React.js", "Next.js", "React Native", "Tailwind CSS", "HTML/CSS"],
+  },
+  {
+    title: "Backend",
+    description: "APIs, auth, search, and data layers at scale.",
+    items: [
+      "Node.js",
+      "Express",
+      "FastAPI",
+      "Flask",
+      "MongoDB",
+      "PostgreSQL",
+      "MySQL",
+      "Elasticsearch",
+      "REST",
+      "JWT",
+    ],
+  },
+  {
+    title: "Cloud / DevOps",
+    description: "Deployment, observability, and cloud-native delivery.",
+    items: [
+      "AWS",
+      "Serverless",
+      "Docker",
+      "Git",
+      "CI/CD",
+      "Postman",
+      "JIRA",
+      "LLMs",
+    ],
+  },
+];
+
+export const experience = [
+  {
+    company: "SeeBiz PVT LTD",
+    location: "Lahore, Pakistan",
+    role: "Software Engineer",
+    period: "July 2022 – Present",
+    highlights: [
+      "Architected enterprise SSO with Node.js and Next.js for 15,000+ active users across platform apps.",
+      "Built MFA and cryptographic account lifecycle workflows, reducing unauthorized access attempts by 99.9%.",
+      "Integrated Elasticsearch, cutting admin search query latency by 40%.",
+      "Migrated legacy backends to serverless, reducing cloud costs by 30% and speeding deploys by 25%.",
+      "Delivered Flask, FastAPI, and MongoDB APIs for mobile products with sub-200ms response times.",
+    ],
+  },
+  {
+    company: "SeeBiz PVT LTD",
+    location: "Lahore, Pakistan",
+    role: "Software Engineer Intern",
+    period: "Jan 2022 – June 2022",
+    highlights: [
+      "Modeled 10+ database schemas and scalable backends with MySQL and MongoDB.",
+      "Implemented JWT auth and input validation across 5+ microservices.",
+      "Supported agile delivery, integration, and debugging with 99.9% uptime during releases.",
+    ],
+  },
+];
+
+export const featuredProjects: FeaturedProject[] = [
+  {
+    name: "Enterprise SSO System",
+    stack: ["Node.js", "Next.js", "Elasticsearch", "AWS", "Serverless"],
+    summary:
+      "Centralized identity platform with MFA, audit trails, and admin search for 15,000+ users.",
+    github: null,
+    demo: null,
+    featured: true,
+  },
+  {
+    name: "SeeCard Platform",
+    stack: ["React Native", "REST APIs", "QR"],
+    summary:
+      "Digital business cards with live profile editing, QR sharing, and phonebook sync.",
+    github: null,
+    demo: null,
+    featured: true,
+  },
+  {
+    name: "SeeTask System",
+    stack: ["React Native", "Real-time", "Multi-tenant"],
+    summary:
+      "Team workspace app with projects, deadlines, and low-latency notifications.",
+    github: null,
+    demo: null,
+    featured: true,
+  },
+  {
+    name: "Turnfeat Platform",
+    stack: ["React Native", "Node.js", "PostgreSQL", "OpenAI"],
+    summary:
+      "AI freelance marketplace with bidding, escrow, milestones, and skill matching.",
+    github: null,
+    demo: null,
+    featured: true,
+  },
+  {
+    name: "PAKEZY Tourism",
+    stack: ["React Native", "FastAPI", "MongoDB", "Maps"],
+    summary:
+      "Regional travel ecosystem with optimized geo-spatial APIs and map microservices.",
+    github: "https://github.com/muhammadrizwaneng/PakTourism",
+    demo: null,
+    featured: true,
+  },
+  {
+    name: "Utility Hub",
+    stack: ["React Native", "Native modules"],
+    summary:
+      "Offline image-to-PDF and compression utilities with native file system bridges.",
+    github: "https://github.com/muhammadrizwaneng/UtilityApp",
+    demo: null,
+    featured: true,
+  },
+  {
+    name: "AI Sales Analytics",
+    stack: ["Python", "BERT", "TAPAS", "Random Forest"],
+    summary:
+      "Demand forecasting and semantic product search with fine-tuned NLP models.",
+    github: "https://github.com/muhammadrizwaneng/coding-model",
+    demo: null,
+    featured: true,
+  },
+  {
+    name: "Smart Shopping (AI)",
+    stack: ["Next.js", "TypeScript", "MERN", "AI"],
+    summary:
+      "AI-assisted e-commerce storefront with modern Next.js UX patterns.",
+    github: "https://github.com/muhammadrizwaneng/SmartShopWithAINextRepo",
+    demo: null,
+    featured: true,
+  },
+];
+
+export const githubProjects = [
+  {
+    name: "FastAPI E-Commerce",
+    language: "Python",
+    url: "https://github.com/muhammadrizwaneng/FastAPI-E-Commerce-Platform",
+    description: "Scalable e-commerce backend with FastAPI.",
+  },
+  {
+    name: "YOLO FastAPI",
+    language: "Python",
+    url: "https://github.com/muhammadrizwaneng/yolo_fastapi",
+    description: "Computer vision API service with YOLO and FastAPI.",
+  },
+  {
+    name: "Plant Disease Detection",
+    language: "Jupyter",
+    url: "https://github.com/muhammadrizwaneng/Plant-disease-detection",
+    description: "ML notebook pipeline for crop disease classification.",
+  },
+  {
+    name: "Smart Shopping (AI)",
+    language: "TypeScript",
+    url: "https://github.com/muhammadrizwaneng/SmartShopWithAINextRepo",
+    description: "Next.js storefront with AI-assisted shopping flows.",
+  },
+  {
+    name: "Travel Booking App",
+    language: "TypeScript",
+    url: "https://github.com/muhammadrizwaneng/travel-booking-app",
+    description: "Modern travel booking experience in Next.js.",
+  },
+  {
+    name: "TinyGems",
+    language: "TypeScript",
+    url: "https://github.com/muhammadrizwaneng/tinygems",
+    description: "Lightweight TypeScript utility / app project.",
+  },
+];
+
+export const education = [
+  {
+    school: "Gomal University",
+    location: "D.I. Khan, KPK",
+    degree: "Bachelor of Science in Software Engineering",
+    period: "2017 – 2021",
+  },
+  {
+    school: "Govt. College Boys Fatehpur",
+    location: "Layyah",
+    degree: "FSc (Pre-Engineering)",
+    period: "2015 – 2017",
+  },
+];
+
+export const navLinks = [
+  { href: "#about", label: "About" },
+  { href: "#skills", label: "Skills" },
+  { href: "#experience", label: "Experience" },
+  { href: "#projects", label: "Projects" },
+  { href: "#education", label: "Education" },
+  { href: "#contact", label: "Contact" },
+];
