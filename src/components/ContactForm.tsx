@@ -90,7 +90,7 @@ export function ContactForm() {
           type="text"
           required
           autoComplete="name"
-          className="w-full rounded-xl border border-border bg-background/60 px-4 py-3 text-sm outline-none transition focus:border-accent/50 focus:ring-2 focus:ring-accent/20"
+          className="form-field w-full rounded-xl border border-border bg-surface-elevated px-4 py-3 text-sm text-foreground outline-none transition focus:border-accent/50 focus:ring-2 focus:ring-accent/20"
           placeholder="Your name"
         />
         {fieldErrors.name ? (
@@ -108,7 +108,7 @@ export function ContactForm() {
           type="email"
           required
           autoComplete="email"
-          className="w-full rounded-xl border border-border bg-background/60 px-4 py-3 text-sm outline-none transition focus:border-accent/50 focus:ring-2 focus:ring-accent/20"
+          className="form-field w-full rounded-xl border border-border bg-surface-elevated px-4 py-3 text-sm text-foreground outline-none transition focus:border-accent/50 focus:ring-2 focus:ring-accent/20"
           placeholder="you@example.com"
         />
         {fieldErrors.email ? (
@@ -125,7 +125,7 @@ export function ContactForm() {
           name="message"
           required
           rows={5}
-          className="w-full resize-y rounded-xl border border-border bg-background/60 px-4 py-3 text-sm outline-none transition focus:border-accent/50 focus:ring-2 focus:ring-accent/20"
+          className="form-field w-full resize-y rounded-xl border border-border bg-surface-elevated px-4 py-3 text-sm text-foreground outline-none transition focus:border-accent/50 focus:ring-2 focus:ring-accent/20"
           placeholder="Tell me about your project or role..."
         />
         {fieldErrors.message ? (

@@ -80,3 +80,23 @@ body {
   filter: blur(80px);
   pointer-events: none;
 }
+
+.form-field {
+  color: var(--foreground);
+  caret-color: var(--accent);
+}
+
+.form-field::placeholder {
+  color: var(--muted);
+  opacity: 1;
+}
+
+.form-field:-webkit-autofill,
+.form-field:-webkit-autofill:hover,
+.form-field:-webkit-autofill:focus,
+.form-field:-webkit-autofill:active {
+  -webkit-text-fill-color: var(--foreground) !important;
+  box-shadow: 0 0 0 1000px var(--surface-elevated) inset !important;
+  border-color: var(--border);
+  transition: background-color 99999s ease-in-out 0s;
+}
