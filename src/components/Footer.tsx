@@ -7,7 +7,7 @@ export function Footer() {
     <footer className="border-t border-border py-8">
       <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 px-4 text-sm text-muted sm:flex-row sm:px-6 lg:px-8">
         <p>
-          © {year} {profile.name}. Crafted with Next.js for Vercel.
+          © {year} {profile.name}
         </p>
         <div className="flex gap-5">
           <a href={profile.github} className="hover:text-accent" target="_blank" rel="noopener noreferrer">
