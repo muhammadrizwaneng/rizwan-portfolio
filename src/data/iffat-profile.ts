@@ -107,9 +107,34 @@ export const iffatEducation = [
   },
 ];
 
+export type IffatWritingSample = {
+  title: string;
+  url: string;
+  client: string;
+  summary: string;
+  tags: string[];
+  targetKeyword?: string;
+  /** Show badge when the article ranks on Google page 1 for the target keyword */
+  googlePageOne?: boolean;
+};
+
+export const iffatWritingSamples: IffatWritingSample[] = [
+  {
+    title: "How To Package Frozen Food For Shipping",
+    url: "https://lucapackaging.com/blog/how-to-package-frozen-food-for-shipping/",
+    client: "Luca Packaging",
+    summary:
+      "In-depth packaging and shipping guide covering insulation, carriers, and DIY methods for frozen food—optimized for search and reader clarity.",
+    tags: ["SEO blog", "Packaging", "How-to guide", "On-page SEO"],
+    targetKeyword: "how to ship frozen food lp usa",
+    googlePageOne: true,
+  },
+];
+
 export const iffatNavLinks = [
   { href: "#about", label: "About" },
   { href: "#services", label: "Services" },
+  { href: "#writing", label: "Writing" },
   { href: "#experience", label: "Experience" },
   { href: "#skills", label: "Skills" },
   { href: "#education", label: "Education" },

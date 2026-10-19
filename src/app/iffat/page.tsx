@@ -5,6 +5,7 @@ import { BookOpen, Feather, Search, Sparkles } from "lucide-react";
 import Link from "next/link";
 import { IffatHero } from "@/components/iffat/IffatHero";
 import { IffatNavbar } from "@/components/iffat/IffatNavbar";
+import { IffatWritingSamples } from "@/components/iffat/IffatWritingSamples";
 import {
   iffatEducation,
   iffatExperience,
@@ -132,6 +133,8 @@ export default function IffatPortfolioPage() {
             </div>
           </div>
         </section>
+
+        <IffatWritingSamples />
 
         <section id="experience" className="px-4 py-16 sm:px-6 sm:py-20">
           <div className="mx-auto max-w-5xl">
@@ -282,10 +285,8 @@ export default function IffatPortfolioPage() {
                   <br />
                   {iffatReference.phone}
                 </p>
-                <p className="mt-6 rounded-2xl border border-dashed border-[var(--border)] bg-[var(--surface-muted)] p-4 text-xs leading-relaxed text-[var(--muted)]">
-                  Writing samples can be added here when available (Google Doc /
-                  Medium / published URLs). Share links anytime and we&apos;ll update
-                  this section.
+                <p className="mt-6 text-xs leading-relaxed text-[var(--muted)]">
+                  See the <a href="#writing" className="text-[var(--accent)] hover:underline">Writing</a> section for live published samples.
                 </p>
               </div>
             </div>
