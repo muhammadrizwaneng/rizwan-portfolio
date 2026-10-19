@@ -87,11 +87,6 @@ export function IffatWritingSamples() {
             </motion.article>
           ))}
         </div>
-
-        <p className="mt-8 text-sm text-[var(--muted)]">
-          Additional articles and case studies can be listed here as your portfolio
-          grows.
-        </p>
       </div>
     </section>
   );
