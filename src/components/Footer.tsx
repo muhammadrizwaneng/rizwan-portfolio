@@ -9,7 +9,10 @@ export function Footer() {
         <p>
           © {year} {profile.name}
         </p>
-        <div className="flex gap-5">
+        <div className="flex flex-wrap justify-center gap-5 sm:justify-end">
+          <a href="/iffat" className="hover:text-accent">
+            Iffat — Content Writer
+          </a>
           <a href={profile.github} className="hover:text-accent" target="_blank" rel="noopener noreferrer">
             GitHub
           </a>
