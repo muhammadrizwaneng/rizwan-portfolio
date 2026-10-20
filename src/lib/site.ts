@@ -4,10 +4,6 @@ export const siteUrl =
   process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "") ??
   "https://muhammadrizwan.dev";
 
-export const iffatPortfolioUrl =
-  process.env.NEXT_PUBLIC_IFFAT_PORTFOLIO_URL?.replace(/\/$/, "") ??
-  "https://iffat-portfolio-eight.vercel.app";
-
 export const siteName = `${profile.name} | Full Stack Software Engineer Portfolio`;
 
 export const seoDescription =

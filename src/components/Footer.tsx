@@ -1,5 +1,4 @@
 import { profile } from "@/data/profile";
-import { iffatPortfolioUrl } from "@/lib/site";
 
 export function Footer() {
   const year = 2026;
@@ -11,14 +10,6 @@ export function Footer() {
           © {year} {profile.name}
         </p>
         <div className="flex flex-wrap justify-center gap-5 sm:justify-end">
-          <a
-            href={iffatPortfolioUrl}
-            className="hover:text-accent"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Iffat — Content Writer
-          </a>
           <a href={profile.github} className="hover:text-accent" target="_blank" rel="noopener noreferrer">
             GitHub
           </a>
