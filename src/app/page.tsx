@@ -8,6 +8,7 @@ import { Hero } from "@/components/Hero";
 import { Navbar } from "@/components/Navbar";
 import { Projects } from "@/components/Projects";
 import { Skills } from "@/components/Skills";
+import { SsoCaseStudy } from "@/components/SsoCaseStudy";
 import { siteName, seoDescription } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -25,6 +26,7 @@ export default function Home() {
         <About />
         <Skills />
         <Experience />
+        <SsoCaseStudy />
         <Projects />
         <Education />
         <Contact />

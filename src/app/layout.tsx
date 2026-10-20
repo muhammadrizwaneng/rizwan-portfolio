@@ -57,20 +57,11 @@ export const metadata: Metadata = {
     siteName: `${profile.name} Portfolio`,
     title: siteName,
     description: seoDescription,
-    images: [
-      {
-        url: profile.avatar,
-        width: 460,
-        height: 460,
-        alt: `${profile.name} — Full Stack Software Engineer`,
-      },
-    ],
   },
   twitter: {
     card: "summary_large_image",
     title: siteName,
     description: seoDescription,
-    images: [profile.avatar],
   },
   ...(process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION
     ? {

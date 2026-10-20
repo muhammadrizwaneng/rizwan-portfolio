@@ -148,7 +148,7 @@ export const featuredProjects: FeaturedProject[] = [
     name: "Enterprise SSO System",
     stack: ["Node.js", "Next.js", "Elasticsearch", "AWS", "Serverless"],
     summary:
-      "Centralized identity platform with MFA, audit trails, and admin search for 15,000+ users.",
+      "Centralized identity platform with MFA, audit trails, and admin search for 15,000+ users. See case study for architecture and metrics.",
     github: null,
     demo: null,
     featured: true,
@@ -327,6 +327,7 @@ export const navLinks = [
   { href: "#about", label: "About" },
   { href: "#skills", label: "Skills" },
   { href: "#experience", label: "Experience" },
+  { href: "#case-study", label: "Case study" },
   { href: "#projects", label: "Projects" },
   { href: "#education", label: "Education" },
   { href: "#contact", label: "Contact" },
