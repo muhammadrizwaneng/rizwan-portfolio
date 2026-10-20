@@ -7,12 +7,12 @@ import { profile } from "@/data/profile";
 
 export function Hero() {
   return (
-    <section className="relative overflow-hidden pt-28 pb-20 sm:pt-32 sm:pb-28">
+    <section className="section-shell relative overflow-hidden pt-28 sm:pt-32">
       <div className="glow-orb -left-24 top-10 h-72 w-72 bg-cyan-500/20" />
       <div className="glow-orb -right-16 top-32 h-80 w-80 bg-violet-500/20" />
       <div className="grid-bg absolute inset-0 opacity-40" />
 
-      <div className="relative mx-auto grid max-w-6xl gap-12 px-4 sm:px-6 lg:grid-cols-[1.2fr_0.8fr] lg:items-center lg:px-8">
+      <div className="section-container relative grid gap-12 lg:grid-cols-[1.2fr_0.8fr] lg:items-center">
         <div>
           <motion.p
             initial={{ opacity: 0, y: 16 }}
@@ -57,16 +57,16 @@ export function Hero() {
             className="mt-8 flex flex-wrap gap-3"
           >
             <a
-              href="#projects"
-              className="rounded-full bg-accent px-6 py-3 text-sm font-semibold text-background shadow-lg shadow-cyan-500/20 transition hover:brightness-110"
+              href="#contact"
+              className="btn-primary rounded-full px-6 py-3 text-sm"
             >
-              View my work
+              Hire me
             </a>
             <a
-              href="#contact"
+              href="#projects"
               className="rounded-full border border-border bg-surface/50 px-6 py-3 text-sm font-semibold text-foreground transition hover:border-accent/40 hover:text-accent"
             >
-              Get in touch
+              View my work
             </a>
           </motion.div>
 

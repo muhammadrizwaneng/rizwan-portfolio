@@ -2,13 +2,14 @@
 
 import { motion } from "framer-motion";
 import { Apple, Code2, ExternalLink, Globe, Play } from "lucide-react";
+import { ProjectPreview } from "@/components/ProjectPreview";
+import { Section } from "@/components/Section";
 import { SectionHeading } from "@/components/SectionHeading";
 import { featuredProjects, githubProjects, profile } from "@/data/profile";
 
 export function Projects() {
   return (
-    <section id="projects" className="py-20 sm:py-24">
-      <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+    <Section id="projects">
         <SectionHeading
           eyebrow="Projects"
           title="Featured work & open source"
@@ -23,8 +24,12 @@ export function Projects() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.04 }}
-              className="group glass flex h-full flex-col rounded-3xl p-6 transition hover:border-accent/30 hover:shadow-lg hover:shadow-cyan-500/5"
+              className="group glass flex h-full flex-col overflow-hidden rounded-3xl p-6 transition hover:border-accent/30 hover:shadow-lg hover:shadow-cyan-500/5"
             >
+              <ProjectPreview
+                name={project.name}
+                isMobile={Boolean(project.playStore || project.appStore)}
+              />
               <div className="flex items-start justify-between gap-3">
                 <div>
                   <p className="text-xs font-medium uppercase tracking-wider text-accent">
@@ -57,7 +62,7 @@ export function Projects() {
                     href={project.playStore}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 rounded-full bg-accent px-4 py-2 text-xs font-semibold text-background transition hover:brightness-110"
+                    className="btn-primary inline-flex items-center gap-2 rounded-full px-4 py-2 text-xs"
                   >
                     <Play size={14} />
                     Google Play
@@ -160,7 +165,6 @@ export function Projects() {
             ))}
           </div>
         </div>
-      </div>
-    </section>
+    </Section>
   );
 }

@@ -2,13 +2,13 @@
 
 import { motion } from "framer-motion";
 import { GraduationCap } from "lucide-react";
+import { Section } from "@/components/Section";
 import { SectionHeading } from "@/components/SectionHeading";
 import { education } from "@/data/profile";
 
 export function Education() {
   return (
-    <section id="education" className="py-20 sm:py-24">
-      <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+    <Section id="education">
         <SectionHeading eyebrow="Education" title="Academic background" />
 
         <div className="grid gap-5 md:grid-cols-2">
@@ -32,7 +32,6 @@ export function Education() {
             </motion.div>
           ))}
         </div>
-      </div>
-    </section>
+    </Section>
   );
 }

@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { Section } from "@/components/Section";
 import { SectionHeading } from "@/components/SectionHeading";
 import { skillGroups } from "@/data/profile";
 
@@ -13,8 +14,7 @@ const categoryStyles = [
 
 export function Skills() {
   return (
-    <section id="skills" className="py-20 sm:py-24">
-      <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+    <Section id="skills">
         <SectionHeading
           eyebrow="Skills"
           title="Skills matrix"
@@ -55,7 +55,6 @@ export function Skills() {
             </motion.div>
           ))}
         </div>
-      </div>
-    </section>
+    </Section>
   );
 }

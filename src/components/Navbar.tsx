@@ -50,7 +50,7 @@ export function Navbar() {
             href="/resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
-            className="rounded-full bg-accent px-4 py-2 text-sm font-semibold text-background transition hover:brightness-110"
+            className="btn-primary rounded-full px-4 py-2 text-sm"
           >
             Resume
           </a>
@@ -83,7 +83,7 @@ export function Navbar() {
               href="/resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-2 rounded-full bg-accent px-4 py-3 text-center text-sm font-semibold text-background"
+              className="btn-primary mt-2 block rounded-full px-4 py-3 text-center text-sm"
               onClick={() => setOpen(false)}
             >
               Download resume

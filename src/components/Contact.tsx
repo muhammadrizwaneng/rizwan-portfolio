@@ -3,13 +3,13 @@
 import { motion } from "framer-motion";
 import { Mail, MapPin, Phone } from "lucide-react";
 import { ContactForm } from "@/components/ContactForm";
+import { Section } from "@/components/Section";
 import { SectionHeading } from "@/components/SectionHeading";
 import { profile } from "@/data/profile";
 
 export function Contact() {
   return (
-    <section id="contact" className="py-20 sm:py-24">
-      <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+    <Section id="contact">
         <SectionHeading
           eyebrow="Contact"
           title="Let's build something great"
@@ -66,7 +66,6 @@ export function Contact() {
             </div>
           </div>
         </motion.div>
-      </div>
-    </section>
+    </Section>
   );
 }

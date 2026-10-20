@@ -2,13 +2,13 @@
 
 import { motion } from "framer-motion";
 import { Briefcase } from "lucide-react";
+import { Section } from "@/components/Section";
 import { SectionHeading } from "@/components/SectionHeading";
 import { experience } from "@/data/profile";
 
 export function Experience() {
   return (
-    <section id="experience" className="py-20 sm:py-24">
-      <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+    <Section id="experience">
         <SectionHeading
           eyebrow="Experience"
           title="Professional journey"
@@ -56,7 +56,6 @@ export function Experience() {
             </motion.article>
           ))}
         </div>
-      </div>
-    </section>
+    </Section>
   );
 }

@@ -136,7 +136,7 @@ export function ContactForm() {
       <button
         type="submit"
         disabled={state === "submitting"}
-        className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-accent px-6 py-3 text-sm font-semibold text-background transition hover:brightness-110 disabled:cursor-not-allowed disabled:opacity-70 sm:w-auto"
+        className="btn-primary inline-flex w-full items-center justify-center gap-2 rounded-full px-6 py-3 text-sm sm:w-auto"
       >
         {state === "submitting" ? (
           <>
