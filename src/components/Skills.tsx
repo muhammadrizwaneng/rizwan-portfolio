@@ -10,6 +10,7 @@ const categoryStyles = [
   "from-violet-500/10 to-transparent",
   "from-emerald-500/10 to-transparent",
   "from-amber-500/10 to-transparent",
+  "from-rose-500/10 to-transparent",
 ];
 
 export function Skills() {
@@ -18,7 +19,7 @@ export function Skills() {
         <SectionHeading
           eyebrow="Skills"
           title="Skills matrix"
-          description="Languages, frontend, backend, and cloud tooling I use to ship production software."
+          description="Languages, frontend, backend, cloud tooling, and AI/ML foundations from production work and structured training."
         />
 
         <div className="grid gap-5 lg:grid-cols-2">

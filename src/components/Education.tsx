@@ -9,7 +9,11 @@ import { education } from "@/data/profile";
 export function Education() {
   return (
     <Section id="education">
-        <SectionHeading eyebrow="Education" title="Academic background" />
+        <SectionHeading
+          eyebrow="Education"
+          title="Education & AI training"
+          description="Degree background plus structured machine learning, deep learning, and NLP coursework."
+        />
 
         <div className="grid gap-5 md:grid-cols-2">
           {education.map((item, index) => (
@@ -29,6 +33,9 @@ export function Education() {
               <p className="mt-1 text-sm text-muted">
                 {item.location} · {item.period}
               </p>
+              {"note" in item && item.note ? (
+                <p className="mt-4 text-sm leading-relaxed text-muted">{item.note}</p>
+              ) : null}
             </motion.div>
           ))}
         </div>

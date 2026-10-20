@@ -64,13 +64,32 @@ export const skillGroups = [
     description: "Deployment, observability, and cloud-native delivery.",
     items: [
       "AWS",
+      "Azure",
       "Serverless",
       "Docker",
       "Git",
       "CI/CD",
       "Postman",
       "JIRA",
-      "LLMs",
+    ],
+  },
+  {
+    title: "AI / ML & Deep Learning",
+    description:
+      "Foundations from Artificial Intelligence (ML & DL) training — regression, CNNs, NLP, and applied model workflows.",
+    items: [
+      "Machine Learning",
+      "Deep Learning",
+      "Neural Networks",
+      "CNN / Convolutions",
+      "VGG & ResNet",
+      "NLP & Text Analysis",
+      "Linear & Logistic Regression",
+      "K-Means Clustering",
+      "Feature Engineering",
+      "Pandas / NumPy",
+      "Data Preprocessing",
+      "LLM Integrations",
     ],
   },
 ];
@@ -261,6 +280,13 @@ export const githubProjects = [
 ];
 
 export const education = [
+  {
+    school: "ML, DL & NLP — Professional Training",
+    location: "Instructor-led (Abdul Bari Khan)",
+    degree: "Artificial Intelligence (Machine Learning & Deep Learning)",
+    period: "2024 – 2025",
+    note: "Labs and coursework: Python for ML, linear & logistic regression, polynomial regression, k-means, neural networks, CNNs (convolution, VGG, ResNet-50), NLP & text analysis, feature engineering, Azure ML basics, and model evaluation.",
+  },
   {
     school: "Gomal University",
     location: "D.I. Khan, KPK",

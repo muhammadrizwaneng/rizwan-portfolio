@@ -43,7 +43,7 @@ export function About() {
                 <span className="text-accent">▹</span> Search, APIs & serverless backends
               </li>
               <li className="flex gap-2">
-                <span className="text-accent">▹</span> LLM integrations & ML pipelines
+                <span className="text-accent">▹</span> ML, deep learning (CNN/NLP) & LLM integrations
               </li>
             </ul>
           </motion.div>
