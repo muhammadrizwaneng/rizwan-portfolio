@@ -29,6 +29,9 @@ export type FeaturedProject = {
   appStore?: string | null;
   /** Official app icon from Google Play (high-res CDN) */
   previewImage?: string | null;
+  kaggle?: string | null;
+  /** e.g. active Kaggle competition */
+  statusLabel?: string | null;
   featured?: boolean;
 };
 
@@ -122,6 +125,25 @@ export const experience = [
 ];
 
 export const featuredProjects: FeaturedProject[] = [
+  {
+    name: "Enveda CASMI 2026 — Molecule ID",
+    stack: [
+      "Python",
+      "Machine Learning",
+      "Deep Learning",
+      "Mass Spectrometry",
+      "Cheminformatics",
+      "Kaggle",
+    ],
+    summary:
+      "Active Kaggle challenge: identify small molecules from tandem mass spectra using ML baselines, fingerprint channels, validation sweeps, and ranked retrieval pipelines.",
+    github: null,
+    demo: null,
+    kaggle:
+      "https://www.kaggle.com/competitions/enveda-CASMI26-molecule-id-mass-spectra",
+    statusLabel: "Active competition",
+    featured: true,
+  },
   {
     name: "Enterprise SSO System",
     stack: ["Node.js", "Next.js", "Elasticsearch", "AWS", "Serverless"],

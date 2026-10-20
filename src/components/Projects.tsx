@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Apple, Code2, ExternalLink, Globe, Play } from "lucide-react";
+import { Apple, Code2, ExternalLink, Globe, Play, Trophy } from "lucide-react";
 import { ProjectPreview } from "@/components/ProjectPreview";
 import { Section } from "@/components/Section";
 import { SectionHeading } from "@/components/SectionHeading";
@@ -33,9 +33,16 @@ export function Projects() {
               />
               <div className="flex items-start justify-between gap-3">
                 <div>
-                  <p className="text-xs font-medium uppercase tracking-wider text-accent">
-                    Featured
-                  </p>
+                  <div className="flex flex-wrap items-center gap-2">
+                    <p className="text-xs font-medium uppercase tracking-wider text-accent">
+                      Featured
+                    </p>
+                    {project.statusLabel ? (
+                      <span className="rounded-full bg-violet/15 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-violet">
+                        {project.statusLabel}
+                      </span>
+                    ) : null}
+                  </div>
                   <h3 className="mt-1 font-display text-xl font-semibold">
                     {project.name}
                   </h3>
@@ -80,6 +87,17 @@ export function Projects() {
                     App Store
                   </a>
                 ) : null}
+                {project.kaggle ? (
+                  <a
+                    href={project.kaggle}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn-primary inline-flex items-center gap-2 rounded-full px-4 py-2 text-xs"
+                  >
+                    <Trophy size={14} />
+                    Kaggle
+                  </a>
+                ) : null}
                 {project.demo ? (
                   <a
                     href={project.demo}
@@ -92,6 +110,7 @@ export function Projects() {
                   </a>
                 ) : null}
                 {!project.demo &&
+                !project.kaggle &&
                 !project.playStore &&
                 !project.appStore ? (
                   <span className="inline-flex items-center gap-2 rounded-full border border-dashed border-border px-4 py-2 text-xs text-muted">
@@ -109,7 +128,7 @@ export function Projects() {
                     <Code2 size={14} />
                     GitHub
                   </a>
-                ) : (
+                ) : project.kaggle ? null : (
                   <span className="inline-flex items-center gap-2 rounded-full border border-border/60 px-4 py-2 text-xs text-muted">
                     <Code2 size={14} />
                     Private / internal
