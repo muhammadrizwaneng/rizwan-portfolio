@@ -27,6 +27,8 @@ export type FeaturedProject = {
   demo?: string | null;
   playStore?: string | null;
   appStore?: string | null;
+  /** Official app icon from Google Play (high-res CDN) */
+  previewImage?: string | null;
   featured?: boolean;
 };
 
@@ -119,6 +121,8 @@ export const featuredProjects: FeaturedProject[] = [
     demo: null,
     playStore: "https://play.google.com/store/apps/details?id=com.seecard",
     appStore: "https://apps.apple.com/pk/app/seecard/id6502513661",
+    previewImage:
+      "https://play-lh.googleusercontent.com/ZFH4qLEB1TYkD_bnKb9fXcPJzAB97A4StqINjxefFo1_FqRszVyHL_jHolSp1gxbMsCPBgwwVk9tJ9l0vWRK=w512-h512",
     featured: true,
   },
   {
@@ -130,6 +134,8 @@ export const featuredProjects: FeaturedProject[] = [
     demo: null,
     playStore: "https://play.google.com/store/apps/details?id=com.seetask",
     appStore: "https://apps.apple.com/pk/app/seetask/id6742219504",
+    previewImage:
+      "https://play-lh.googleusercontent.com/r_RJh534slArjIEubL1A69HkVP4PCwhZcEHzR-SGXrjnNxPlZHUjrwTaT-BeFqkdJy6U0yVKAjehChGdnD6yX5Y=w512-h512",
     featured: true,
   },
   {
@@ -140,6 +146,8 @@ export const featuredProjects: FeaturedProject[] = [
     github: null,
     demo: null,
     playStore: "https://play.google.com/store/apps/details?id=com.turnfeat.ai",
+    previewImage:
+      "https://play-lh.googleusercontent.com/HZkmZ8gKDMvVPWZbOILArMmCcpWyKMxr0KCR3X-y6iHpBLhy3dCjranwX_jh975kWVJIGzTgM1cQncrm2o796Q=w512-h512",
     featured: true,
   },
   {
@@ -152,6 +160,8 @@ export const featuredProjects: FeaturedProject[] = [
     playStore:
       "https://play.google.com/store/apps/details?id=b2b.seebiz.marketplace",
     appStore: "https://apps.apple.com/pk/app/seebiz/id1624880662",
+    previewImage:
+      "https://play-lh.googleusercontent.com/VWeT9knKI-zvRC09QVCjAjsy2rI3IFs2ZcRd1KMobAWA0JjJ7fEduBTA5ucCCtIG_jpk6lbqMiZRMMYiqqvL=w512-h512",
     featured: true,
   },
   {
@@ -163,6 +173,8 @@ export const featuredProjects: FeaturedProject[] = [
     demo: null,
     playStore: "https://play.google.com/store/apps/details?id=com.b2bcommunity",
     appStore: "https://apps.apple.com/pk/app/krub-ai/id6747217722",
+    previewImage:
+      "https://play-lh.googleusercontent.com/Uj41PlecUvYj3Ts-35HNLEJ3WUKFkziLc5auzUTzSO7N99Zvmbi-3HI7OlnxsRr_JhEYTPhcAc9OJJCw41a6BQ=w512-h512",
     featured: true,
   },
   {
@@ -173,6 +185,8 @@ export const featuredProjects: FeaturedProject[] = [
     github: "https://github.com/muhammadrizwaneng/PakTourism",
     demo: null,
     playStore: "https://play.google.com/store/apps/details?id=com.paktourism",
+    previewImage:
+      "https://play-lh.googleusercontent.com/Ey7TsbNBLnbZ5PQ1Jpfi0wGaqaEH85yAcOO9jBf29WCyPcKSvJ7pcbdpZK5MDWimChOWM5UzYUOwTWy_SoIjuQ=w512-h512",
     featured: true,
   },
   {
@@ -183,6 +197,8 @@ export const featuredProjects: FeaturedProject[] = [
     github: "https://github.com/muhammadrizwaneng/UtilityApp",
     demo: null,
     playStore: "https://play.google.com/store/apps/details?id=com.utilityhub.app",
+    previewImage:
+      "https://play-lh.googleusercontent.com/3cMJu--3RfLa3yZidAK9SK9zSwJ4hKLlzY7PICYuEpwUihxjWZsf70rSdpo5fD_UV5l_YzMIoFCWAV2DOV26=w512-h512",
     featured: true,
   },
   {

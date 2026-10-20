@@ -29,6 +29,7 @@ export function Projects() {
               <ProjectPreview
                 name={project.name}
                 isMobile={Boolean(project.playStore || project.appStore)}
+                imageUrl={project.previewImage}
               />
               <div className="flex items-start justify-between gap-3">
                 <div>
