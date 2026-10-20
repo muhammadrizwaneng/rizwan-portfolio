@@ -25,6 +25,8 @@ export type FeaturedProject = {
   stack: string[];
   github?: string | null;
   demo?: string | null;
+  playStore?: string | null;
+  appStore?: string | null;
   featured?: boolean;
 };
 
@@ -109,30 +111,58 @@ export const featuredProjects: FeaturedProject[] = [
     featured: true,
   },
   {
-    name: "SeeCard Platform",
+    name: "SeeCard",
     stack: ["React Native", "REST APIs", "QR"],
     summary:
       "Digital business cards with live profile editing, QR sharing, and phonebook sync.",
     github: null,
     demo: null,
+    playStore: "https://play.google.com/store/apps/details?id=com.seecard",
+    appStore: "https://apps.apple.com/pk/app/seecard/id6502513661",
     featured: true,
   },
   {
-    name: "SeeTask System",
+    name: "SeeTask",
     stack: ["React Native", "Real-time", "Multi-tenant"],
     summary:
       "Team workspace app with projects, deadlines, and low-latency notifications.",
     github: null,
     demo: null,
+    playStore: "https://play.google.com/store/apps/details?id=com.seetask",
+    appStore: "https://apps.apple.com/pk/app/seetask/id6742219504",
     featured: true,
   },
   {
-    name: "Turnfeat Platform",
+    name: "Turnfeat.ai",
     stack: ["React Native", "Node.js", "PostgreSQL", "OpenAI"],
     summary:
       "AI freelance marketplace with bidding, escrow, milestones, and skill matching.",
     github: null,
     demo: null,
+    playStore: "https://play.google.com/store/apps/details?id=com.turnfeat.ai",
+    featured: true,
+  },
+  {
+    name: "SeeBiz Marketplace",
+    stack: ["React Native", "B2B", "Marketplace"],
+    summary:
+      "B2B marketplace mobile app connecting businesses with catalog and trade workflows.",
+    github: null,
+    demo: null,
+    playStore:
+      "https://play.google.com/store/apps/details?id=b2b.seebiz.marketplace",
+    appStore: "https://apps.apple.com/pk/app/seebiz/id1624880662",
+    featured: true,
+  },
+  {
+    name: "Krub.ai",
+    stack: ["React Native", "B2B", "AI"],
+    summary:
+      "B2B community and AI-assisted platform for business networking and discovery.",
+    github: null,
+    demo: null,
+    playStore: "https://play.google.com/store/apps/details?id=com.b2bcommunity",
+    appStore: "https://apps.apple.com/pk/app/krub-ai/id6747217722",
     featured: true,
   },
   {
@@ -142,6 +172,7 @@ export const featuredProjects: FeaturedProject[] = [
       "Regional travel ecosystem with optimized geo-spatial APIs and map microservices.",
     github: "https://github.com/muhammadrizwaneng/PakTourism",
     demo: null,
+    playStore: "https://play.google.com/store/apps/details?id=com.paktourism",
     featured: true,
   },
   {
@@ -151,6 +182,7 @@ export const featuredProjects: FeaturedProject[] = [
       "Offline image-to-PDF and compression utilities with native file system bridges.",
     github: "https://github.com/muhammadrizwaneng/UtilityApp",
     demo: null,
+    playStore: "https://play.google.com/store/apps/details?id=com.utilityhub.app",
     featured: true,
   },
   {

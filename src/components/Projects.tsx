@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Code2, ExternalLink, Globe } from "lucide-react";
+import { Apple, Code2, ExternalLink, Globe, Play } from "lucide-react";
 import { SectionHeading } from "@/components/SectionHeading";
 import { featuredProjects, githubProjects, profile } from "@/data/profile";
 
@@ -52,22 +52,47 @@ export function Projects() {
               </div>
 
               <div className="mt-6 flex flex-wrap gap-2 border-t border-border pt-4">
+                {project.playStore ? (
+                  <a
+                    href={project.playStore}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 rounded-full bg-accent px-4 py-2 text-xs font-semibold text-background transition hover:brightness-110"
+                  >
+                    <Play size={14} />
+                    Google Play
+                  </a>
+                ) : null}
+                {project.appStore ? (
+                  <a
+                    href={project.appStore}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 rounded-full border border-border px-4 py-2 text-xs font-semibold text-foreground transition hover:border-accent/40 hover:text-accent"
+                  >
+                    <Apple size={14} />
+                    App Store
+                  </a>
+                ) : null}
                 {project.demo ? (
                   <a
                     href={project.demo}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 rounded-full bg-accent px-4 py-2 text-xs font-semibold text-background transition hover:brightness-110"
+                    className="inline-flex items-center gap-2 rounded-full border border-border px-4 py-2 text-xs font-semibold text-foreground transition hover:border-accent/40 hover:text-accent"
                   >
                     <Globe size={14} />
                     Live demo
                   </a>
-                ) : (
+                ) : null}
+                {!project.demo &&
+                !project.playStore &&
+                !project.appStore ? (
                   <span className="inline-flex items-center gap-2 rounded-full border border-dashed border-border px-4 py-2 text-xs text-muted">
                     <Globe size={14} />
                     Demo on request
                   </span>
-                )}
+                ) : null}
                 {project.github ? (
                   <a
                     href={project.github}
