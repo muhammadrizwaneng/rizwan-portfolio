@@ -3,6 +3,9 @@ import { Outfit, Syne } from "next/font/google";
 import { JsonLd } from "@/components/JsonLd";
 import { profile } from "@/data/profile";
 import {
+  ogImageAlt,
+  ogImageHeight,
+  ogImageWidth,
   seoDescription,
   seoKeywords,
   siteName,
@@ -59,10 +62,10 @@ export const metadata: Metadata = {
     description: seoDescription,
     images: [
       {
-        url: "/opengraph-image",
-        width: 1600,
-        height: 840,
-        alt: `${profile.name} — Full Stack Software Engineer Portfolio`,
+        url: `${siteUrl}/opengraph-image`,
+        width: ogImageWidth,
+        height: ogImageHeight,
+        alt: ogImageAlt,
         type: "image/png",
       },
     ],
@@ -71,7 +74,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: siteName,
     description: seoDescription,
-    images: ["/twitter-image"],
+    images: [`${siteUrl}/twitter-image`],
   },
   ...(process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION
     ? {

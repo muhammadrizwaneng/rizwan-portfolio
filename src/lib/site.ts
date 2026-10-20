@@ -1,8 +1,30 @@
 import { profile } from "@/data/profile";
 
-export const siteUrl =
-  process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "") ??
-  "https://muhammadrizwan.dev";
+/** Legacy Vercel env pointed here; that host has no deployment (OG image 404). */
+const BROKEN_SITE_URL = "https://rizwan-portfolio.vercel.app";
+
+/** Canonical URL for metadata, sitemap, and JSON-LD. */
+export function getConfiguredSiteUrl(): string {
+  const fromEnv = process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "");
+
+  if (fromEnv && fromEnv !== BROKEN_SITE_URL) {
+    return fromEnv;
+  }
+
+  const vercelProduction = process.env.VERCEL_PROJECT_PRODUCTION_URL?.replace(
+    /^https?:\/\//,
+    "",
+  );
+  if (vercelProduction) {
+    return `https://${vercelProduction}`;
+  }
+
+  if (fromEnv) return fromEnv;
+
+  return "https://rizwan-portfolio-eight.vercel.app";
+}
+
+export const siteUrl = getConfiguredSiteUrl();
 
 export const siteName = `${profile.name} | Full Stack Software Engineer Portfolio`;
 
@@ -26,3 +48,7 @@ export const seoKeywords = [
   "TypeScript",
   "portfolio",
 ];
+
+export const ogImageWidth = 1600;
+export const ogImageHeight = 840;
+export const ogImageAlt = `${profile.name} — Full Stack Software Engineer Portfolio`;

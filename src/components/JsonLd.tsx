@@ -16,7 +16,7 @@ export function JsonLd() {
       addressCountry: "PK",
     },
     url: siteUrl,
-    image: profile.avatar,
+    image: `${siteUrl}/opengraph-image`,
     sameAs: [profile.github, profile.linkedin],
     knowsAbout: [
       "Node.js",
