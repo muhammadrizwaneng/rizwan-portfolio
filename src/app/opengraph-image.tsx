@@ -1,8 +1,9 @@
 import { ImageResponse } from "next/og";
 import { profile } from "@/data/profile";
 
+/** LinkedIn Post Inspector requires width ≥ 1600px and height ≥ 400px. */
 export const alt = `${profile.name} — Full Stack Software Engineer Portfolio`;
-export const size = { width: 1200, height: 630 };
+export const size = { width: 1600, height: 840 };
 export const contentType = "image/png";
 
 export default function OpenGraphImage() {
@@ -17,7 +18,7 @@ export default function OpenGraphImage() {
           display: "flex",
           flexDirection: "column",
           justifyContent: "space-between",
-          padding: "64px 72px",
+          padding: "85px 96px",
           background: "#0f1729",
           color: "#e8edf5",
           fontFamily: "system-ui, sans-serif",
@@ -27,13 +28,13 @@ export default function OpenGraphImage() {
           style={{
             display: "flex",
             alignItems: "center",
-            gap: 16,
+            gap: 20,
           }}
         >
           <div
             style={{
               display: "flex",
-              fontSize: 22,
+              fontSize: 28,
               fontWeight: 700,
               letterSpacing: "-0.02em",
               color: "#22d3ee",
@@ -44,7 +45,7 @@ export default function OpenGraphImage() {
           <div
             style={{
               display: "flex",
-              fontSize: 18,
+              fontSize: 24,
               color: "#94a3b8",
             }}
           >
@@ -56,14 +57,14 @@ export default function OpenGraphImage() {
           style={{
             display: "flex",
             flexDirection: "column",
-            gap: 16,
-            maxWidth: 900,
+            gap: 20,
+            maxWidth: 1200,
           }}
         >
           <div
             style={{
               display: "flex",
-              fontSize: 64,
+              fontSize: 72,
               fontWeight: 700,
               letterSpacing: "-0.03em",
               lineHeight: 1.05,
@@ -74,7 +75,7 @@ export default function OpenGraphImage() {
           <div
             style={{
               display: "flex",
-              fontSize: 32,
+              fontSize: 36,
               color: "#22d3ee",
               fontWeight: 600,
             }}
@@ -84,7 +85,7 @@ export default function OpenGraphImage() {
           <div
             style={{
               display: "flex",
-              fontSize: 22,
+              fontSize: 28,
               color: "#94a3b8",
               lineHeight: 1.45,
             }}
@@ -93,17 +94,17 @@ export default function OpenGraphImage() {
           </div>
         </div>
 
-        <div style={{ display: "flex", gap: 12 }}>
+        <div style={{ display: "flex", gap: 14 }}>
           {tags.map((tag) => (
             <div
               key={tag}
               style={{
                 display: "flex",
-                padding: "10px 18px",
+                padding: "12px 22px",
                 borderRadius: 999,
                 border: "1px solid rgba(148, 163, 184, 0.25)",
                 background: "rgba(15, 23, 41, 0.7)",
-                fontSize: 16,
+                fontSize: 20,
                 color: "#e8edf5",
               }}
             >

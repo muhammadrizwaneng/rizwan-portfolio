@@ -57,11 +57,21 @@ export const metadata: Metadata = {
     siteName: `${profile.name} Portfolio`,
     title: siteName,
     description: seoDescription,
+    images: [
+      {
+        url: "/opengraph-image",
+        width: 1600,
+        height: 840,
+        alt: `${profile.name} — Full Stack Software Engineer Portfolio`,
+        type: "image/png",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: siteName,
     description: seoDescription,
+    images: ["/twitter-image"],
   },
   ...(process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION
     ? {
