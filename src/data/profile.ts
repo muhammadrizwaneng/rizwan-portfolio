@@ -19,6 +19,16 @@ export const profile = {
   ],
 };
 
+export type EducationItem = {
+  school: string;
+  location: string;
+  degree: string;
+  period: string;
+  note?: string;
+  certificateImage?: string;
+  certificateLabel?: string;
+};
+
 export type FeaturedProject = {
   name: string;
   summary: string;
@@ -79,7 +89,7 @@ export const skillGroups = [
   {
     title: "AI / ML & Deep Learning",
     description:
-      "Foundations from Artificial Intelligence (ML & DL) training — regression, CNNs, NLP, and applied model workflows.",
+      "SoL-certified AI programme — regression, CNNs, NLP, and applied model workflows.",
     items: [
       "Machine Learning",
       "Deep Learning",
@@ -301,13 +311,15 @@ export const githubProjects = [
   },
 ];
 
-export const education = [
+export const education: EducationItem[] = [
   {
-    school: "ML, DL & NLP — Professional Training",
-    location: "Instructor-led (Abdul Bari Khan)",
-    degree: "Artificial Intelligence (Machine Learning & Deep Learning)",
-    period: "2024 – 2025",
-    note: "Labs and coursework: Python for ML, linear & logistic regression, polynomial regression, k-means, neural networks, CNNs (convolution, VGG, ResNet-50), NLP & text analysis, feature engineering, Azure ML basics, and model evaluation.",
+    school: "School of Leadership (SoL)",
+    location: "Professional programme · Instructor-led",
+    degree: "Artificial Intelligence — Machine Learning & Deep Learning",
+    period: "2024 – 2025 · Certified Oct 2025",
+    note: "Certificate programme covering Python for ML, linear & logistic regression, polynomial regression, k-means, neural networks, CNNs (convolution, VGG, ResNet-50), NLP & text analysis, feature engineering, Azure ML basics, and model evaluation.",
+    certificateImage: "/certificates/sol-ai-ml-dl.jpg",
+    certificateLabel: "SoL certificate of completion",
   },
   {
     school: "Gomal University",
