@@ -145,6 +145,22 @@ export const featuredProjects: FeaturedProject[] = [
     featured: true,
   },
   {
+    name: "rizwan-code-model",
+    stack: [
+      "Python",
+      "QLoRA",
+      "Qwen2.5-Coder",
+      "Hugging Face",
+      "Fine-tuning",
+      "Kaggle",
+    ],
+    summary:
+      "Custom coding adapter: QLoRA fine-tune on ~400 curated instruction pairs (FastAPI, React Native, Node, debugging) — trained on Kaggle T4 with a 4-hour budget, without noisy public tutorial datasets.",
+    github: "https://github.com/muhammadrizwaneng/coding-model",
+    demo: null,
+    featured: true,
+  },
+  {
     name: "Enterprise SSO System",
     stack: ["Node.js", "Next.js", "Elasticsearch", "AWS", "Serverless"],
     summary:
@@ -274,6 +290,13 @@ export const githubProjects = [
     language: "Python",
     url: "https://github.com/muhammadrizwaneng/yolo_fastapi",
     description: "Computer vision API service with YOLO and FastAPI.",
+  },
+  {
+    name: "coding-model (rizwan-code-model)",
+    language: "Python",
+    url: "https://github.com/muhammadrizwaneng/coding-model",
+    description:
+      "QLoRA adapter on Qwen2.5-Coder — curated SFT data, Kaggle training workflow, local FastAPI chat server.",
   },
   {
     name: "Plant Disease Detection",
