@@ -144,11 +144,12 @@ export function Projects() {
             <div>
               <h3 className="font-display text-2xl font-semibold">On GitHub</h3>
               <p className="mt-1 text-sm text-muted">
-                APIs, ML notebooks, and Next.js experiments.
+                Curated public repos — APIs, AI/ML, mobile, and web apps (mostly
+                in progress across 39 repositories).
               </p>
             </div>
             <a
-              href={profile.github}
+              href={`${profile.github}?tab=repositories`}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 text-sm font-medium text-accent hover:underline"
@@ -171,12 +172,17 @@ export function Projects() {
                 transition={{ delay: index * 0.04 }}
                 className="glass block rounded-2xl p-5 transition hover:border-violet/40 hover:bg-surface-elevated/80"
               >
-                <div className="flex items-center justify-between gap-2">
+                <div className="flex items-start justify-between gap-2">
                   <h4 className="font-medium text-foreground">{repo.name}</h4>
-                  <span className="rounded-full border border-border px-2 py-0.5 text-[10px] uppercase tracking-wide text-muted">
+                  <span className="shrink-0 rounded-full border border-border px-2 py-0.5 text-[10px] uppercase tracking-wide text-muted">
                     {repo.language}
                   </span>
                 </div>
+                {"statusLabel" in repo && repo.statusLabel ? (
+                  <span className="mt-2 inline-flex rounded-full bg-violet/15 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-violet">
+                    {repo.statusLabel}
+                  </span>
+                ) : null}
                 <p className="mt-2 text-sm text-muted">{repo.description}</p>
                 <p className="mt-3 inline-flex items-center gap-1 text-xs font-medium text-accent">
                   View repo <ExternalLink size={12} />
