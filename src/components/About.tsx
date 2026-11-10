@@ -11,7 +11,7 @@ export function About() {
         <SectionHeading
           eyebrow="About"
           title="Building products that feel fast, secure, and human"
-          description="From enterprise identity platforms to AI-assisted marketplaces, I focus on reliable APIs, thoughtful mobile UX, and measurable impact."
+          description="From enterprise identity platforms to AI-assisted marketplaces, I focus on reliable APIs, thoughtful mobile UX, measurable impact, and agentic delivery with Cursor and Claude."
         />
 
         <div className="grid gap-6 lg:grid-cols-3">
@@ -44,6 +44,12 @@ export function About() {
               </li>
               <li className="flex gap-2">
                 <span className="text-accent">▹</span> ML, deep learning (CNN/NLP) & LLM integrations
+              </li>
+              <li className="flex gap-2">
+                <span className="text-accent">▹</span> Vibe coding with Cursor & Claude
+              </li>
+              <li className="flex gap-2">
+                <span className="text-accent">▹</span> Custom rules, QA & backend agents
               </li>
             </ul>
           </motion.div>

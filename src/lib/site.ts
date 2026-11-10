@@ -29,7 +29,7 @@ export const siteUrl = getConfiguredSiteUrl();
 export const siteName = `${profile.name} | Full Stack Software Engineer Portfolio`;
 
 export const seoDescription =
-  "Muhammad Rizwan — Full Stack Software Engineer specializing in Node.js, MERN stack, AWS, React Native, Next.js, Python (FastAPI), and mobile app development. 4+ years building secure, scalable products in Lahore, Pakistan.";
+  "Muhammad Rizwan — Full Stack Software Engineer specializing in Node.js, MERN stack, AWS, React Native, Next.js, Python (FastAPI), vibe coding with Cursor and Claude, custom rules, and AI agents (QA, backend). 4+ years building secure, scalable products in Lahore, Pakistan.";
 
 export const seoKeywords = [
   "Muhammad Rizwan",
@@ -46,6 +46,10 @@ export const seoKeywords = [
   "Pakistan software developer",
   "FastAPI",
   "TypeScript",
+  "vibe coding",
+  "Cursor",
+  "Claude",
+  "AI agents",
   "portfolio",
 ];
 

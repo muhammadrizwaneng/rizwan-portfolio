@@ -27,6 +27,10 @@ export function JsonLd() {
       "FastAPI",
       "MongoDB",
       "TypeScript",
+      "Vibe Coding",
+      "Cursor",
+      "Claude",
+      "AI Agents",
     ],
   };
 

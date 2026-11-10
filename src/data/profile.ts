@@ -1,7 +1,7 @@
 export const profile = {
   name: "Muhammad Rizwan",
   title: "Software Engineer",
-  tagline: "Full Stack & Mobile · Backend · AI Integrations",
+  tagline: "Full Stack & Mobile · Backend · Vibe Coding · AI Agents",
   location: "Lahore, Pakistan",
   email: "muhammadrizwaneng@gmail.com",
   phone: "+92 300 0795296",
@@ -10,7 +10,7 @@ export const profile = {
   githubUsername: "muhammadrizwaneng",
   avatar: "https://avatars.githubusercontent.com/u/102026105?v=4",
   summary:
-    "Software Engineer with 4+ years of experience building secure, scalable backend systems and cross-platform mobile applications. Specialized in Node.js, Next.js, Python (FastAPI/Flask), and React Native, with hands-on delivery of enterprise authentication, search, and AI-integrated products serving 15,000+ active users.",
+    "Software Engineer with 4+ years of experience building secure, scalable backend systems and cross-platform mobile applications. Specialized in Node.js, Next.js, Python (FastAPI/Flask), and React Native, with hands-on delivery of enterprise authentication, search, and AI-integrated products serving 15,000+ active users. I also ship faster with vibe coding in Cursor and Claude — writing strong prompts, project rules, and custom agents (QA, backend, and more) to turn ideas into production-ready code.",
   stats: [
     { label: "Years experience", value: "4+" },
     { label: "Active users served", value: "15K+" },
@@ -95,6 +95,21 @@ export const skillGroups = [
       "LLM Integrations",
     ],
   },
+  {
+    title: "Vibe Coding / AI Agents",
+    description:
+      "Prompt-driven delivery with Cursor and Claude — rules, agents, and agentic workflows.",
+    items: [
+      "Cursor",
+      "Claude",
+      "Vibe Coding",
+      "Prompt Engineering",
+      "Custom Rules",
+      "QA Agents",
+      "Backend Agents",
+      "Agent Workflows",
+    ],
+  },
 ];
 
 export const experience = [
@@ -109,6 +124,7 @@ export const experience = [
       "Integrated Elasticsearch, cutting admin search query latency by 40%.",
       "Migrated legacy backends to serverless, reducing cloud costs by 30% and speeding deploys by 25%.",
       "Delivered Flask, FastAPI, and MongoDB APIs for mobile products with sub-200ms response times.",
+      "Accelerated feature delivery with vibe coding in Cursor and Claude — custom project rules plus QA and backend agents for consistent, reviewable output.",
     ],
   },
   {
