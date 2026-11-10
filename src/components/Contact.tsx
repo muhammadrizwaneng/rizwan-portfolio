@@ -49,7 +49,8 @@ export function Contact() {
               </div>
 
               <a
-                href="/resume.pdf"
+                href={profile.resumeUrl}
+                download="Muhammad_Rizwan_Resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="mt-8 inline-flex rounded-full border border-border px-5 py-2.5 text-sm font-semibold transition hover:border-accent/40 hover:text-accent"

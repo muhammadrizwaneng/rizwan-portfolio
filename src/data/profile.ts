@@ -8,6 +8,8 @@ export const profile = {
   linkedin: "https://linkedin.com/in/muhammad-rizwan-fullstack",
   github: "https://github.com/muhammadrizwaneng",
   githubUsername: "muhammadrizwaneng",
+  /** Versioned public path so CDNs/browsers do not keep serving an old PDF. */
+  resumeUrl: "/muhammad-rizwan-resume.pdf",
   avatar: "https://avatars.githubusercontent.com/u/102026105?v=4",
   summary:
     "Software Engineer with 4+ years of experience building secure, scalable backend systems and cross-platform mobile applications. Specialized in Node.js, Next.js, Python (FastAPI/Flask), and React Native, with hands-on delivery of enterprise authentication, search, and AI-integrated products serving 15,000+ active users. I also ship faster with vibe coding in Cursor and Claude — writing strong prompts, project rules, and custom agents (QA, backend, and more) to turn ideas into production-ready code.",

@@ -47,7 +47,8 @@ export function Navbar() {
             </a>
           ))}
           <a
-            href="/resume.pdf"
+            href={profile.resumeUrl}
+            download="Muhammad_Rizwan_Resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="btn-primary rounded-full px-4 py-2 text-sm"
@@ -80,7 +81,8 @@ export function Navbar() {
               </a>
             ))}
             <a
-              href="/resume.pdf"
+              href={profile.resumeUrl}
+              download="Muhammad_Rizwan_Resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="btn-primary mt-2 block rounded-full px-4 py-3 text-center text-sm"
