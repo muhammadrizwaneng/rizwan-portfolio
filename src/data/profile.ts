@@ -142,6 +142,33 @@ export const experience = [
 
 export const featuredProjects: FeaturedProject[] = [
   {
+    name: "HiveTalk",
+    stack: [
+      "Next.js",
+      "Express",
+      "Socket.IO",
+      "PostgreSQL",
+      "TypeScript",
+      "AWS",
+    ],
+    summary:
+      "Real-time team messaging with workspaces, channels, and live Socket.IO updates — Next.js frontend and Express API monorepo, deployed on AWS.",
+    github: "https://github.com/muhammadrizwaneng/HiveTalk",
+    demo: "http://16.178.144.77:3000",
+    statusLabel: "Live on AWS",
+    featured: true,
+  },
+  {
+    name: "ZeroAds Downloader",
+    stack: ["Next.js", "Android", "Vercel", "YouTube"],
+    summary:
+      "Ad-free YouTube and social media downloader for Android — APK distribution site plus download API, deployed on Vercel.",
+    github: "https://github.com/muhammadrizwaneng/zeroad_downloader",
+    demo: "https://zeroad-downloader.vercel.app",
+    statusLabel: "Live on Vercel",
+    featured: true,
+  },
+  {
     name: "Enveda CASMI 2026 — Molecule ID",
     stack: [
       "Python",
@@ -252,14 +279,15 @@ export const featuredProjects: FeaturedProject[] = [
   },
   {
     name: "PAKEZY Tourism",
-    stack: ["React Native", "FastAPI", "MongoDB", "Maps"],
+    stack: ["Next.js", "React Native", "FastAPI", "MongoDB", "Maps"],
     summary:
-      "Regional travel ecosystem with optimized geo-spatial APIs and map microservices.",
-    github: "https://github.com/muhammadrizwaneng/PakTourism",
-    demo: null,
+      "Pakistan travel platform with destinations, attractions, packages, and maps — Next.js web app on Vercel plus React Native mobile.",
+    github: "https://github.com/muhammadrizwaneng/PAKToursimWeb",
+    demo: "https://pakezy.vercel.app",
     playStore: "https://play.google.com/store/apps/details?id=com.paktourism",
     previewImage:
       "https://play-lh.googleusercontent.com/Ey7TsbNBLnbZ5PQ1Jpfi0wGaqaEH85yAcOO9jBf29WCyPcKSvJ7pcbdpZK5MDWimChOWM5UzYUOwTWy_SoIjuQ=w512-h512",
+    statusLabel: "Live on Vercel",
     featured: true,
   },
   {
