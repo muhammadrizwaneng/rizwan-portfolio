@@ -47,6 +47,12 @@ export function Navbar() {
             </a>
           ))}
           <a
+            href="/metro"
+            className="text-sm text-muted transition-colors hover:text-accent"
+          >
+            Metro
+          </a>
+          <a
             href={profile.resumeUrl}
             download="Muhammad_Rizwan_Resume.pdf"
             target="_blank"
@@ -80,6 +86,13 @@ export function Navbar() {
                 {link.label}
               </a>
             ))}
+            <a
+              href="/metro"
+              className="rounded-lg px-3 py-3 text-base text-foreground hover:bg-white/5"
+              onClick={() => setOpen(false)}
+            >
+              Metro View
+            </a>
             <a
               href={profile.resumeUrl}
               download="Muhammad_Rizwan_Resume.pdf"

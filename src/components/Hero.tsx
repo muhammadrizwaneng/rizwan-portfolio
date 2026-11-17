@@ -69,6 +69,12 @@ export function Hero() {
             >
               View my work
             </a>
+            <a
+              href="/metro"
+              className="rounded-full border border-accent/40 bg-accent/10 px-6 py-3 text-sm font-semibold text-accent transition hover:bg-accent/20"
+            >
+              Board Metro View
+            </a>
           </motion.div>
 
           <motion.div

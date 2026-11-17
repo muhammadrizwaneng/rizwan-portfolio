@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Outfit, Syne } from "next/font/google";
+import { Barlow_Condensed, Outfit, Syne } from "next/font/google";
 import { JsonLd } from "@/components/JsonLd";
 import { profile } from "@/data/profile";
 import {
@@ -23,6 +23,14 @@ const outfit = Outfit({
 const syne = Syne({
   variable: "--font-syne",
   subsets: ["latin"],
+  display: "swap",
+  preload: true,
+});
+
+const barlowCondensed = Barlow_Condensed({
+  variable: "--font-barlow-condensed",
+  subsets: ["latin"],
+  weight: ["600", "700"],
   display: "swap",
   preload: true,
 });
@@ -89,7 +97,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="en"
-      className={`${outfit.variable} ${syne.variable} h-full`}
+      className={`${outfit.variable} ${syne.variable} ${barlowCondensed.variable} h-full`}
       suppressHydrationWarning
     >
       <body
