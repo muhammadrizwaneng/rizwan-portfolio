@@ -48,8 +48,19 @@
 }
 
 .metro-root.metro-paused .map-train,
-.metro-root.metro-paused .metro-pill--live::before {
+.metro-root.metro-paused .metro-pill--live::before,
+.metro-root.metro-paused .pulse-dot::after,
+.metro-root.metro-paused .ticket-train {
   animation-play-state: paused !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .metro-root .map-train,
+  .metro-root .enter-flip,
+  .metro-root .ticket-train,
+  .metro-root .pulse-dot::after {
+    animation: none !important;
+  }
 }
 
 .metro-boot {
@@ -894,8 +905,13 @@
 .metro-network.card {
   border-radius: 1.1rem;
   border: 1px solid var(--rule);
-  background: rgba(17, 29, 53, 0.9);
+  background: rgba(17, 29, 53, 0.92);
   padding: 1rem;
+  box-shadow:
+    0 1px 2px #0006,
+    0 18px 40px -18px #000000b8,
+    inset 0 1px 0 rgba(255, 255, 255, 0.04);
+  transform-style: preserve-3d;
 }
 
 @media (min-width: 768px) {
@@ -909,6 +925,29 @@
     linear-gradient(var(--paper-grid) 1px, transparent 1px),
     linear-gradient(90deg, var(--paper-grid) 1px, transparent 1px);
   background-size: 32px 32px;
+  overflow-x: clip;
+}
+
+.enter-flip {
+  transform-origin: 50% 0;
+  animation: enter-flip 0.9s cubic-bezier(0.2, 0.75, 0.2, 1) both;
+}
+
+@keyframes enter-flip {
+  0% {
+    opacity: 0.1;
+    transform: perspective(400px) rotateX(-100deg);
+  }
+  60% {
+    opacity: 1;
+    transform: perspective(400px) rotateX(14deg);
+  }
+  80% {
+    transform: perspective(400px) rotateX(-6deg);
+  }
+  100% {
+    transform: perspective(400px) rotateX(0deg);
+  }
 }
 
 .metro-network__head {
@@ -974,142 +1013,312 @@
   position: absolute;
   inset: 0;
   pointer-events: none;
+  z-index: 2;
 }
 
+/* Reference-style trains: sized/positioned in container query units (cqw). */
 .map-train {
   position: absolute;
   top: 0;
   left: 0;
-  width: 14px;
-  height: 14px;
-  margin-left: -7px;
-  margin-top: -7px;
-  border-radius: 4px;
-  border: 2px solid #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.35);
+  width: 5.45455cqw;
+  height: 2.95455cqw;
+  margin: -1.47727cqw 0 0 -2.72727cqw;
+  border-radius: 1.13636cqw;
+  border: 0.568182cqw solid;
+  background: var(--train-body);
+  box-shadow: 0 0 0 calc(1.5cqw / 4.4) rgba(11, 20, 38, 0.85);
+  will-change: transform;
 }
 
-.map-train--orange {
-  background: var(--orange);
-  animation: map-train-orange 10s infinite;
-}
-
-.map-train--blue {
-  background: var(--blue);
-  animation: map-train-blue 11s infinite;
-}
-
-.map-train--green {
-  background: var(--green);
-  animation: map-train-green 12s infinite;
-}
-
-.map-train--grey {
-  background: var(--grey);
-  animation: map-train-grey 13s infinite;
+.map-train::after {
+  content: "";
+  position: absolute;
+  top: 20%;
+  right: 10%;
+  width: 22%;
+  height: 60%;
+  border-radius: 2px;
+  background: #fde68a;
 }
 
 @keyframes map-train-orange {
   0% {
-    transform: translate(50%, 46.5%) rotate(180deg);
+    transform: translate(calc(50cqw), calc(42.2727cqw)) rotate(180deg);
+    animation-timing-function: ease-in;
   }
-  15% {
-    transform: translate(27%, 46.5%) rotate(180deg);
+  14.12% {
+    transform: translate(calc(29.3182cqw), calc(42.2727cqw)) rotate(180deg);
+    animation-timing-function: linear;
   }
-  28% {
-    transform: translate(16%, 34%) rotate(270deg);
+  15.51% {
+    transform: translate(calc(27.2727cqw), calc(42.2727cqw)) rotate(202.5deg);
+    animation-timing-function: linear;
   }
-  42%,
+  16.91% {
+    transform: translate(calc(25.8273cqw), calc(40.8273cqw)) rotate(225deg);
+    animation-timing-function: linear;
+  }
+  25.09% {
+    transform: translate(calc(17.3545cqw), calc(32.3545cqw)) rotate(225deg);
+    animation-timing-function: linear;
+  }
+  26.49% {
+    transform: translate(calc(15.9091cqw), calc(30.9091cqw)) rotate(247.5deg);
+    animation-timing-function: linear;
+  }
+  27.88% {
+    transform: translate(calc(15.9091cqw), calc(28.8636cqw)) rotate(270deg);
+    animation-timing-function: ease-out;
+  }
+  42% {
+    transform: translate(calc(15.9091cqw), calc(8.18182cqw)) rotate(270deg);
+    animation-timing-function: linear;
+  }
   50% {
-    transform: translate(16%, 9%) rotate(270deg);
+    transform: translate(calc(15.9091cqw), calc(8.18182cqw)) rotate(270deg);
+    animation-timing-function: ease-in;
   }
-  64% {
-    transform: translate(16%, 34%) rotate(270deg);
+  64.12% {
+    transform: translate(calc(15.9091cqw), calc(28.8636cqw)) rotate(270deg);
+    animation-timing-function: linear;
   }
-  78% {
-    transform: translate(27%, 46.5%) rotate(180deg);
+  65.51% {
+    transform: translate(calc(15.9091cqw), calc(30.9091cqw)) rotate(247.5deg);
+    animation-timing-function: linear;
   }
-  92%,
+  66.91% {
+    transform: translate(calc(17.3545cqw), calc(32.3545cqw)) rotate(225deg);
+    animation-timing-function: linear;
+  }
+  75.09% {
+    transform: translate(calc(25.8273cqw), calc(40.8273cqw)) rotate(225deg);
+    animation-timing-function: linear;
+  }
+  76.49% {
+    transform: translate(calc(27.2727cqw), calc(42.2727cqw)) rotate(202.5deg);
+    animation-timing-function: linear;
+  }
+  77.88% {
+    transform: translate(calc(29.3182cqw), calc(42.2727cqw)) rotate(180deg);
+    animation-timing-function: ease-out;
+  }
+  92% {
+    transform: translate(calc(50cqw), calc(42.2727cqw)) rotate(180deg);
+    animation-timing-function: linear;
+  }
   100% {
-    transform: translate(50%, 46.5%) rotate(180deg);
+    transform: translate(calc(50cqw), calc(42.2727cqw)) rotate(180deg);
   }
 }
 
 @keyframes map-train-blue {
   0% {
-    transform: translate(50%, 46.5%) rotate(0deg);
+    transform: translate(calc(50cqw), calc(42.2727cqw)) rotate(0deg);
+    animation-timing-function: ease-in;
   }
-  15% {
-    transform: translate(73%, 46.5%) rotate(0deg);
+  14.12% {
+    transform: translate(calc(70.6818cqw), calc(42.2727cqw)) rotate(0deg);
+    animation-timing-function: linear;
   }
-  28% {
-    transform: translate(84%, 34%) rotate(-90deg);
+  15.51% {
+    transform: translate(calc(72.7273cqw), calc(42.2727cqw)) rotate(-22.5deg);
+    animation-timing-function: linear;
   }
-  42%,
+  16.91% {
+    transform: translate(calc(74.1727cqw), calc(40.8273cqw)) rotate(-45deg);
+    animation-timing-function: linear;
+  }
+  25.09% {
+    transform: translate(calc(82.6455cqw), calc(32.3545cqw)) rotate(-45deg);
+    animation-timing-function: linear;
+  }
+  26.49% {
+    transform: translate(calc(84.0909cqw), calc(30.9091cqw)) rotate(-67.5deg);
+    animation-timing-function: linear;
+  }
+  27.88% {
+    transform: translate(calc(84.0909cqw), calc(28.8636cqw)) rotate(-90deg);
+    animation-timing-function: ease-out;
+  }
+  42% {
+    transform: translate(calc(84.0909cqw), calc(8.18182cqw)) rotate(-90deg);
+    animation-timing-function: linear;
+  }
   50% {
-    transform: translate(84%, 9%) rotate(-90deg);
+    transform: translate(calc(84.0909cqw), calc(8.18182cqw)) rotate(-90deg);
+    animation-timing-function: ease-in;
   }
-  64% {
-    transform: translate(84%, 34%) rotate(-90deg);
+  64.12% {
+    transform: translate(calc(84.0909cqw), calc(28.8636cqw)) rotate(-90deg);
+    animation-timing-function: linear;
   }
-  78% {
-    transform: translate(73%, 46.5%) rotate(0deg);
+  65.51% {
+    transform: translate(calc(84.0909cqw), calc(30.9091cqw)) rotate(-67.5deg);
+    animation-timing-function: linear;
   }
-  92%,
+  66.91% {
+    transform: translate(calc(82.6455cqw), calc(32.3545cqw)) rotate(-45deg);
+    animation-timing-function: linear;
+  }
+  75.09% {
+    transform: translate(calc(74.1727cqw), calc(40.8273cqw)) rotate(-45deg);
+    animation-timing-function: linear;
+  }
+  76.49% {
+    transform: translate(calc(72.7273cqw), calc(42.2727cqw)) rotate(-22.5deg);
+    animation-timing-function: linear;
+  }
+  77.88% {
+    transform: translate(calc(70.6818cqw), calc(42.2727cqw)) rotate(0deg);
+    animation-timing-function: ease-out;
+  }
+  92% {
+    transform: translate(calc(50cqw), calc(42.2727cqw)) rotate(0deg);
+    animation-timing-function: linear;
+  }
   100% {
-    transform: translate(50%, 46.5%) rotate(0deg);
+    transform: translate(calc(50cqw), calc(42.2727cqw)) rotate(0deg);
   }
 }
 
 @keyframes map-train-green {
   0% {
-    transform: translate(50%, 46.5%) rotate(90deg);
+    transform: translate(calc(50cqw), calc(42.2727cqw)) rotate(90deg);
+    animation-timing-function: ease-in;
   }
-  18% {
-    transform: translate(50%, 66.5%) rotate(90deg);
+  10.63% {
+    transform: translate(calc(50cqw), calc(58.4091cqw)) rotate(90deg);
+    animation-timing-function: linear;
   }
-  28% {
-    transform: translate(59%, 76.5%) rotate(0deg);
+  11.98% {
+    transform: translate(calc(50cqw), calc(60.4545cqw)) rotate(67.5deg);
+    animation-timing-function: linear;
   }
-  42%,
+  13.32% {
+    transform: translate(calc(51.4455cqw), calc(61.9cqw)) rotate(45deg);
+    animation-timing-function: linear;
+  }
+  19.1% {
+    transform: translate(calc(57.6455cqw), calc(68.1cqw)) rotate(45deg);
+    animation-timing-function: linear;
+  }
+  20.44% {
+    transform: translate(calc(59.0909cqw), calc(69.5455cqw)) rotate(22.5deg);
+    animation-timing-function: linear;
+  }
+  21.79% {
+    transform: translate(calc(61.1364cqw), calc(69.5455cqw)) rotate(0deg);
+    animation-timing-function: ease-out;
+  }
+  42% {
+    transform: translate(calc(91.8182cqw), calc(69.5455cqw)) rotate(0deg);
+    animation-timing-function: linear;
+  }
   50% {
-    transform: translate(92%, 76.5%) rotate(0deg);
+    transform: translate(calc(91.8182cqw), calc(69.5455cqw)) rotate(0deg);
+    animation-timing-function: ease-in;
   }
-  64% {
-    transform: translate(59%, 76.5%) rotate(0deg);
+  70.21% {
+    transform: translate(calc(61.1364cqw), calc(69.5455cqw)) rotate(0deg);
+    animation-timing-function: linear;
   }
-  78% {
-    transform: translate(50%, 66.5%) rotate(90deg);
+  71.56% {
+    transform: translate(calc(59.0909cqw), calc(69.5455cqw)) rotate(22.5deg);
+    animation-timing-function: linear;
   }
-  92%,
+  72.9% {
+    transform: translate(calc(57.6455cqw), calc(68.1cqw)) rotate(45deg);
+    animation-timing-function: linear;
+  }
+  78.68% {
+    transform: translate(calc(51.4455cqw), calc(61.9cqw)) rotate(45deg);
+    animation-timing-function: linear;
+  }
+  80.02% {
+    transform: translate(calc(50cqw), calc(60.4545cqw)) rotate(67.5deg);
+    animation-timing-function: linear;
+  }
+  81.37% {
+    transform: translate(calc(50cqw), calc(58.4091cqw)) rotate(90deg);
+    animation-timing-function: ease-out;
+  }
+  92% {
+    transform: translate(calc(50cqw), calc(42.2727cqw)) rotate(90deg);
+    animation-timing-function: linear;
+  }
   100% {
-    transform: translate(50%, 46.5%) rotate(90deg);
+    transform: translate(calc(50cqw), calc(42.2727cqw)) rotate(90deg);
   }
 }
 
 @keyframes map-train-grey {
   0% {
-    transform: translate(50%, 46.5%) rotate(135deg);
+    transform: translate(calc(50cqw), calc(42.2727cqw)) rotate(135deg);
+    animation-timing-function: ease-in;
   }
-  18% {
-    transform: translate(36%, 61.5%) rotate(135deg);
+  14.39% {
+    transform: translate(calc(37.8091cqw), calc(54.4636cqw)) rotate(135deg);
+    animation-timing-function: linear;
   }
-  28% {
-    transform: translate(36%, 71.5%) rotate(90deg);
+  16.1% {
+    transform: translate(calc(36.3636cqw), calc(55.9091cqw)) rotate(112.5deg);
+    animation-timing-function: linear;
   }
-  42%,
+  17.8% {
+    transform: translate(calc(36.3636cqw), calc(57.9545cqw)) rotate(90deg);
+    animation-timing-function: linear;
+  }
+  29.56% {
+    transform: translate(calc(36.3636cqw), calc(72.0455cqw)) rotate(90deg);
+    animation-timing-function: linear;
+  }
+  31.27% {
+    transform: translate(calc(36.3636cqw), calc(74.0909cqw)) rotate(112.5deg);
+    animation-timing-function: linear;
+  }
+  32.98% {
+    transform: translate(calc(34.9182cqw), calc(75.5364cqw)) rotate(135deg);
+    animation-timing-function: ease-out;
+  }
+  42% {
+    transform: translate(calc(27.2727cqw), calc(83.1818cqw)) rotate(135deg);
+    animation-timing-function: linear;
+  }
   50% {
-    transform: translate(27%, 91.5%) rotate(135deg);
+    transform: translate(calc(27.2727cqw), calc(83.1818cqw)) rotate(135deg);
+    animation-timing-function: ease-in;
   }
-  64% {
-    transform: translate(36%, 71.5%) rotate(90deg);
+  59.02% {
+    transform: translate(calc(34.9182cqw), calc(75.5364cqw)) rotate(135deg);
+    animation-timing-function: linear;
   }
-  78% {
-    transform: translate(36%, 61.5%) rotate(135deg);
+  60.73% {
+    transform: translate(calc(36.3636cqw), calc(74.0909cqw)) rotate(112.5deg);
+    animation-timing-function: linear;
   }
-  92%,
+  62.44% {
+    transform: translate(calc(36.3636cqw), calc(72.0455cqw)) rotate(90deg);
+    animation-timing-function: linear;
+  }
+  74.2% {
+    transform: translate(calc(36.3636cqw), calc(57.9545cqw)) rotate(90deg);
+    animation-timing-function: linear;
+  }
+  75.9% {
+    transform: translate(calc(36.3636cqw), calc(55.9091cqw)) rotate(112.5deg);
+    animation-timing-function: linear;
+  }
+  77.61% {
+    transform: translate(calc(37.8091cqw), calc(54.4636cqw)) rotate(135deg);
+    animation-timing-function: ease-out;
+  }
+  92% {
+    transform: translate(calc(50cqw), calc(42.2727cqw)) rotate(135deg);
+    animation-timing-function: linear;
+  }
   100% {
-    transform: translate(50%, 46.5%) rotate(135deg);
+    transform: translate(calc(50cqw), calc(42.2727cqw)) rotate(135deg);
   }
 }
 

@@ -1,9 +1,33 @@
 "use client";
 
-/** Transit network map — geometry matches the reference metro portfolio. */
+import type { CSSProperties } from "react";
+
+const trainStyles = {
+  orange: {
+    borderColor: "var(--line-orange)",
+    animation: "map-train-orange 9s linear 1.2s infinite backwards",
+  },
+  blue: {
+    borderColor: "var(--line-blue)",
+    animation: "map-train-blue 10s linear 2s infinite backwards",
+  },
+  green: {
+    borderColor: "var(--line-green)",
+    animation: "map-train-green 9.5s linear 2.8s infinite backwards",
+  },
+  grey: {
+    borderColor: "var(--line-grey)",
+    animation: "map-train-grey 8.5s linear 3.6s infinite backwards",
+  },
+} as const satisfies Record<string, CSSProperties>;
+
+/** Transit network map — geometry + moving trains match the reference metro portfolio. */
 export function NetworkMap() {
   return (
-    <nav aria-label="Network map" className="metro-network card map-paper">
+    <nav
+      aria-label="Network map"
+      className="metro-network card map-paper enter-flip"
+    >
       <div className="metro-network__head">
         <p>Network map</p>
         <p>Not to scale</p>
@@ -150,10 +174,10 @@ export function NetworkMap() {
         </svg>
 
         <div className="map-trains" aria-hidden>
-          <span className="map-train map-train--orange" />
-          <span className="map-train map-train--blue" />
-          <span className="map-train map-train--green" />
-          <span className="map-train map-train--grey" />
+          <span className="map-train" style={trainStyles.orange} />
+          <span className="map-train" style={trainStyles.blue} />
+          <span className="map-train" style={trainStyles.green} />
+          <span className="map-train" style={trainStyles.grey} />
         </div>
       </div>
 
