@@ -1,6 +1,20 @@
 @import "tailwindcss";
 @source "../../../rizwan-interactive-portfolio/src/**/*.{ts,tsx}";
 
+/* Pin document width on mobile — wide sections (e.g. contact) must not expand the scrollport. */
+html:has(.attractive-root),
+html:has(.attractive-root) body {
+  overflow-x: clip;
+  max-width: 100%;
+}
+
+/* Pin document width on mobile — wide sections (e.g. contact) must not expand the scrollport. */
+html:has(.attractive-root),
+html:has(.attractive-root) body {
+  overflow-x: clip;
+  max-width: 100%;
+}
+
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
@@ -33,7 +47,7 @@
 }
 
 
-body {
+.attractive-root {
   scroll-behavior: smooth;
 }
 
@@ -112,23 +126,20 @@ body {
   /* Medium (500) is the site-wide default weight. Un-weighted text (body,
      labels, nav) follows this; elements with an explicit font-bold/semibold
      utility keep their own weight. */
-  html {
+  .attractive-root {
     font-weight: 500;
   }
 
-  body {
+  .attractive-root {
     @apply bg-background text-foreground;
   }
 
-  /* Headings use the display font (--font-display, Bricolage Grotesque). Body and
-     everything else inherits Geist via `font-sans` on <html>. Elements
-     can still opt in explicitly with the `font-display` Tailwind class. */
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
+  .attractive-root h1,
+  .attractive-root h2,
+  .attractive-root h3,
+  .attractive-root h4,
+  .attractive-root h5,
+  .attractive-root h6 {
     font-family: var(--font-display), sans-serif;
   }
 }

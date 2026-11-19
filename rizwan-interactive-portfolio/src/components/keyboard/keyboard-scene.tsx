@@ -18,7 +18,8 @@ const SceneCanvas = memo(ChibiScene);
 const SCENE_STYLE: CSSProperties = {
   position: "fixed",
   inset: 0,
-  width: "100vw",
+  width: "100%",
+  maxWidth: "100vw",
   height: "100dvh",
 };
 

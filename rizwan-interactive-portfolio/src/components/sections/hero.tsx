@@ -48,8 +48,8 @@ const HeroSection = () => {
           className={cn(
             "h-[calc(100dvh-3rem)] md:h-[calc(100dvh-4rem)] z-[2]",
             "col-span-1",
-            "flex flex-col justify-start md:justify-center items-center md:items-start",
-            "pt-24 sm:pb-16 md:py-20 md:pl-12 md:pr-6 lg:py-24 lg:pl-16 lg:pr-8 xl:p-28",
+            "flex w-full max-w-full flex-col justify-start md:justify-center items-center md:items-start",
+            "px-4 pt-24 sm:pb-16 md:px-0 md:py-20 md:pl-12 md:pr-6 lg:py-24 lg:pl-16 lg:pr-8 xl:p-28",
             // big monitors: grow the gutter with the viewport so the copy doesn't float in a small corner
             "2xl:pl-[clamp(7rem,8vw,13rem)] 2xl:pr-0",
             // short laptop screens (e.g. 1366x768): trim vertical padding so nothing hides under the header
@@ -78,8 +78,8 @@ const HeroSection = () => {
                   <TooltipTrigger asChild>
                     <h1
                       className={cn(
-                        "-ml-[6px] leading-none text-transparent text-neutral-800 text-center md:text-left",
-                        "font-bold text-7xl md:text-7xl lg:text-8xl xl:text-9xl xl:[@media(max-height:820px)]:text-8xl",
+                        "leading-none text-transparent text-neutral-800 text-center md:text-left",
+                        "font-bold text-[clamp(2.75rem,11vw,4.5rem)] md:text-7xl lg:text-8xl xl:text-9xl xl:[@media(max-height:820px)]:text-8xl md:-ml-[6px]",
                         // fluid on wide screens: ~170px at 2000px, ~210px at 2560px
                         "2xl:text-[clamp(8rem,8.4vw,14rem)]",
                         "cursor-default text-edge-outline font-display"

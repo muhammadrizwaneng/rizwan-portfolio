@@ -21,7 +21,8 @@ interface HeaderProps {
 
 const Header = ({ loader, githubStars }: HeaderProps) => {
   const [isActive, setIsActive] = useState<boolean>(false);
-  const isHome = usePathname() === "/";
+  const pathname = usePathname();
+  const isHome = pathname === "/attractive" || pathname === "/";
   return (
     <motion.header
       className={cn(

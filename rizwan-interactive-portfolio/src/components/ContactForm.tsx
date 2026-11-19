@@ -117,7 +117,7 @@ const ContactForm = () => {
         className: cn("top-0 mx-auto flex fixed md:top-4 md:right-4"),
       });
       setValues(EMPTY_FORM);
-      setTimeout(() => router.push("/"), REDIRECT_DELAY_MS);
+      setTimeout(() => router.push("/attractive"), REDIRECT_DELAY_MS);
     } catch {
       showErrorToast("Couldn't reach the server. Check your connection and try again.");
     } finally {
@@ -130,7 +130,7 @@ const ContactForm = () => {
 
   return (
     <form
-      className="min-w-7xl mx-auto sm:mt-4"
+      className="mx-auto w-full max-w-7xl px-4 sm:mt-4"
       onSubmit={handleSubmit}
       aria-busy={loading}
       // our own messages replace the browser's inconsistent tooltips
