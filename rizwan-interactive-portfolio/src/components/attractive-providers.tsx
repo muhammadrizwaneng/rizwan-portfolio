@@ -7,8 +7,9 @@ import { Toaster } from "./ui/toaster";
 import { TooltipProvider } from "./ui/tooltip";
 import { GameContextProvider } from "@ix/contexts/game-context";
 import MotionPreferences from "./motion-preferences";
+import { ThemeProvider } from "./theme-provider";
 
-/** Interactive portfolio providers scoped under `/attractive` (no `next-themes` on `<html>`). */
+/** Interactive providers for `/attractive` — Talha-style theme (default dark). */
 export function AttractiveProviders({
   children,
 }: {
@@ -16,6 +17,13 @@ export function AttractiveProviders({
 }) {
   return (
     <Suspense fallback={null}>
+      <ThemeProvider
+        attribute="class"
+        defaultTheme="dark"
+        enableSystem={false}
+        storageKey="ix-portfolio-theme"
+        disableTransitionOnChange
+      >
       <MotionPreferences>
         <Preloader>
           <SocketContextProvider>
@@ -26,6 +34,7 @@ export function AttractiveProviders({
           </SocketContextProvider>
         </Preloader>
       </MotionPreferences>
+      </ThemeProvider>
     </Suspense>
   );
 }

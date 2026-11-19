@@ -17,8 +17,8 @@ export const CERTIFICATES: Certificate[] = [
   {
     id: "ai-ml-dl-2024",
     title: "Artificial Intelligence (Machine Learning & Deep Learning)",
-    issuer: "Abdul Bari Khan",
-    category: "Professional training",
+    issuer: "Metawise",
+    category: "Metawise Academy",
     topics: [
       "Python for ML",
       "Linear & logistic regression",

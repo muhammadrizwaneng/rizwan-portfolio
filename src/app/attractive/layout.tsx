@@ -73,7 +73,7 @@ export default function AttractiveLayout({
 
   return (
     <div
-      className={`attractive-root dark ${fontVars} font-sans min-h-screen w-full max-w-[100vw] overflow-x-clip bg-background text-foreground antialiased`}
+      className={`attractive-root ${fontVars} font-sans min-h-screen w-full max-w-[100vw] overflow-x-clip bg-background text-foreground antialiased`}
       suppressHydrationWarning
     >
       <AttractiveProviders>

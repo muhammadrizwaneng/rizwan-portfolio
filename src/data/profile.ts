@@ -500,7 +500,7 @@ export const githubProjects = [
 
 export const education = [
   {
-    school: "ML, DL & NLP — Professional Training",
+    school: "Metawise — ML, DL & NLP",
     location: "Instructor-led (Abdul Bari Khan)",
     degree: "Artificial Intelligence (Machine Learning & Deep Learning)",
     period: "2024 – 2025",

@@ -356,17 +356,8 @@ export type Education = {
   logo: string;
 };
 
-// Mirrors the Education section on LinkedIn.
+/** Shown at the end of the Experience timeline (Talha-style), after job roles. */
 export const EDUCATION: Education[] = [
-  {
-    institution: "Professional Training — Abdul Bari Khan",
-    degree: "Artificial Intelligence (ML & Deep Learning)",
-    field: "Machine Learning, CNNs, NLP",
-    start: "2024",
-    end: "2025",
-    location: "Instructor-led",
-    logo: "AI",
-  },
   {
     institution: "Gomal University",
     degree: "Bachelor of Science in Software Engineering",
