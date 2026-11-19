@@ -12,7 +12,7 @@ import { AnimatePresence } from "motion/react";
 import { usePathname } from "next/navigation";
 
 import Loader from "./loader";
-import { usePerfProfile } from "@/hooks/use-perf-profile";
+import { usePerfProfile } from "@ix/hooks/use-perf-profile";
 
 type PreloaderContextType = {
   isLoading: boolean;
@@ -48,7 +48,10 @@ const MAX_FRAME_SECONDS = 1 / 30;
 function Preloader({ children, disabled = false }: PreloaderProps) {
   const pathname = usePathname();
   // Skip the loading splash for the résumé route (and anywhere it's disabled).
-  const skip = disabled || pathname?.startsWith("/resume");
+  const skip =
+    disabled ||
+    pathname?.startsWith("/attractive/resume") ||
+    pathname?.startsWith("/resume");
 
   const [isLoading, setIsLoading] = useState(!skip);
   const [loadingPercent, setLoadingPercent] = useState(skip ? 100 : 0);

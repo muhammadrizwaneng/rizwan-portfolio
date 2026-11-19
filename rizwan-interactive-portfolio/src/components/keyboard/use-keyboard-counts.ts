@@ -2,8 +2,8 @@
 
 import { useCallback, useContext, useEffect, useState } from "react";
 import type { Socket } from "socket.io-client";
-import { SocketContext } from "@/contexts/socketio";
-import { SKILLS } from "@/data/constants";
+import { SocketContext } from "@ix/contexts/socketio";
+import { SKILLS } from "@ix/data/constants";
 import { mergeKeyboardCounts } from "./wear";
 
 const skills = new Set(Object.values(SKILLS).map(skill => skill.name));

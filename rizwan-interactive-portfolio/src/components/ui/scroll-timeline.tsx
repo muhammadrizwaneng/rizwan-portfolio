@@ -2,7 +2,7 @@ import { useRef, type ReactNode } from "react";
 import { motion, useReducedMotion, useScroll, useSpring } from "motion/react";
 import type { LucideIcon } from "lucide-react";
 
-import { cn } from "@/lib/utils";
+import { cn } from "@ix/lib/utils";
 
 // Fill runs from when the list top hits 75% of the viewport until its bottom
 // reaches the middle, so the line "draws" as the items scroll past.

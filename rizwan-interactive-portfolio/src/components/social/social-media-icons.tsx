@@ -5,7 +5,7 @@ import React, { useRef } from "react";
 import { Button } from "../ui/button";
 import { SiGithub } from "react-icons/si";
 import { FaLinkedin } from "react-icons/fa";
-import { config } from "@/data/config";
+import { config } from "@ix/data/config";
 import Link from "next/link";
 
 const BUTTONS = [

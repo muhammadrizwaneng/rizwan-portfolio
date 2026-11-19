@@ -1,7 +1,7 @@
 "use client";
 
 import * as React from "react";
-import { useMediaQuery } from "@/hooks/use-media-query";
+import { useMediaQuery } from "@ix/hooks/use-media-query";
 import {
   Dialog,
   DialogClose,
@@ -11,7 +11,7 @@ import {
   DialogHeader,
   DialogTitle,
   DialogTrigger,
-} from "@/components/ui/dialog";
+} from "@ix/components/ui/dialog";
 import {
   Drawer,
   DrawerClose,
@@ -21,8 +21,8 @@ import {
   DrawerHeader,
   DrawerTitle,
   DrawerTrigger,
-} from "@/components/ui/drawer";
-import { ScrollArea } from "@/components/ui/scroll-area";
+} from "@ix/components/ui/drawer";
+import { ScrollArea } from "@ix/components/ui/scroll-area";
 
 interface ResponsiveDialogProps {
   children: React.ReactNode;

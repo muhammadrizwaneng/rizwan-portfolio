@@ -6,13 +6,13 @@ import {
   CardDescription,
   CardHeader,
   CardTitle,
-} from "@/components/ui/card";
+} from "@ix/components/ui/card";
 import ContactForm from "../ContactForm";
-import { config } from "@/data/config";
+import { config } from "@ix/data/config";
 import { SectionHeader } from "./section-header";
 import SectionWrapper from "../ui/section-wrapper";
 import BookCall from "../book-call";
-import { cn } from "@/lib/utils";
+import { cn } from "@ix/lib/utils";
 
 const ContactSection = () => {
   return (

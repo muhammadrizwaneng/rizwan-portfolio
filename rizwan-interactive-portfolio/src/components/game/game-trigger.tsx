@@ -2,9 +2,9 @@
 
 import { useContext } from "react";
 import { Gamepad2 } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import { GameContext } from "@/contexts/game-context";
-import { cn } from "@/lib/utils";
+import { Button } from "@ix/components/ui/button";
+import { GameContext } from "@ix/contexts/game-context";
+import { cn } from "@ix/lib/utils";
 
 export const GameTrigger = ({ className }: { className?: string }) => {
   const { open, playing } = useContext(GameContext);

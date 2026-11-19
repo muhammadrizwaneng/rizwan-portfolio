@@ -11,13 +11,13 @@ import Link from "next/link";
 import { ArrowRight, ArrowUpRight, Lock } from "lucide-react";
 import { motion } from "motion/react";
 
-import projects, { Project } from "@/data/projects";
+import projects, { Project } from "@ix/data/projects";
 import { SectionHeader } from "./section-header";
 import {
   STACK_PEEK_PX,
   STICKY_TOP_PX,
   useStackedCards,
-} from "@/hooks/use-stacked-cards";
+} from "@ix/hooks/use-stacked-cards";
 
 import SectionWrapper from "../ui/section-wrapper";
 import ScrollingPreview from "../scrolling-preview";

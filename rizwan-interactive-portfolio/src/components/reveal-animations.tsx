@@ -2,8 +2,8 @@
 
 import { motion, useAnimation, useInView } from "motion/react";
 
-import { cn } from "@/lib/utils";
-import { usePerfProfile } from "@/hooks/use-perf-profile";
+import { cn } from "@ix/lib/utils";
+import { usePerfProfile } from "@ix/hooks/use-perf-profile";
 import { ReactNode, useEffect, useRef } from "react";
 
 interface BlurIntProps {

@@ -1,7 +1,7 @@
 import React, { useRef, useEffect, MutableRefObject } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { MenuItem, Position } from './types';
-import { usePerfProfile } from '@/hooks/use-perf-profile';
+import { usePerfProfile } from '@ix/hooks/use-perf-profile';
 
 interface RadialMenuPresentationalProps {
   isOpen: boolean;

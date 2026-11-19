@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { cn } from "@/lib/utils";
+import { cn } from "@ix/lib/utils";
 
 /**
  * Page-wide background wash that changes colour per section. Each section owns a

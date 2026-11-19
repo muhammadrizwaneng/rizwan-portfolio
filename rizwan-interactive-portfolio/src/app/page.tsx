@@ -1,19 +1,19 @@
 "use client";
 
 import React from "react";
-import SmoothScroll from "@/components/smooth-scroll";
-import { cn } from "@/lib/utils";
-import AnimatedBackground from "@/components/animated-background";
-import SectionBackdrop from "@/components/section-backdrop";
-import ScrollTrain from "@/components/scroll-train";
-import SkillsSection from "@/components/sections/skills";
-import ConstellationSection from "@/components/sections/constellation";
-import ExperienceSection from "@/components/sections/experience";
-import CertificatesSection from "@/components/sections/certificates";
-import ProjectsSection from "@/components/sections/projects";
-import GithubProjectsSection from "@/components/sections/github-projects";
-import ContactSection from "@/components/sections/contact";
-import HeroSection from "@/components/sections/hero";
+import SmoothScroll from "@ix/components/smooth-scroll";
+import { cn } from "@ix/lib/utils";
+import AnimatedBackground from "@ix/components/animated-background";
+import SectionBackdrop from "@ix/components/section-backdrop";
+import ScrollTrain from "@ix/components/scroll-train";
+import SkillsSection from "@ix/components/sections/skills";
+import ConstellationSection from "@ix/components/sections/constellation";
+import ExperienceSection from "@ix/components/sections/experience";
+import CertificatesSection from "@ix/components/sections/certificates";
+import ProjectsSection from "@ix/components/sections/projects";
+import GithubProjectsSection from "@ix/components/sections/github-projects";
+import ContactSection from "@ix/components/sections/contact";
+import HeroSection from "@ix/components/sections/hero";
 
 function MainPage() {
   return (

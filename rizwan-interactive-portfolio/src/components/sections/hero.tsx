@@ -1,4 +1,4 @@
-import { cn } from "@/lib/utils";
+import { cn } from "@ix/lib/utils";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "motion/react";
@@ -11,16 +11,16 @@ import {
   Tooltip,
   TooltipContent,
   TooltipTrigger,
-} from "@/components/ui/tooltip";
+} from "@ix/components/ui/tooltip";
 import { usePreloader } from "../preloader";
 import { BlurIn, BoxReveal } from "../reveal-animations";
 import ScrollDownIcon from "../scroll-down-icon";
-import { config } from "@/data/config";
-import projects from "@/data/projects";
-import { CERTIFICATES } from "@/data/certificates";
-import { CAREER_START_YEAR, CURRENT_ROLE, shortCompany } from "@/lib/career";
-import { useCurrentYear } from "@/hooks/use-current-year";
-import { usePerfProfile } from "@/hooks/use-perf-profile";
+import { config } from "@ix/data/config";
+import projects from "@ix/data/projects";
+import { CERTIFICATES } from "@ix/data/certificates";
+import { CAREER_START_YEAR, CURRENT_ROLE, shortCompany } from "@ix/lib/career";
+import { useCurrentYear } from "@ix/hooks/use-current-year";
+import { usePerfProfile } from "@ix/hooks/use-perf-profile";
 
 import SectionWrapper from "../ui/section-wrapper";
 import HeroShowcase from "./hero-showcase";
@@ -207,7 +207,7 @@ const HeroActions = () => (
   <div className="mt-8 flex flex-wrap items-center justify-center gap-3 md:justify-start xl:w-max 2xl:mt-10 2xl:gap-4 2xl:[&_button]:h-12 2xl:[&_button]:text-base 2xl:[&_button.size-11]:w-12">
     <BookCall />
     <BoxReveal delay={1.8}>
-      <Link href="/resume">
+      <Link href="/attractive/resume">
         <Button className="flex h-11 items-center gap-2 rounded-full px-6">
           <File size={18} aria-hidden />
           Resume

@@ -1,5 +1,5 @@
-import { config } from "@/data/config";
-import { getGithubStars } from "@/lib/github-stars";
+import { config } from "@ix/data/config";
+import { getGithubStars } from "@ix/lib/github-stars";
 import { GitHubStarsButton } from "../ui/shadcn-io/github-stars-button";
 
 export default async function GitHubStars({ className }: { className?: string }) {

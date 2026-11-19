@@ -2,8 +2,8 @@
 
 import { memo, useCallback, useEffect, useMemo, useRef, useState, type CSSProperties } from "react";
 import { ChibiScene, type ChibiSceneApi, type ScenePointerEvent, type RuntimeEvent } from "@chibi3d/runtime";
-import { SKILLS } from "@/data/constants";
-import { setSceneStatus } from "@/lib/scene-health";
+import { SKILLS } from "@ix/data/constants";
+import { setSceneStatus } from "@ix/lib/scene-health";
 import { usePreloader } from "../preloader";
 import { createKeyboardScene, resolveKeyboardAsset, type KeyboardKey, type KeyboardSkill } from "./scene";
 import { createKeyInput, isTypingTarget } from "./input";

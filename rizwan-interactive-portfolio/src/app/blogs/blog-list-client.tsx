@@ -2,7 +2,7 @@
 
 import React from "react";
 import Link from "next/link";
-import { Badge } from "@/components/ui/badge";
+import { Badge } from "@ix/components/ui/badge";
 import { CalendarDays, ArrowUpRight, Clock } from "lucide-react";
 import { motion } from "motion/react";
 

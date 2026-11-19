@@ -4,11 +4,11 @@ import React from "react";
 import Link from "next/link";
 import { motion } from "motion/react";
 import { Download, ArrowLeft } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { Button } from "@ix/components/ui/button";
 import ResumeDoodle from "./resume-doodle";
 
-// Resume PDF lives in public/
-const RESUME_PATH = "/Muhammad_Rizwan_Resume.pdf";
+/** Same CV as the classic portfolio (one PDF in repo root `public/`). */
+const RESUME_PATH = "/muhammad-rizwan-resume.pdf";
 
 export default function ResumeView() {
   return (
@@ -30,7 +30,7 @@ export default function ResumeView() {
           className="mb-4 flex items-center justify-between gap-4"
         >
           <Link
-            href="/"
+            href="/attractive"
             className="inline-flex items-center gap-2 text-sm text-muted-foreground transition-colors hover:text-foreground"
           >
             <ArrowLeft className="h-4 w-4" />

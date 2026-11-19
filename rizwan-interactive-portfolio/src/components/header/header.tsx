@@ -6,10 +6,10 @@ import { usePathname } from "next/navigation";
 import styles from "./style.module.scss";
 import { opacity, background } from "./anim";
 import Nav from "./nav";
-import { cn } from "@/lib/utils";
+import { cn } from "@ix/lib/utils";
 import FunnyThemeToggle from "../theme/funny-theme-toggle";
 import { Button } from "../ui/button";
-import { config } from "@/data/config";
+import { config } from "@ix/data/config";
 import OnlineUsers from "../realtime/online-users";
 import { GameTrigger } from "../game/game-trigger";
 
@@ -52,7 +52,7 @@ const Header = ({ loader, githubStars }: HeaderProps) => {
       >
       </div> */}
       <div className={cn(styles.bar, "flex items-center justify-between")}>
-        <Link href="/" className="flex items-center justify-center">
+        <Link href="/attractive" className="flex items-center justify-center">
           <Button variant={"link"} className="text-md">
             {config.author}
           </Button>

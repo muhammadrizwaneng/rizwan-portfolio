@@ -20,9 +20,9 @@ import {
   type LucideIcon,
 } from "lucide-react";
 
-import { CERTIFICATES, type Certificate } from "@/data/certificates";
-import { useMediaQuery } from "@/hooks/use-media-query";
-import { cn } from "@/lib/utils";
+import { CERTIFICATES, type Certificate } from "@ix/data/certificates";
+import { useMediaQuery } from "@ix/hooks/use-media-query";
+import { cn } from "@ix/lib/utils";
 import SectionWrapper from "../ui/section-wrapper";
 import { SectionHeader } from "./section-header";
 

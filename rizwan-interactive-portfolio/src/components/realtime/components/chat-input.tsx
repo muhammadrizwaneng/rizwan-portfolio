@@ -1,13 +1,13 @@
 import React, { useRef, useCallback, useState, useEffect } from "react";
-import { Button } from "@/components/ui/button";
+import { Button } from "@ix/components/ui/button";
 import { Send, Check, X } from "lucide-react";
-import { cn } from "@/lib/utils";
+import { cn } from "@ix/lib/utils";
 import { THEME } from "../constants";
 import { SlashCommandMenu, getFilteredCommands, processSlashCommand } from "./slash-command-menu";
 import type { ProcessedCommand } from "./slash-command-menu";
 import { ReplyPreview } from "./reply-preview";
 import type { SlashCommand } from "./slash-command-menu";
-import type { Message } from "@/contexts/socketio";
+import type { Message } from "@ix/contexts/socketio";
 
 interface ChatInputProps {
   onSendMessage: (cmd: ProcessedCommand) => void;

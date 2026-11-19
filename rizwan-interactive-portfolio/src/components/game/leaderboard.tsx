@@ -4,7 +4,7 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import * as Dialog from "@radix-ui/react-dialog";
 import { RefreshCw, X } from "lucide-react";
 import type { Socket } from "socket.io-client";
-import { cn } from "@/lib/utils";
+import { cn } from "@ix/lib/utils";
 import { gameTheme } from "./game-theme";
 import { formatDuration, formatPlayed } from "./leaderboard-format";
 import { PlayerAvatar } from "./player-avatar";

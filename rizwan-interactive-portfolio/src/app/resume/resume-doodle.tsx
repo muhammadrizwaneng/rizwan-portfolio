@@ -3,7 +3,7 @@
 import React, { useCallback, useEffect, useRef, useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { Pencil, Trash2, Check } from "lucide-react";
-import { cn } from "@/lib/utils";
+import { cn } from "@ix/lib/utils";
 
 const COLORS = [
   "hsl(20,100%,70%)", // accent

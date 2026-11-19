@@ -1,6 +1,6 @@
 
 import { cacheLife } from "next/cache";
-import { config } from "@/data/config";
+import { config } from "@ix/data/config";
 
 // unauthenticated github api = 60 req/hr per ip; 5min cache -> ~12 req/hr
 // throws on failure: errors aren't cached, so bad fetch retries next request

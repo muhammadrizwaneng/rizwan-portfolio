@@ -1,15 +1,15 @@
 import React, { useContext } from "react";
 import { SmilePlus } from "lucide-react";
-import { cn } from "@/lib/utils";
+import { cn } from "@ix/lib/utils";
 import { THEME } from "../constants";
-import { SocketContext } from "@/contexts/socketio";
-import type { Reaction } from "@/contexts/socketio";
+import { SocketContext } from "@ix/contexts/socketio";
+import type { Reaction } from "@ix/contexts/socketio";
 import {
   Tooltip,
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
-} from "@/components/ui/tooltip";
+} from "@ix/components/ui/tooltip";
 
 interface MessageReactionsProps {
   reactions: Reaction[];

@@ -1,12 +1,12 @@
 import React from "react";
-import { getBlogPost, getBlogPosts } from "@/lib/mdx";
+import { getBlogPost, getBlogPosts } from "@ix/lib/mdx";
 import { MDXRemote } from "next-mdx-remote/rsc";
-import ScrollProgress from "@/components/ui/scroll-progress";
+import ScrollProgress from "@ix/components/ui/scroll-progress";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ArrowLeft, CalendarDays, Clock, User } from "lucide-react";
-import { Badge } from "@/components/ui/badge";
-import RevealAnimation from "@/components/reveal-animations";
+import { Badge } from "@ix/components/ui/badge";
+import RevealAnimation from "@ix/components/reveal-animations";
 
 export async function generateStaticParams() {
   const posts = getBlogPosts();
@@ -131,7 +131,7 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
         {/* Back link */}
         <RevealAnimation>
           <Link
-            href="/blogs"
+            href="/attractive/blogs"
             className="inline-flex items-center text-muted-foreground hover:text-[hsl(20,100%,70%)] transition-colors mb-12 group text-sm"
           >
             <ArrowLeft className="w-4 h-4 mr-2 group-hover:-translate-x-1 transition-transform" />
@@ -193,7 +193,7 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
         <RevealAnimation delay={0.1}>
           <div className="mt-20 pt-8 border-t border-border/50">
             <Link
-              href="/blogs"
+              href="/attractive/blogs"
               className="inline-flex items-center text-muted-foreground hover:text-[hsl(20,100%,70%)] transition-colors group text-sm"
             >
               <ArrowLeft className="w-4 h-4 mr-2 group-hover:-translate-x-1 transition-transform" />

@@ -1,4 +1,4 @@
-import { EXPERIENCE, type Experience } from "@/data/constants";
+import { EXPERIENCE, type Experience } from "@ix/data/constants";
 
 export const PRESENT = "Present";
 

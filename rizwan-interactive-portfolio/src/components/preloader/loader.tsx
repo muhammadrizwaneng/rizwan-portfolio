@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "motion/react";
 import { slideUp } from "./anim";
 import { usePreloader } from ".";
-import { config } from "@/data/config";
+import { config } from "@ix/data/config";
 
 // launch-style countdown: 3 → 2 → 1 → GO as loading runs 0 → 100%
 const COUNT = ["3", "2", "1", "GO"];

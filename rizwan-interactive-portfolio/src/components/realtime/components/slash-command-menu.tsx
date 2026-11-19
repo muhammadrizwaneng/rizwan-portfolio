@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react";
-import { cn } from "@/lib/utils";
+import { cn } from "@ix/lib/utils";
 import { THEME } from "../constants";
 
 export type SlashCommand = {

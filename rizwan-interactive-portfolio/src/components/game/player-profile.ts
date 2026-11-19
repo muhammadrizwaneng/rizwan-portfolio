@@ -1,4 +1,4 @@
-import type { User } from "@/contexts/socketio";
+import type { User } from "@ix/contexts/socketio";
 import type { PlayerSnap } from "./protocol";
 
 export type PlayerProfile = { name: string; color: string; avatar?: string };

@@ -1,4 +1,4 @@
-import { cn } from "@/lib/utils";
+import { cn } from "@ix/lib/utils";
 import { ReactNode } from "react";
 
 export function TypographyH1({

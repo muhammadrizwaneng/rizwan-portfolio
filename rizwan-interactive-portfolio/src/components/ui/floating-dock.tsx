@@ -4,8 +4,8 @@
  * Mobile navbar is better positioned at bottom right.
  **/
 
-import { cn } from "@/lib/utils";
-import { usePerfProfile } from "@/hooks/use-perf-profile";
+import { cn } from "@ix/lib/utils";
+import { usePerfProfile } from "@ix/hooks/use-perf-profile";
 import {
   AnimatePresence,
   MotionValue,

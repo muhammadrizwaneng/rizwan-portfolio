@@ -1,7 +1,7 @@
-import { EmailTemplate, emailText } from "@/components/email-template";
-import { config } from "@/data/config";
+import { EmailTemplate, emailText } from "@ix/components/email-template";
+import { config } from "@ix/data/config";
 import { Resend } from "resend";
-import { contactSchema, toFieldErrors } from "@/lib/contact-schema";
+import { contactSchema, toFieldErrors } from "@ix/lib/contact-schema";
 
 // Created on first use: `new Resend()` throws without a key, which used to crash
 // the whole route at import time (so even validation errors came back as a 500 page).

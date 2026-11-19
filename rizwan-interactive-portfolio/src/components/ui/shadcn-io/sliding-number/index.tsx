@@ -8,7 +8,7 @@ import {
   type MotionValue,
   type SpringOptions,
 } from 'motion/react';
-import { cn } from '@/lib/utils';
+import { cn } from '@ix/lib/utils';
 
 
 type SlidingNumberRollerProps = {

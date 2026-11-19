@@ -1,11 +1,11 @@
 import { motion } from "motion/react";
 import Link from "next/link";
 import { blur, translate } from "../../anim";
-import { Link as LinkType } from "@/types";
-import { cn } from "@/lib/utils";
+import { Link as LinkType } from "@ix/types";
+import { cn } from "@ix/lib/utils";
 import { useParams } from "next/navigation";
 import { useEffect, useState } from "react";
-import FunnyThemeToggle from "@/components/theme/funny-theme-toggle";
+import FunnyThemeToggle from "@ix/components/theme/funny-theme-toggle";
 
 interface SelectedLink {
   isActive: boolean;

@@ -1,0 +1,1 @@
+export { POST } from "@ix/app/api/collect/route";

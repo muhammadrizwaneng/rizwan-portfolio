@@ -10,9 +10,9 @@ import {
   useTransform,
   useVelocity,
 } from "motion/react";
-import { useLenis } from "@/lib/lenis";
-import { usePerfProfile } from "@/hooks/use-perf-profile";
-import { cn } from "@/lib/utils";
+import { useLenis } from "@ix/lib/lenis";
+import { usePerfProfile } from "@ix/hooks/use-perf-profile";
+import { cn } from "@ix/lib/utils";
 
 const STATIONS = [
   { id: "hero", label: "Home" },

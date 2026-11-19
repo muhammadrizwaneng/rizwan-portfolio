@@ -1,15 +1,15 @@
 "use client";
 
 import { usePathname } from "next/navigation";
-import Particles from "@/components/Particles";
-import RemoteCursors from "@/components/realtime/remote-cursors";
-import EasterEggs from "@/components/easter-eggs";
-import ElasticCursor from "@/components/ui/ElasticCursor";
-import RadialMenu from "@/components/radial-menu/index";
-import MotionNudge from "@/components/motion-nudge";
-import DomainNotice from "@/components/domain-notice";
-import Analytics from "@/components/analytics";
-import { usePerfProfile } from "@/hooks/use-perf-profile";
+import Particles from "@ix/components/Particles";
+import RemoteCursors from "@ix/components/realtime/remote-cursors";
+import EasterEggs from "@ix/components/easter-eggs";
+import ElasticCursor from "@ix/components/ui/ElasticCursor";
+import RadialMenu from "@ix/components/radial-menu/index";
+import MotionNudge from "@ix/components/motion-nudge";
+import DomainNotice from "@ix/components/domain-notice";
+import Analytics from "@ix/components/analytics";
+import { usePerfProfile } from "@ix/hooks/use-perf-profile";
 
 export default function AppOverlays() {
   const pathname = usePathname();

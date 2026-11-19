@@ -1,5 +1,5 @@
 import { Wifi, WifiOff } from "lucide-react";
-import { cn } from "@/lib/utils";
+import { cn } from "@ix/lib/utils";
 import type { GamePing } from "./engine/ping";
 
 export function PingIndicator({ ping, className }: { ping: GamePing; className?: string }) {

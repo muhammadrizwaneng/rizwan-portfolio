@@ -26,8 +26,7 @@ const config = {
   ],
   author: "Muhammad Rizwan",
   email: "muhammadrizwaneng@gmail.com",
-  // Set to your Vercel URL after deploy (root directory: rizwan-interactive-portfolio)
-  site: "https://muhammad-rizwan-interactive.vercel.app",
+  site: "https://rizwan-portfolio-eight.vercel.app/attractive",
 
   githubUsername: "muhammadrizwaneng",
   githubRepo: "HiveTalk",

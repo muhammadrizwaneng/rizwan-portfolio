@@ -4,15 +4,15 @@ import { Reply, Pencil, Loader2 } from "lucide-react";
 import { differenceInMinutes, format, isToday, isYesterday } from "date-fns";
 import { ArrowDown, Hash } from "lucide-react";
 import { ScrollArea } from "../../ui/scroll-area";
-import { cn } from "@/lib/utils";
-import type { Message, User, ChatItem, Reaction } from "@/contexts/socketio";
+import { cn } from "@ix/lib/utils";
+import type { Message, User, ChatItem, Reaction } from "@ix/contexts/socketio";
 import { THEME } from "../constants";
-import { getAvatarUrl } from "@/lib/avatar";
-import { resolveMessageFlag } from "@/lib/message-flag";
-import type { DeviceType } from "@/lib/device-type";
-import { SocketContext, isLocalMsg } from "@/contexts/socketio";
+import { getAvatarUrl } from "@ix/lib/avatar";
+import { resolveMessageFlag } from "@ix/lib/message-flag";
+import type { DeviceType } from "@ix/lib/device-type";
+import { SocketContext, isLocalMsg } from "@ix/contexts/socketio";
 import { UNREAD_DIVIDER_ATTR } from "../hooks/use-chat-scroll";
-import { useToast } from "@/components/ui/use-toast";
+import { useToast } from "@ix/components/ui/use-toast";
 import { SystemMessageRow } from "./system-message";
 import { QuotedMessage } from "./quoted-message";
 import { ReactionPicker } from "./reaction-picker";
@@ -20,7 +20,7 @@ import { MessageReactions } from "./message-reactions";
 import { AdminBadge } from "./admin-badge";
 import { DeviceIcon } from "./device-icon";
 
-function isSystemMessage(item: ChatItem): item is import("@/contexts/socketio").SystemMessage {
+function isSystemMessage(item: ChatItem): item is import("@ix/contexts/socketio").SystemMessage {
   return "type" in item && item.type === "system";
 }
 
@@ -47,8 +47,8 @@ function groupChatItems(items: ChatItem[]): GroupedItem[] {
     if (isSystemMessage(item) && item.subtype === "join") {
       const seen = new Set<string>();
       const users: { username: string; flag: string }[] = [];
-      while (i < items.length && isSystemMessage(items[i]) && (items[i] as import("@/contexts/socketio").SystemMessage).subtype === "join") {
-        const sys = items[i] as import("@/contexts/socketio").SystemMessage;
+      while (i < items.length && isSystemMessage(items[i]) && (items[i] as import("@ix/contexts/socketio").SystemMessage).subtype === "join") {
+        const sys = items[i] as import("@ix/contexts/socketio").SystemMessage;
         if (!seen.has(sys.sessionId)) {
           seen.add(sys.sessionId);
           users.push({ username: sys.username, flag: sys.flag });

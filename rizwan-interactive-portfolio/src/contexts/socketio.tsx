@@ -11,9 +11,9 @@ import React, {
   useState,
 } from "react";
 import { io, Socket } from "socket.io-client";
-import { useToast } from "@/components/ui/use-toast";
-import { createCursorStore, CursorStoreContext } from "@/contexts/cursor-positions";
-import { getDeviceType, type DeviceType } from "@/lib/device-type";
+import { useToast } from "@ix/components/ui/use-toast";
+import { createCursorStore, CursorStoreContext } from "@ix/contexts/cursor-positions";
+import { getDeviceType, type DeviceType } from "@ix/lib/device-type";
 
 export type User = {
   id: string;

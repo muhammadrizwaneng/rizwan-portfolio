@@ -1,6 +1,6 @@
 import React from "react";
 import { X } from "lucide-react";
-import { cn } from "@/lib/utils";
+import { cn } from "@ix/lib/utils";
 import { THEME } from "../constants";
 
 interface ReplyPreviewProps {

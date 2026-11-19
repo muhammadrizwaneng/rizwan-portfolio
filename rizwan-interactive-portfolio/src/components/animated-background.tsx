@@ -3,8 +3,8 @@
 import React, { useEffect } from "react";
 import dynamic from "next/dynamic";
 import { usePreloader } from "./preloader";
-import { usePerfProfile } from "@/hooks/use-perf-profile";
-import { setSceneStatus, useSceneStatus } from "@/lib/scene-health";
+import { usePerfProfile } from "@ix/hooks/use-perf-profile";
+import { setSceneStatus, useSceneStatus } from "@ix/lib/scene-health";
 
 const KeyboardScene = dynamic(() => import("./keyboard/keyboard-scene"), { ssr: false });
 

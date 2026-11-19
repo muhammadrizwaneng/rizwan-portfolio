@@ -5,11 +5,11 @@ import confetti from 'canvas-confetti';
 import { RadialMenuPresentational } from './radial-menu-presentational';
 import { Shockwave, ShockwaveData } from './shockwave';
 import { MenuItem, Position } from './types';
-import { SocketContext } from '@/contexts/socketio';
-import { useSounds } from '@/components/realtime/hooks/use-sounds';
+import { SocketContext } from '@ix/contexts/socketio';
+import { useSounds } from '@ix/components/realtime/hooks/use-sounds';
 import { RightClickHint } from './right-click-hint';
-import { usePerfProfile } from '@/hooks/use-perf-profile';
-import { SKILLS, SkillNames } from '@/data/constants';
+import { usePerfProfile } from '@ix/hooks/use-perf-profile';
+import { SKILLS, SkillNames } from '@ix/data/constants';
 
 // Reactions are the tech stack: pick a logo, it bursts in that brand's colours
 const stack = (id: SkillNames, color: string, icon = SKILLS[id].icon): MenuItem => ({

@@ -7,12 +7,12 @@ import styles from "./style.module.scss";
 import { height, opacity } from "../anim";
 import Body from "./body/body";
 import Image from "./image/image";
-import MotionToggle from "@/components/motion-toggle";
+import MotionToggle from "@ix/components/motion-toggle";
 
-import { links } from "@/components/header/config";
-import { config } from "@/data/config";
-import { CURRENT_ROLE } from "@/lib/career";
-import { cn } from "@/lib/utils";
+import { links } from "@ix/components/header/config";
+import { config } from "@ix/data/config";
+import { CURRENT_ROLE } from "@ix/lib/career";
+import { cn } from "@ix/lib/utils";
 
 interface IndexProps {
   setIsActive: (isActive: boolean) => void;

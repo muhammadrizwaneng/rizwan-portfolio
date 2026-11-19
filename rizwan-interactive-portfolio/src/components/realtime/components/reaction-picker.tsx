@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { SmilePlus } from "lucide-react";
-import { cn } from "@/lib/utils";
+import { cn } from "@ix/lib/utils";
 import { THEME } from "../constants";
 
 const EMOJIS = ["👍", "❤️", "😂", "😮", "🔥"];

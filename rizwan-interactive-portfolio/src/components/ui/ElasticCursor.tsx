@@ -11,9 +11,9 @@ import React, {
   useState,
 } from "react";
 import { gsap } from "gsap";
-import { cn } from "@/lib/utils";
+import { cn } from "@ix/lib/utils";
 import { usePreloader } from "../preloader";
-import { useMediaQuery } from "@/hooks/use-media-query";
+import { useMediaQuery } from "@ix/hooks/use-media-query";
 import { usePathname } from "next/navigation";
 
 function useTicker(callback: any, paused: boolean) {

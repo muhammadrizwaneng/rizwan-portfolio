@@ -1,7 +1,7 @@
-import AceTernityLogo from "@/components/logos/aceternity";
-import SlideShow from "@/components/slide-show";
-import { Button } from "@/components/ui/button";
-import { TypographyH3, TypographyP } from "@/components/ui/typography";
+import AceTernityLogo from "@ix/components/logos/aceternity";
+import SlideShow from "@ix/components/slide-show";
+import { Button } from "@ix/components/ui/button";
+import { TypographyH3, TypographyP } from "@ix/components/ui/typography";
 import { ArrowUpRight, ExternalLink, Link2, MoveUpRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";

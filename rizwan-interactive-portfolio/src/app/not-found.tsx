@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
-import NotFoundMeme from "@/components/not-found-meme";
+import NotFoundMeme from "@ix/components/not-found-meme";
 
 export const metadata: Metadata = {
   title: "404 - Page Not Found",

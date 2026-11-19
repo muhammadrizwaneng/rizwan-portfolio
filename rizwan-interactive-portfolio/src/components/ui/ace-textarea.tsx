@@ -1,6 +1,6 @@
 import * as React from "react";
 
-import { cn } from "@/lib/utils";
+import { cn } from "@ix/lib/utils";
 import { useMotionTemplate, useMotionValue, motion } from "motion/react";
 
 export interface TextareaProps

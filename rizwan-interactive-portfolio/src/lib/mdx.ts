@@ -19,7 +19,10 @@ const metadataSchema = z.object({
 });
 
 function getBlogsDirectory() {
-  return path.join(process.cwd(), "src/content/blogs");
+  return path.join(
+    process.cwd(),
+    "rizwan-interactive-portfolio/src/content/blogs",
+  );
 }
 
 function readMDXFile(filePath: string) {

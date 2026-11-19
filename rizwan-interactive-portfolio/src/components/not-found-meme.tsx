@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import { Pause, Play } from "lucide-react";
-import { usePerfProfile } from "@/hooks/use-perf-profile";
+import { usePerfProfile } from "@ix/hooks/use-perf-profile";
 
 const memes = [
   {

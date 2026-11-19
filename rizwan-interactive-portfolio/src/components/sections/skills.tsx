@@ -4,10 +4,10 @@ import { useEffect, type CSSProperties } from "react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import SectionWrapper from "../ui/section-wrapper";
 import { SectionHeader } from "./section-header";
-import { SKILLS } from "@/data/constants";
-import { usePerfProfile } from "@/hooks/use-perf-profile";
-import { cn } from "@/lib/utils";
-import { useSceneStatus } from "@/lib/scene-health";
+import { SKILLS } from "@ix/data/constants";
+import { usePerfProfile } from "@ix/hooks/use-perf-profile";
+import { cn } from "@ix/lib/utils";
+import { useSceneStatus } from "@ix/lib/scene-health";
 
 /**
  * Skills are visible HTML until the keyboard scene is ready, and remain

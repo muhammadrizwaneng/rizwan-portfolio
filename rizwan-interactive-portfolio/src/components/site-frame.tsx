@@ -1,9 +1,9 @@
 "use client";
 
 import { usePathname } from "next/navigation";
-import Header from "@/components/header/header";
-import Footer from "@/components/footer/footer";
-import AppOverlays from "@/components/app-overlays";
+import Header from "@ix/components/header/header";
+import Footer from "@ix/components/footer/footer";
+import AppOverlays from "@ix/components/app-overlays";
 
 /**
  * Wraps the app shell. The `/components*` showcase routes are rendered

@@ -1,7 +1,7 @@
 import { Monitor, Smartphone, Tablet } from "lucide-react";
-import type { DeviceType } from "@/lib/device-type";
+import type { DeviceType } from "@ix/lib/device-type";
 import { THEME } from "../constants";
-import { cn } from "@/lib/utils";
+import { cn } from "@ix/lib/utils";
 
 const devices = {
   mobile: { icon: Smartphone, label: "Mobile" },

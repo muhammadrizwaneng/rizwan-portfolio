@@ -2,9 +2,9 @@ import Link from "next/link";
 import { motion } from "motion/react";
 import { ArrowUpRight } from "lucide-react";
 
-import projects from "@/data/projects";
-import { cn } from "@/lib/utils";
-import { usePerfProfile } from "@/hooks/use-perf-profile";
+import projects from "@ix/data/projects";
+import { cn } from "@ix/lib/utils";
+import { usePerfProfile } from "@ix/hooks/use-perf-profile";
 import { BlurIn } from "../reveal-animations";
 
 // opaque-ish glass so the 3D keyboard behind never bleeds through the text

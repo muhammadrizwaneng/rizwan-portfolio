@@ -1,7 +1,7 @@
 "use client";
 
 import { Zap, ZapOff } from "lucide-react";
-import { setMotionPreference, usePerfProfile } from "@/hooks/use-perf-profile";
+import { setMotionPreference, usePerfProfile } from "@ix/hooks/use-perf-profile";
 import { Button } from "./ui/button";
 
 /**

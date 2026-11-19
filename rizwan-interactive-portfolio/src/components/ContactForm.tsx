@@ -4,7 +4,7 @@ import React from "react";
 import { Label } from "./ui/label";
 import { Input } from "./ui/ace-input";
 import { Textarea } from "./ui/ace-textarea";
-import { cn } from "@/lib/utils";
+import { cn } from "@ix/lib/utils";
 import { useToast } from "./ui/use-toast";
 import { Button } from "./ui/button";
 import { useRouter } from "next/navigation";
@@ -16,7 +16,7 @@ import {
   type ContactField,
   type ContactFieldErrors,
   type ContactInput,
-} from "@/lib/contact-schema";
+} from "@ix/lib/contact-schema";
 
 const EMPTY_FORM: ContactInput = { fullName: "", email: "", message: "" };
 const REDIRECT_DELAY_MS = 1000;
@@ -95,7 +95,7 @@ const ContactForm = () => {
     setErrors({});
     setLoading(true);
     try {
-      const res = await fetch("/api/send", {
+      const res = await fetch("/attractive/api/send", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(result.data),

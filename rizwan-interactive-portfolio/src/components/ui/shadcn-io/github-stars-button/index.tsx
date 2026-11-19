@@ -10,7 +10,7 @@ import {
   type SpringOptions,
 } from 'motion/react';
 
-import { cn } from '@/lib/utils';
+import { cn } from '@ix/lib/utils';
 import { SlidingNumber } from '../sliding-number';
 import { Fragment, useCallback, useEffect, useMemo, useReducer, useRef, useState } from 'react';
 

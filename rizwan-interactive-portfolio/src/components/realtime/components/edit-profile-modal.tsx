@@ -1,12 +1,12 @@
 import React, { useState, useEffect, useMemo } from "react";
 import { createPortal } from "react-dom";
 import { motion } from "motion/react";
-import { ScrollArea } from "@/components/ui/scroll-area";
-import { Button } from "@/components/ui/button";
-import { cn } from "@/lib/utils";
-import type { User } from "@/contexts/socketio";
+import { ScrollArea } from "@ix/components/ui/scroll-area";
+import { Button } from "@ix/components/ui/button";
+import { cn } from "@ix/lib/utils";
+import type { User } from "@ix/contexts/socketio";
 import { THEME } from "../constants";
-import { getAvatarUrl } from "@/lib/avatar";
+import { getAvatarUrl } from "@ix/lib/avatar";
 
 const COLORS = [
   "#60a5fa",

@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
-import { config } from "@/data/config";
-import { getBlogPosts } from "@/lib/mdx";
+import { config } from "@ix/data/config";
+import { getBlogPosts } from "@ix/lib/mdx";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const posts = getBlogPosts().map((post) => ({

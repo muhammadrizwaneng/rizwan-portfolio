@@ -8,9 +8,9 @@ import {
   DialogDescription,
   DialogTitle,
   DialogTrigger,
-} from "@/components/ui/dialog";
-import { config } from "@/data/config";
-import { cn } from "@/lib/utils";
+} from "@ix/components/ui/dialog";
+import { config } from "@ix/data/config";
+import { cn } from "@ix/lib/utils";
 
 /**
  * Calendly inline-embed URL. Always light: Calendly's own page around the widget is

@@ -2,9 +2,9 @@
 
 import { useEffect, useMemo, useRef, useState } from "react";
 import { AnimatePresence, motion, useInView } from "motion/react";
-import { cn } from "@/lib/utils";
-import { useMediaQuery } from "@/hooks/use-media-query";
-import { usePerfProfile } from "@/hooks/use-perf-profile";
+import { cn } from "@ix/lib/utils";
+import { useMediaQuery } from "@ix/hooks/use-media-query";
+import { usePerfProfile } from "@ix/hooks/use-perf-profile";
 import SectionWrapper from "../ui/section-wrapper";
 
 type Star = { name: string; core?: boolean };

@@ -6,14 +6,14 @@ import {
   Instrument_Serif,
 } from "next/font/google";
 import "./globals.css";
-import { config } from "@/data/config";
+import { config } from "@ix/data/config";
 
 import Script from "next/script";
-import SiteFrame from "@/components/site-frame";
-import GitHubStars from "@/components/header/github-stars";
-import { Providers } from "@/components/providers";
+import SiteFrame from "@ix/components/site-frame";
+import GitHubStars from "@ix/components/header/github-stars";
+import { Providers } from "@ix/components/providers";
 import { GoogleAnalytics } from "@next/third-parties/google";
-import { UMAMI_SRC } from "@/lib/umami";
+import { UMAMI_SRC } from "@ix/lib/umami";
 
 /* Body/base font — Geist, bound to --font-sans (applied as `font-sans`
  * on <html>). Everything that isn't a heading inherits this. */

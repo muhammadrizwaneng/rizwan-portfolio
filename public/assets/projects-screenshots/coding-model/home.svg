@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675">
+  <rect width="1200" height="675" fill="#12141a"/>
+  <rect width="1200" height="6" fill="#F9AB00"/>
+  <text x="72" y="200" fill="#fff" font-family="system-ui,sans-serif" font-size="52" font-weight="700">rizwan-code-model</text>
+  <text x="72" y="270" fill="#a1a1aa" font-family="system-ui,sans-serif" font-size="28">QLoRA fine-tune · Qwen2.5-Coder</text>
+  <text x="72" y="340" fill="#F9AB00" font-family="ui-monospace,monospace" font-size="22">Kaggle T4 · Google Colab · GitHub</text>
+</svg>

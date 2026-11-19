@@ -2,8 +2,8 @@
 
 import * as React from "react";
 import { X } from "lucide-react";
-import { config } from "@/data/config";
-import { cn } from "@/lib/utils";
+import { config } from "@ix/data/config";
+import { cn } from "@ix/lib/utils";
 
 // unset (the default) = nothing renders. set it only while migrating off an old domain.
 const legacyHost = process.env.NEXT_PUBLIC_LEGACY_HOST;

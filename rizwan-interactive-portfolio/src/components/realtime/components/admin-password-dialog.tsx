@@ -1,8 +1,8 @@
 import React, { useState, useEffect, useRef } from "react";
 import { createPortal } from "react-dom";
 import { motion } from "motion/react";
-import { Button } from "@/components/ui/button";
-import { cn } from "@/lib/utils";
+import { Button } from "@ix/components/ui/button";
+import { cn } from "@ix/lib/utils";
 import { THEME } from "../constants";
 import { Shield } from "lucide-react";
 

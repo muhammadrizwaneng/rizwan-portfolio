@@ -1,16 +1,16 @@
 "use client";
-import { SocketContext } from "@/contexts/socketio";
-import { useCursorPositions } from "@/contexts/cursor-positions";
-import { useMouse } from "@/hooks/use-mouse";
-import { useThrottle } from "@/hooks/use-throttle";
-import { getAvatarUrl } from "@/lib/avatar";
+import { SocketContext } from "@ix/contexts/socketio";
+import { useCursorPositions } from "@ix/contexts/cursor-positions";
+import { useMouse } from "@ix/hooks/use-mouse";
+import { useThrottle } from "@ix/hooks/use-throttle";
+import { getAvatarUrl } from "@ix/lib/avatar";
 import { MousePointer2, X } from "lucide-react";
 import React, { useCallback, useContext, useEffect, useRef, useState } from "react";
 
 import { AnimatePresence, motion } from "motion/react";
-import { useMediaQuery } from "@/hooks/use-media-query";
-import { useLenis } from "@/lib/lenis";
-import { usePerfProfile } from "@/hooks/use-perf-profile";
+import { useMediaQuery } from "@ix/hooks/use-media-query";
+import { useLenis } from "@ix/lib/lenis";
+import { usePerfProfile } from "@ix/hooks/use-perf-profile";
 
 // TODO: add clicking animation
 

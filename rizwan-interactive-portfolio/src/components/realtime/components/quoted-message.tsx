@@ -1,7 +1,7 @@
 import React from "react";
-import { cn } from "@/lib/utils";
+import { cn } from "@ix/lib/utils";
 import { THEME } from "../constants";
-import { getAvatarUrl } from "@/lib/avatar";
+import { getAvatarUrl } from "@ix/lib/avatar";
 
 interface QuotedMessageProps {
   username: string;

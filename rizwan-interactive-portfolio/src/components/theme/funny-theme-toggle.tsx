@@ -3,10 +3,10 @@ import { Moon, Sun } from "lucide-react";
 import { useTheme } from "next-themes";
 import { flushSync } from "react-dom";
 
-import { Button } from "@/components/ui/button";
-import { cn } from "@/lib/utils";
+import { Button } from "@ix/components/ui/button";
+import { cn } from "@ix/lib/utils";
 import { useToast } from "../ui/use-toast";
-import { themeDisclaimers } from "@/data/constants";
+import { themeDisclaimers } from "@ix/data/constants";
 import { Popover, PopoverContent, PopoverTrigger } from "../ui/popover";
 
 const TRANSITION_MS = 500;

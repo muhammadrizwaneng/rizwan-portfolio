@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import type { Socket } from 'socket.io-client';
-import type { User } from '@/contexts/socketio';
+import type { User } from '@ix/contexts/socketio';
 
 const TYPING_TTL_MS = 3000;
 

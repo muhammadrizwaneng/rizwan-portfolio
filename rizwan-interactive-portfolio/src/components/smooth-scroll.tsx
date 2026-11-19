@@ -1,10 +1,10 @@
 "use client";
 
 import React, { useEffect } from "react";
-import { ReactLenis, useLenis } from "@/lib/lenis";
+import { ReactLenis, useLenis } from "@ix/lib/lenis";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { usePerfProfile } from "@/hooks/use-perf-profile";
+import { usePerfProfile } from "@ix/hooks/use-perf-profile";
 
 gsap.registerPlugin(ScrollTrigger);
 

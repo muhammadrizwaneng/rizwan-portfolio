@@ -1,14 +1,14 @@
 import React, { useContext, useMemo } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { Users, Edit } from "lucide-react";
-import { ScrollArea } from "@/components/ui/scroll-area";
-import { Button } from "@/components/ui/button";
-import { cn } from "@/lib/utils";
-import type { User } from "@/contexts/socketio";
-import { SocketContext } from "@/contexts/socketio";
+import { ScrollArea } from "@ix/components/ui/scroll-area";
+import { Button } from "@ix/components/ui/button";
+import { cn } from "@ix/lib/utils";
+import type { User } from "@ix/contexts/socketio";
+import { SocketContext } from "@ix/contexts/socketio";
 import type { Socket } from "socket.io-client";
 import { THEME } from "../constants";
-import { getAvatarUrl } from "@/lib/avatar";
+import { getAvatarUrl } from "@ix/lib/avatar";
 import { AdminBadge } from "./admin-badge";
 import { DeviceIcon } from "./device-icon";
 

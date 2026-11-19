@@ -1,20 +1,20 @@
-import { EDUCATION, EXPERIENCE, Experience, SKILLS, type Education } from "@/data/constants";
+import { EDUCATION, EXPERIENCE, Experience, SKILLS, type Education } from "@ix/data/constants";
 import { SectionHeader } from "./section-header";
-import { cn } from "@/lib/utils";
+import { cn } from "@ix/lib/utils";
 import SectionWrapper from "../ui/section-wrapper";
 import { motion, useScroll, useSpring, type MotionValue } from "motion/react";
 import { useEffect, useRef, useState } from "react";
-import { useMediaQuery } from "@/hooks/use-media-query";
+import { useMediaQuery } from "@ix/hooks/use-media-query";
 import { GraduationCap, MapPin } from "lucide-react";
-import { usePerfProfile } from "@/hooks/use-perf-profile";
-import { useCurrentYear } from "@/hooks/use-current-year";
+import { usePerfProfile } from "@ix/hooks/use-perf-profile";
+import { useCurrentYear } from "@ix/hooks/use-current-year";
 import {
   CAREER_START_YEAR as CAREER_START,
   CURRENT_ROLE,
   isCurrentRole as isCurrent,
   roleStartYear as startYear,
   shortCompany,
-} from "@/lib/career";
+} from "@ix/lib/career";
 
 const currentCompany = CURRENT_ROLE?.company;
 

@@ -1,4 +1,4 @@
-import { UMAMI_ORIGIN } from "@/lib/umami";
+import { UMAMI_ORIGIN } from "@ix/lib/umami";
 
 const OWN = new Set([
   "localhost",

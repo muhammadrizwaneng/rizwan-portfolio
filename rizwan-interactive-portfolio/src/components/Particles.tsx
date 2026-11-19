@@ -1,8 +1,8 @@
 "use client";
 
 import React, { useRef, useEffect, useState } from "react";
-import { useMousePosition } from "@/utils/mouse";
-import { cn } from "@/lib/utils";
+import { useMousePosition } from "@ix/utils/mouse";
+import { cn } from "@ix/lib/utils";
 import { usePathname } from "next/navigation";
 
 interface ParticlesProps {

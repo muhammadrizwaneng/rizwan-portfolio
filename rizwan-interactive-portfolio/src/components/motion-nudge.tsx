@@ -3,8 +3,8 @@
 import * as React from "react";
 import { X } from "lucide-react";
 import { Button } from "./ui/button";
-import { enableMotion, usePerfProfile } from "@/hooks/use-perf-profile";
-import { cn } from "@/lib/utils";
+import { enableMotion, usePerfProfile } from "@ix/hooks/use-perf-profile";
+import { cn } from "@ix/lib/utils";
 
 const DISMISS_KEY = "portfolio:motion-nudge-dismissed";
 

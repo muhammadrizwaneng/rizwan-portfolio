@@ -2,8 +2,8 @@
 
 import { useRef } from "react";
 import { motion, useScroll, useTransform } from "motion/react";
-import { cn } from "@/lib/utils";
-import { usePerfProfile } from "@/hooks/use-perf-profile";
+import { cn } from "@ix/lib/utils";
+import { usePerfProfile } from "@ix/hooks/use-perf-profile";
 
 interface SectionWrapperProps extends React.HTMLAttributes<HTMLElement> {
   children: React.ReactNode;

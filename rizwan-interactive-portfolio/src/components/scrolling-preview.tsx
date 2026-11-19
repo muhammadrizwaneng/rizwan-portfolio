@@ -2,7 +2,7 @@
 
 import { motion } from "motion/react";
 import { useEffect, useRef, useState } from "react";
-import { usePerfProfile } from "@/hooks/use-perf-profile";
+import { usePerfProfile } from "@ix/hooks/use-perf-profile";
 
 // Pan speed (CSS px/sec). Higher value = faster scroll.
 const PAN_SPEED = 120;

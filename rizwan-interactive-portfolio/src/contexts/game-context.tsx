@@ -3,11 +3,11 @@
 import dynamic from "next/dynamic";
 import { createContext, useCallback, useContext, useEffect, useMemo, useState, type ReactNode } from "react";
 import { SocketContext } from "./socketio";
-import { ROOM_RE } from "@/components/game/protocol";
-import { readRoomCode, roomUrl } from "@/components/game/room-url";
+import { ROOM_RE } from "@ix/components/game/protocol";
+import { readRoomCode, roomUrl } from "@ix/components/game/room-url";
 
 // three.js stays out of the main bundle until the game opens
-const GameOverlay = dynamic(() => import("@/components/game/game-overlay"), { ssr: false });
+const GameOverlay = dynamic(() => import("@ix/components/game/game-overlay"), { ssr: false });
 
 type GameContextType = {
   isOpen: boolean;

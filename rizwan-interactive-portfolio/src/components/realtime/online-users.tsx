@@ -1,23 +1,23 @@
 "use client";
 import React, { useContext, useState, useEffect, useRef, useCallback } from "react";
-import { Button } from "@/components/ui/button";
+import { Button } from "@ix/components/ui/button";
 import {
   Popover,
   PopoverContent,
   PopoverTrigger,
-} from "@/components/ui/popover";
+} from "@ix/components/ui/popover";
 import {
   Tooltip,
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
-} from "@/components/ui/tooltip";
+} from "@ix/components/ui/tooltip";
 
-import { SocketContext, Message, ChatItem } from "@/contexts/socketio";
-import { GameContext } from "@/contexts/game-context";
-import { useToast } from "@/components/ui/use-toast";
+import { SocketContext, Message, ChatItem } from "@ix/contexts/socketio";
+import { GameContext } from "@ix/contexts/game-context";
+import { useToast } from "@ix/components/ui/use-toast";
 import { Users, Users2, Hash, Settings, Gamepad2 } from "lucide-react";
-import { cn } from "@/lib/utils";
+import { cn } from "@ix/lib/utils";
 
 import { useChatScroll } from "./hooks/use-chat-scroll";
 import { useTyping } from "./hooks/use-typing";
@@ -30,7 +30,7 @@ import { UserList } from "./components/user-list";
 import { EditProfileModal } from "./components/edit-profile-modal";
 import { AdminPasswordDialog } from "./components/admin-password-dialog";
 import { THEME } from "./constants";
-import { getAvatarUrl } from "@/lib/avatar";
+import { getAvatarUrl } from "@ix/lib/avatar";
 
 const OnlineUsers = () => {
   const { socket, users: _users, msgs, hasMoreMessages, loadingHistory, fetchOlderMessages, initStatus, fetchInitialMessages, sendMessage, resendMessage, discardMessage } = useContext(SocketContext);

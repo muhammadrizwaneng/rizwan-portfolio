@@ -1,5 +1,5 @@
 import React from "react";
-import { getBlogPosts } from "@/lib/mdx";
+import { getBlogPosts } from "@ix/lib/mdx";
 import BlogListClient from "./blog-list-client";
 
 export const metadata = {

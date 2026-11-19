@@ -5,9 +5,9 @@ import { motion } from "motion/react";
 import { ArrowUpRight, Code2 } from "lucide-react";
 import { SiGithub } from "react-icons/si";
 
-import { config } from "@/data/config";
-import { GITHUB_PROJECTS, GITHUB_REPOS_URL } from "@/data/github-projects";
-import { cn } from "@/lib/utils";
+import { config } from "@ix/data/config";
+import { GITHUB_PROJECTS, GITHUB_REPOS_URL } from "@ix/data/github-projects";
+import { cn } from "@ix/lib/utils";
 import SectionWrapper from "../ui/section-wrapper";
 import { SectionHeader } from "./section-header";
 

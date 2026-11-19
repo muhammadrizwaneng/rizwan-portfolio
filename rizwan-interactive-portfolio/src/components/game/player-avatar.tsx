@@ -2,8 +2,8 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import { getAvatarUrl } from "@/lib/avatar";
-import { cn } from "@/lib/utils";
+import { getAvatarUrl } from "@ix/lib/avatar";
+import { cn } from "@ix/lib/utils";
 
 export function PlayerAvatar({
   name,
