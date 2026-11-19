@@ -6,7 +6,7 @@ export const useDevToolsOpen = () => {
 
   useEffect(() => {
     if (typeof window === "undefined") return;
-    addListener((isOpen) => {
+    addListener((isOpen: boolean) => {
       if (isOpen) {
         setIsDevToolsOpen(true);
         stop();

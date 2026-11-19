@@ -272,12 +272,12 @@ const SocketContextProvider = ({ children }: { children: ReactNode }) => {
         });
       }
     });
-    newSocket.on("session", ({ sessionId }) => {
+    newSocket.on("session", ({ sessionId }: { sessionId: string }) => {
       localStorage.setItem(SESSION_ID_KEY, (sessionId));
       newSocket.auth = { ...newSocket.auth, sessionId };
     });
 
-    newSocket.on("msg-receive", (msgs) => {
+    newSocket.on("msg-receive", (msgs: ChatItem) => {
       // Drop live messages until the popover is opened and init has been fetched.
       // The init fetch returns the latest 50 user messages anyway, so nothing is lost.
       if (initStatusRef.current !== "loaded") return;

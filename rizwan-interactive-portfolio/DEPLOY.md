@@ -15,9 +15,12 @@ Open [http://localhost:3000](http://localhost:3000).
 ## New Vercel URL
 
 1. [Vercel](https://vercel.com) → **Add New Project** → import this Git repo.
-2. **Root Directory** → `rizwan-interactive-portfolio` → Save.
-3. Deploy. Suggested project name: `muhammad-rizwan-interactive`.
-4. Update `src/data/config.ts` → `site` with the final URL (e.g. `https://muhammad-rizwan-interactive.vercel.app`) and redeploy.
+2. **Root Directory** → **Edit** → choose `rizwan-interactive-portfolio` → **Continue** (required — do not deploy from repo root).
+3. Framework: **Next.js**; install/build use `vercel.json` in this folder (`npm install` / `npm run build`).
+4. **Deploy**. Suggested project name: `muhammad-rizwan-interactive`.
+5. Update `src/data/config.ts` → `site` with the final URL and redeploy.
+
+If the build fails with errors under `rizwan-interactive-portfolio/...` while the Root Directory is empty, you are building the wrong app — set the root directory as in step 2 and redeploy.
 
 ## Optional env
 
