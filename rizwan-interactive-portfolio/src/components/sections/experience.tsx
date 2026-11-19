@@ -30,7 +30,7 @@ const LIGHT_SURFACE =
 
 // light: clean white card that matches the year tiles; dark: neutral graphite
 const CARD_SURFACE =
-  "rounded-[26px] border border-slate-900/[0.07] bg-white text-neutral-700 shadow-[0_30px_60px_-35px_rgba(15,23,42,0.35)] dark:border-white/10 dark:card-surface dark:text-neutral-200 dark:shadow-[0_40px_70px_-40px_rgba(0,0,0,0.9)]";
+  "rounded-[26px] border border-slate-900/[0.07] bg-white text-neutral-700 shadow-[0_30px_60px_-35px_rgba(15,23,42,0.35)] dark:border-white/10 dark:bg-[#131518] dark:[background-image:radial-gradient(120%_90%_at_100%_0%,rgba(249,115,22,0.08)_0%,transparent_55%)] dark:text-neutral-200 dark:shadow-[0_40px_70px_-40px_rgba(0,0,0,0.9)]";
 
 const EASE_OUT_EXPO: [number, number, number, number] = [0.16, 1, 0.3, 1];
 

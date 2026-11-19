@@ -239,7 +239,7 @@ const ConstellationSection = () => {
           onPointerLeave={() => setPaused(false)}
           role="tabpanel"
           aria-label={`${active.label} skills`}
-          className="relative mt-6 aspect-[3/4] w-full overflow-hidden rounded-[28px] border border-slate-900/[0.07] bg-white shadow-[0_30px_60px_-35px_rgba(15,23,42,0.35)] dark:border-white/10 dark:card-surface sm:aspect-[16/9] md:aspect-[2/1]"
+          className="relative mt-6 aspect-[3/4] w-full overflow-hidden rounded-[28px] border border-slate-900/[0.07] bg-white shadow-[0_30px_60px_-35px_rgba(15,23,42,0.35)] dark:border-white/10 dark:bg-[#131518] dark:[background-image:radial-gradient(120%_90%_at_100%_0%,rgba(249,115,22,0.08)_0%,transparent_55%)] sm:aspect-[16/9] md:aspect-[2/1]"
         >
           {/* tinted glow in the constellation's colour (own layer, so the card surface stays opaque) */}
           <div

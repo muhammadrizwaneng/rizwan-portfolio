@@ -12,7 +12,7 @@ import SectionWrapper from "../ui/section-wrapper";
 import { SectionHeader } from "./section-header";
 
 const CARD =
-  "rounded-2xl border border-slate-900/[0.07] bg-white p-5 text-neutral-700 shadow-[0_20px_50px_-35px_rgba(15,23,42,0.35)] transition-[transform,border-color] duration-300 hover:-translate-y-1 hover:border-slate-900/20 dark:border-white/10 dark:card-surface dark:text-neutral-200 dark:shadow-[0_40px_70px_-40px_rgba(0,0,0,0.9)]";
+  "rounded-2xl border border-slate-900/[0.07] bg-white p-5 text-neutral-700 shadow-[0_20px_50px_-35px_rgba(15,23,42,0.35)] transition-[transform,border-color] duration-300 hover:-translate-y-1 hover:border-slate-900/20 dark:border-white/10 dark:bg-[#131518] dark:[background-image:radial-gradient(120%_90%_at_100%_0%,rgba(249,115,22,0.08)_0%,transparent_55%)] dark:text-neutral-200 dark:shadow-[0_40px_70px_-40px_rgba(0,0,0,0.9)]";
 
 const GithubProjectsSection = () => (
   <SectionWrapper

@@ -58,7 +58,7 @@ const ProjectsSection = () => {
             }}
             // only the first few cards step down; later ones stick on the last line so a long stack stays on screen
             style={{ top: STICKY_TOP_PX + Math.min(index, MAX_PEEK_STEPS) * STACK_PEEK_PX }}
-            className="group/card relative sm:sticky origin-top overflow-hidden will-change-[transform,filter] rounded-[28px] max-sm:rounded-[18px] border border-slate-900/[0.07] bg-white p-3 max-sm:p-1.5 text-neutral-700 shadow-[0_-10px_40px_-24px_rgba(15,23,42,0.18),0_30px_60px_-35px_rgba(15,23,42,0.35)] dark:border-white/10 dark:card-surface dark:text-neutral-200 dark:shadow-[0_-10px_40px_-20px_rgba(0,0,0,0.6),0_40px_70px_-40px_rgba(0,0,0,0.9)]"
+            className="group/card relative sm:sticky origin-top overflow-hidden will-change-[transform,filter] rounded-[28px] max-sm:rounded-[18px] border border-slate-900/[0.07] bg-white p-3 max-sm:p-1.5 text-neutral-700 shadow-[0_-10px_40px_-24px_rgba(15,23,42,0.18),0_30px_60px_-35px_rgba(15,23,42,0.35)] dark:border-white/10 dark:bg-[#131518] dark:[background-image:radial-gradient(120%_90%_at_100%_0%,rgba(249,115,22,0.08)_0%,transparent_55%)] dark:text-neutral-200 dark:shadow-[0_-10px_40px_-20px_rgba(0,0,0,0.6),0_40px_70px_-40px_rgba(0,0,0,0.9)]"
           >
             <ProjectCard project={project} index={index} />
           </article>

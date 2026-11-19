@@ -144,15 +144,22 @@ const CertificatesSection = () => {
             <TrackProgress progress={progress} />
           </div>
         ) : (
-          // phones: compact two-up grid, no scroll hijacking
+          // phones: one cert = full width; multiple = two-up grid
           <div className="w-full px-4">
             {header}
-            <div className="grid grid-cols-2 gap-3">
+            <div
+              className={
+                CERTIFICATES.length === 1
+                  ? "grid grid-cols-1 gap-3"
+                  : "grid grid-cols-2 gap-3"
+              }
+            >
               {CERTIFICATES.map((certificate, index) => (
                 <CertificateCard
                   key={certificate.id}
                   certificate={certificate}
                   index={index}
+                  className={CERTIFICATES.length === 1 ? "w-full" : undefined}
                 />
               ))}
             </div>
@@ -222,7 +229,7 @@ const CertificateCard = ({ certificate, index, className }: CertificateCardProps
       rel="noopener noreferrer"
       aria-label={`${certificate.title}, issued by ${certificate.issuer}. View verification (opens in a new tab)`}
       className={cn(
-        "group/card relative grid grid-cols-1 sm:grid-cols-[250px_1fr] max-md:!grid-cols-1 2xl:grid-cols-[330px_1fr] overflow-hidden rounded-[28px] max-md:rounded-[20px] border border-slate-900/[0.07] bg-white text-neutral-700 shadow-[0_30px_60px_-35px_rgba(15,23,42,0.35)] transition-[transform,border-color] duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] hover:-translate-y-1.5 hover:border-slate-900/20 dark:border-white/10 dark:card-surface dark:text-neutral-200 dark:shadow-[0_40px_70px_-40px_rgba(0,0,0,0.9)] dark:hover:border-white/25 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-400",
+        "group/card relative grid grid-cols-1 sm:grid-cols-[250px_1fr] max-md:!grid-cols-1 2xl:grid-cols-[330px_1fr] overflow-hidden rounded-[28px] max-md:rounded-[20px] border border-slate-900/[0.07] bg-white text-neutral-700 shadow-[0_30px_60px_-35px_rgba(15,23,42,0.35)] transition-[transform,border-color] duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] hover:-translate-y-1.5 hover:border-slate-900/20 dark:border-white/10 dark:bg-[#131518] dark:[background-image:radial-gradient(120%_90%_at_100%_0%,rgba(249,115,22,0.08)_0%,transparent_55%)] dark:text-neutral-200 dark:shadow-[0_40px_70px_-40px_rgba(0,0,0,0.9)] dark:hover:border-white/25 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-400",
         className
       )}
     >

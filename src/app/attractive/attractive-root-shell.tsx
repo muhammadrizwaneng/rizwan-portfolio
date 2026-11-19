@@ -17,6 +17,16 @@ export function AttractiveRootShell({ children, fontClassName }: Props) {
 
   const isDark = !mounted || resolvedTheme !== "light";
 
+  // Keep `html.dark` in sync so Tailwind `dark:` utilities match Talha (class on html).
+  useEffect(() => {
+    const root = document.documentElement;
+    if (isDark) root.classList.add("dark");
+    else root.classList.remove("dark");
+    return () => {
+      root.classList.remove("dark");
+    };
+  }, [isDark]);
+
   return (
     <div
       className={cn(
