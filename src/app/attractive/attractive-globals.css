@@ -92,6 +92,10 @@ html:has(.attractive-root) body {
   color: hsl(var(--foreground));
 }
 
+html:has(.attractive-root) .attractive-root {
+  font-family: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
+}
+
 @theme inline {
   --color-border: hsl(var(--border));
   --color-input: hsl(var(--input));
@@ -127,7 +131,7 @@ html:has(.attractive-root) body {
 }
 
 @layer base {
-  .attractive-root {
+  html:not(.dark) .attractive-root {
     --background: 0 0% 100%;
     --foreground: 222.2 84% 4.9%;
     --card: 0 0% 100%;
@@ -161,6 +165,7 @@ html:has(.attractive-root) body {
     --accent-glow: transparent;
   }
 
+  html.dark .attractive-root,
   .attractive-root.dark {
     --background: 222.2 84% 4.9%;
     --foreground: 210 40% 98%;

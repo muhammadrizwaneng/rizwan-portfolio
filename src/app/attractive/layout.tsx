@@ -10,6 +10,7 @@ import { config } from "@ix/data/config";
 import SiteFrame from "@ix/components/site-frame";
 import GitHubStars from "@ix/components/header/github-stars";
 import { AttractiveProviders } from "@ix/components/attractive-providers";
+import { AttractiveRootShell } from "./attractive-root-shell";
 
 const geistSans = Geist({
   subsets: ["latin"],
@@ -72,15 +73,12 @@ export default function AttractiveLayout({
   ].join(" ");
 
   return (
-    <div
-      className={`attractive-root ${fontVars} font-sans min-h-screen w-full max-w-[100vw] overflow-x-clip bg-background text-foreground antialiased`}
-      suppressHydrationWarning
-    >
-      <AttractiveProviders>
+    <AttractiveProviders>
+      <AttractiveRootShell fontClassName={fontVars}>
         <SiteFrame githubStars={<GitHubStars className="mr-4" />}>
           {children}
         </SiteFrame>
-      </AttractiveProviders>
-    </div>
+      </AttractiveRootShell>
+    </AttractiveProviders>
   );
 }

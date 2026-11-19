@@ -9,32 +9,32 @@ import { GameContextProvider } from "@ix/contexts/game-context";
 import MotionPreferences from "./motion-preferences";
 import { ThemeProvider } from "./theme-provider";
 
-/** Interactive providers for `/attractive` — Talha-style theme (default dark). */
+/** Talha-style theme (default dark) — Provider sabse bahar, taake shell `useTheme` use kar sake. */
 export function AttractiveProviders({
   children,
 }: {
   children: React.ReactNode;
 }) {
   return (
-    <Suspense fallback={null}>
-      <ThemeProvider
-        attribute="class"
-        defaultTheme="dark"
-        enableSystem={false}
-        storageKey="ix-portfolio-theme"
-        disableTransitionOnChange
-      >
-      <MotionPreferences>
-        <Preloader>
-          <SocketContextProvider>
-            <GameContextProvider>
-              <TooltipProvider>{children}</TooltipProvider>
-            </GameContextProvider>
-            <Toaster />
-          </SocketContextProvider>
-        </Preloader>
-      </MotionPreferences>
-      </ThemeProvider>
-    </Suspense>
+    <ThemeProvider
+      attribute="class"
+      defaultTheme="dark"
+      enableSystem={false}
+      storageKey="ix-portfolio-theme"
+      disableTransitionOnChange
+    >
+      <Suspense fallback={null}>
+        <MotionPreferences>
+          <Preloader>
+            <SocketContextProvider>
+              <GameContextProvider>
+                <TooltipProvider>{children}</TooltipProvider>
+              </GameContextProvider>
+              <Toaster />
+            </SocketContextProvider>
+          </Preloader>
+        </MotionPreferences>
+      </Suspense>
+    </ThemeProvider>
   );
 }
