@@ -10,7 +10,7 @@ export const profile = {
   githubUsername: "muhammadrizwaneng",
   /** Versioned public path so CDNs/browsers do not keep serving an old PDF. */
   /** Unique path — avoids CDN/browser serving a stale PDF after CV updates. */
-  resumeUrl: "/muhammad-rizwan-cv-2026-11f.pdf",
+  resumeUrl: "/muhammad-rizwan-cv-2026-11g.pdf",
   avatar: "https://avatars.githubusercontent.com/u/102026105?v=4",
   summary:
     "Full Stack & Mobile Developer with nearly 5 years building secure backends, APIs, and React Native apps (Node.js, Next.js, FastAPI). Delivered enterprise SSO and search for 15,000+ users, and builds AI features with RAG and fine-tuned LLMs.",

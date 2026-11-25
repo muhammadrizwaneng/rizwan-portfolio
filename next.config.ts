@@ -21,42 +21,47 @@ const nextConfig: NextConfig = {
       // Old CV filenames → current résumé (stops stale downloads).
       {
         source: "/muhammad-rizwan-cv-2026-11.pdf",
-        destination: "/muhammad-rizwan-cv-2026-11f.pdf",
+        destination: "/muhammad-rizwan-cv-2026-11g.pdf",
         permanent: false,
       },
       {
         source: "/muhammad-rizwan-cv-2026-11b.pdf",
-        destination: "/muhammad-rizwan-cv-2026-11f.pdf",
+        destination: "/muhammad-rizwan-cv-2026-11g.pdf",
         permanent: false,
       },
       {
         source: "/muhammad-rizwan-cv-2026-11c.pdf",
-        destination: "/muhammad-rizwan-cv-2026-11f.pdf",
+        destination: "/muhammad-rizwan-cv-2026-11g.pdf",
         permanent: false,
       },
       {
         source: "/muhammad-rizwan-cv-2026-11d.pdf",
-        destination: "/muhammad-rizwan-cv-2026-11f.pdf",
+        destination: "/muhammad-rizwan-cv-2026-11g.pdf",
         permanent: false,
       },
       {
         source: "/muhammad-rizwan-cv-2026-11e.pdf",
-        destination: "/muhammad-rizwan-cv-2026-11f.pdf",
+        destination: "/muhammad-rizwan-cv-2026-11g.pdf",
+        permanent: false,
+      },
+      {
+        source: "/muhammad-rizwan-cv-2026-11f.pdf",
+        destination: "/muhammad-rizwan-cv-2026-11g.pdf",
         permanent: false,
       },
       {
         source: "/muhammad-rizwan-resume.pdf",
-        destination: "/muhammad-rizwan-cv-2026-11f.pdf",
+        destination: "/muhammad-rizwan-cv-2026-11g.pdf",
         permanent: false,
       },
       {
         source: "/Muhammad_Rizwan_Resume.pdf",
-        destination: "/muhammad-rizwan-cv-2026-11f.pdf",
+        destination: "/muhammad-rizwan-cv-2026-11g.pdf",
         permanent: false,
       },
       {
         source: "/resume.pdf",
-        destination: "/muhammad-rizwan-cv-2026-11f.pdf",
+        destination: "/muhammad-rizwan-cv-2026-11g.pdf",
         permanent: false,
       },
     ];
