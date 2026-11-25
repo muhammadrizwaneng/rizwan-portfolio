@@ -13,11 +13,13 @@ export function Projects() {
         <SectionHeading
           eyebrow="Projects"
           title="Featured work & open source"
-          description="Production systems, mobile apps, and GitHub projects across MERN, AWS, and AI stacks."
+          description="Highlighted work aligned with the résumé — HiveTalk, PAKEZY, Utility Hub, and AI/ML projects, plus shipped apps."
         />
 
         <div className="grid gap-6 md:grid-cols-2">
-          {featuredProjects.map((project, index) => (
+          {featuredProjects
+            .filter((project) => project.featured !== false)
+            .map((project, index) => (
             <motion.article
               key={project.name}
               initial={{ opacity: 0, y: 18 }}

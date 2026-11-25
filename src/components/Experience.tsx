@@ -12,7 +12,7 @@ export function Experience() {
         <SectionHeading
           eyebrow="Experience"
           title="Professional journey"
-          description="4+ years at SeeBiz delivering enterprise platforms and mobile products."
+          description="4+ years delivering enterprise platforms and mobile products."
         />
 
         <div className="relative space-y-8 before:absolute before:inset-y-2 before:left-[17px] before:w-px before:bg-border sm:before:left-[21px]">

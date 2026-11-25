@@ -41,6 +41,8 @@ interface BadgeTheme {
 const CATEGORY_THEMES: Record<string, BadgeTheme> = {
   "Data Engineering": { from: "#fb923c", to: "#c2410c", glow: "rgba(251,146,60,0.35)", icon: Workflow },
   "Data Science": { from: "#fbbf24", to: "#ea580c", glow: "rgba(251,191,36,0.3)", icon: Brain },
+  "Metawise Academy": { from: "#fb923c", to: "#c2410c", glow: "rgba(251,146,60,0.35)", icon: Brain },
+  "PNY Training": { from: "#38bdf8", to: "#6366f1", glow: "rgba(56,189,248,0.32)", icon: Bot },
   Cloud: { from: "#38bdf8", to: "#6366f1", glow: "rgba(56,189,248,0.32)", icon: Cloud },
   "Cloud Native": { from: "#22d3ee", to: "#0e7490", glow: "rgba(34,211,238,0.3)", icon: Boxes },
   Security: { from: "#fb7185", to: "#e11d48", glow: "rgba(251,113,133,0.3)", icon: ShieldCheck },

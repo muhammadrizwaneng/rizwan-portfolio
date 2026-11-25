@@ -2,7 +2,7 @@ import { ImageResponse } from "next/og";
 import { profile } from "@/data/profile";
 
 /** LinkedIn Post Inspector requires width ≥ 1600px and height ≥ 400px. */
-export const alt = `${profile.name} — Full Stack Software Engineer Portfolio`;
+export const alt = `${profile.name} — Full Stack & Mobile Developer`;
 export const size = { width: 1600, height: 840 };
 export const contentType = "image/png";
 

@@ -16,6 +16,26 @@ const nextConfig: NextConfig = {
     ],
     formats: ["image/avif", "image/webp"],
   },
+  async redirects() {
+    return [
+      // Old CV filenames → current résumé (stops stale downloads).
+      {
+        source: "/muhammad-rizwan-resume.pdf",
+        destination: "/muhammad-rizwan-cv-2026-11.pdf",
+        permanent: false,
+      },
+      {
+        source: "/Muhammad_Rizwan_Resume.pdf",
+        destination: "/muhammad-rizwan-cv-2026-11.pdf",
+        permanent: false,
+      },
+      {
+        source: "/resume.pdf",
+        destination: "/muhammad-rizwan-cv-2026-11.pdf",
+        permanent: false,
+      },
+    ];
+  },
   async headers() {
     return [
       {

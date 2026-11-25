@@ -284,15 +284,12 @@ export type Experience = {
   skills: SkillNames[];
 };
 
-// Mirrors LinkedIn experience (linkedin.com/in/muhammad-rizwan-fullstack), newest first.
+// Newest first. SeeBiz is one continuous role (intern folded into full-time).
 export const EXPERIENCE: Experience[] = [
   {
     id: 1,
-    periods: [
-      { start: "July 2022", end: "Present" },
-      { start: "Jan 2022", end: "June 2022" },
-    ],
-    title: "Software Engineer",
+    periods: [{ start: "Jan 2022", end: "Present" }],
+    title: "Full Stack & Mobile Developer",
     company: "SeeBiz PVT LTD",
     location: "Lahore, Pakistan",
     logo: "SB",
@@ -306,7 +303,6 @@ export const EXPERIENCE: Experience[] = [
       "Integrated Elasticsearch, cutting admin search query latency by 40%.",
       "Migrated legacy backends to serverless on AWS, reducing cloud costs by 30% and speeding deploys by 25%.",
       "Delivered Flask, FastAPI, and MongoDB APIs for mobile products with sub-200ms response times.",
-      "Started as an intern (Jan–Jun 2022): JWT auth across microservices, schema design, and release support at 99.9% uptime.",
     ],
     skills: [
       SkillNames.NEXTJS,
@@ -321,8 +317,8 @@ export const EXPERIENCE: Experience[] = [
   },
   {
     id: 2,
-    periods: [{ start: "2024", end: "Present" }],
-    title: "Software Engineer",
+    periods: [{ start: "Jan 2024", end: "Present" }],
+    title: "Full Stack & Mobile Developer",
     company: "Turn Feat AI",
     location: "Lahore, Pakistan",
     logo: "TF",

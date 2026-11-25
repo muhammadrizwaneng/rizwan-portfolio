@@ -26,10 +26,10 @@ export function getConfiguredSiteUrl(): string {
 
 export const siteUrl = getConfiguredSiteUrl();
 
-export const siteName = `${profile.name} | Full Stack Software Engineer Portfolio`;
+export const siteName = `${profile.name} | Full Stack & Mobile Developer`;
 
 export const seoDescription =
-  "Muhammad Rizwan — Full Stack Software Engineer specializing in Node.js, MERN stack, AWS, React Native, Next.js, Python (FastAPI), vibe coding with Cursor and Claude, custom rules, and AI agents (QA, backend). 4+ years building secure, scalable products in Lahore, Pakistan.";
+  "Muhammad Rizwan — Full Stack & Mobile Developer with 4+ years shipping secure backends, APIs, and React Native apps (Node.js, Next.js, Python/FastAPI). Enterprise SSO and search for 15,000+ users. Lahore, Pakistan.";
 
 export const seoKeywords = [
   "Muhammad Rizwan",
@@ -55,4 +55,4 @@ export const seoKeywords = [
 
 export const ogImageWidth = 1600;
 export const ogImageHeight = 840;
-export const ogImageAlt = `${profile.name} — Full Stack Software Engineer Portfolio`;
+export const ogImageAlt = `${profile.name} — Full Stack & Mobile Developer`;

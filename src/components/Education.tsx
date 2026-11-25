@@ -1,18 +1,18 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { GraduationCap } from "lucide-react";
+import { Award, GraduationCap } from "lucide-react";
 import { Section } from "@/components/Section";
 import { SectionHeading } from "@/components/SectionHeading";
-import { education } from "@/data/profile";
+import { certifications, education } from "@/data/profile";
 
 export function Education() {
   return (
     <Section id="education">
       <SectionHeading
         eyebrow="Education"
-        title="Education & AI training"
-        description="Degree background plus structured machine learning, deep learning, and NLP coursework."
+        title="Education & certifications"
+        description="Degree background plus professional AI / ML training."
       />
 
       <div className="grid gap-5 md:grid-cols-2">
@@ -34,8 +34,28 @@ export function Education() {
               {item.location} · {item.period}
             </p>
             {item.note ? (
-              <p className="mt-4 text-sm leading-relaxed text-muted">{item.note}</p>
+              <p className="mt-4 text-sm leading-relaxed text-muted">
+                {item.note}
+              </p>
             ) : null}
+          </motion.div>
+        ))}
+        {certifications.map((item, index) => (
+          <motion.div
+            key={item.title}
+            initial={{ opacity: 0, y: 16 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: (education.length + index) * 0.06 }}
+            className="glass rounded-3xl p-6"
+          >
+            <div className="mb-4 inline-flex rounded-xl bg-accent-soft p-3 text-accent">
+              <Award size={20} />
+            </div>
+            <h3 className="font-display text-lg font-semibold">{item.title}</h3>
+            <p className="mt-1 text-accent">{item.issuer}</p>
+            <p className="mt-1 text-sm text-muted">{item.period}</p>
+            <p className="mt-4 text-sm leading-relaxed text-muted">{item.note}</p>
           </motion.div>
         ))}
       </div>

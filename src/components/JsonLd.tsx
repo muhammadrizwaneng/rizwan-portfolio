@@ -6,7 +6,7 @@ export function JsonLd() {
     "@context": "https://schema.org",
     "@type": "Person",
     name: profile.name,
-    jobTitle: "Software Engineer",
+    jobTitle: profile.title,
     description: profile.summary,
     email: profile.email,
     telephone: profile.phone,

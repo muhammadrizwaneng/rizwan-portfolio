@@ -120,7 +120,7 @@ export function Hero() {
               <div className="relative h-20 w-20 shrink-0 overflow-hidden rounded-2xl ring-2 ring-accent/30">
                 <Image
                   src={profile.avatar}
-                  alt={`${profile.name}, Full Stack Software Engineer`}
+                  alt={`${profile.name}, ${profile.title}`}
                   width={80}
                   height={80}
                   sizes="80px"

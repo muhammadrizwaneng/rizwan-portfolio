@@ -53,7 +53,7 @@ export const metadata: Metadata = {
         url: config.ogImg,
         width: 1200,
         height: 630,
-        alt: "Muhammad Rizwan - Software Engineer",
+        alt: "Muhammad Rizwan - Full Stack & Mobile Developer",
       },
     ],
     type: "website",

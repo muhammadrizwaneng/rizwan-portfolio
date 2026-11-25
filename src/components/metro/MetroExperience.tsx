@@ -174,7 +174,7 @@ export function MetroExperience() {
           <a
             className="metro-cv-btn"
             href={profile.resumeUrl}
-            download="Muhammad_Rizwan_Resume.pdf"
+            download="Muhammad_Rizwan_CV.pdf"
           >
             <Download size={14} />
             <span>Download CV</span>
@@ -233,7 +233,7 @@ export function MetroExperience() {
                 <a
                   className="metro-btn metro-btn--ghost"
                   href={profile.resumeUrl}
-                  download="Muhammad_Rizwan_Resume.pdf"
+                  download="Muhammad_Rizwan_CV.pdf"
                 >
                   Download CV (PDF)
                 </a>
@@ -588,7 +588,7 @@ export function MetroExperience() {
                 <li>
                   <a
                     href={profile.resumeUrl}
-                    download="Muhammad_Rizwan_Resume.pdf"
+                    download="Muhammad_Rizwan_CV.pdf"
                     className="ticket-btn ticket-btn--secondary"
                   >
                     <Download size={18} /> Download CV

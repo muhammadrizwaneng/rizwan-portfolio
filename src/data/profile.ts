@@ -1,6 +1,6 @@
 export const profile = {
   name: "Muhammad Rizwan",
-  title: "Software Engineer",
+  title: "Full Stack & Mobile Developer",
   tagline: "Full Stack & Mobile · Backend · Vibe Coding · AI Agents",
   location: "Lahore, Pakistan",
   email: "muhammadrizwaneng@gmail.com",
@@ -9,10 +9,11 @@ export const profile = {
   github: "https://github.com/muhammadrizwaneng",
   githubUsername: "muhammadrizwaneng",
   /** Versioned public path so CDNs/browsers do not keep serving an old PDF. */
-  resumeUrl: "/muhammad-rizwan-resume.pdf",
+  /** Unique path — avoids CDN/browser serving a stale PDF after CV updates. */
+  resumeUrl: "/muhammad-rizwan-cv-2026-11.pdf",
   avatar: "https://avatars.githubusercontent.com/u/102026105?v=4",
   summary:
-    "Software Engineer with 4+ years of experience building secure, scalable backend systems and cross-platform mobile applications. Specialized in Node.js, Next.js, Python (FastAPI/Flask), and React Native, with hands-on delivery of enterprise authentication, search, and AI-integrated products serving 15,000+ active users. I also ship faster with vibe coding in Cursor and Claude — writing strong prompts, project rules, and custom agents (QA, backend, and more) to turn ideas into production-ready code.",
+    "Full Stack & Mobile Developer with 4+ years shipping secure backends, APIs, and React Native apps (Node.js, Next.js, Python/FastAPI). Delivered enterprise SSO and search for 15,000+ users; builds faster with Cursor/Claude-assisted workflows when useful.",
   stats: [
     { label: "Years experience", value: "4+" },
     { label: "Active users served", value: "15K+" },
@@ -39,16 +40,6 @@ export type FeaturedProject = {
 
 export const skillGroups = [
   {
-    title: "Languages",
-    description: "Core languages for web, mobile, and data backends.",
-    items: ["Python", "JavaScript", "TypeScript", "SQL"],
-  },
-  {
-    title: "Frontend",
-    description: "Modern UI stacks for web and cross-platform mobile.",
-    items: ["React.js", "Next.js", "React Native", "Tailwind CSS", "HTML/CSS"],
-  },
-  {
     title: "Backend",
     description: "APIs, auth, search, and data layers at scale.",
     items: [
@@ -63,6 +54,27 @@ export const skillGroups = [
       "REST",
       "JWT",
     ],
+  },
+  {
+    title: "Mobile",
+    description: "Cross-platform apps for iOS and Android.",
+    items: [
+      "React Native",
+      "Expo",
+      "Push Notifications",
+      "Stripe",
+      "Socket.IO",
+    ],
+  },
+  {
+    title: "Frontend",
+    description: "Modern UI stacks for web products.",
+    items: ["React.js", "Next.js", "TypeScript", "Tailwind CSS", "HTML/CSS"],
+  },
+  {
+    title: "Languages",
+    description: "Core languages for web, mobile, and data backends.",
+    items: ["Python", "JavaScript", "TypeScript", "SQL"],
   },
   {
     title: "Cloud / DevOps",
@@ -81,35 +93,18 @@ export const skillGroups = [
   {
     title: "AI / ML & Deep Learning",
     description:
-      "Foundations from Artificial Intelligence (ML & DL) training — regression, CNNs, NLP, and applied model workflows.",
+      "Applied ML/RAG work plus training foundations — CNNs, NLP, and fine-tuning workflows.",
     items: [
+      "LangChain / RAG",
+      "QLoRA fine-tuning",
       "Machine Learning",
       "Deep Learning",
       "Neural Networks",
       "CNN / Convolutions",
-      "VGG & ResNet",
       "NLP & Text Analysis",
-      "Linear & Logistic Regression",
-      "K-Means Clustering",
       "Feature Engineering",
       "Pandas / NumPy",
-      "Data Preprocessing",
       "LLM Integrations",
-    ],
-  },
-  {
-    title: "Vibe Coding / AI Agents",
-    description:
-      "Prompt-driven delivery with Cursor and Claude — rules, agents, and agentic workflows.",
-    items: [
-      "Cursor",
-      "Claude",
-      "Vibe Coding",
-      "Prompt Engineering",
-      "Custom Rules",
-      "QA Agents",
-      "Backend Agents",
-      "Agent Workflows",
     ],
   },
 ];
@@ -118,26 +113,26 @@ export const experience = [
   {
     company: "SeeBiz PVT LTD",
     location: "Lahore, Pakistan",
-    role: "Software Engineer",
-    period: "July 2022 – Present",
+    role: "Full Stack & Mobile Developer",
+    period: "Jan 2022 – Present",
     highlights: [
       "Architected enterprise SSO with Node.js and Next.js for 15,000+ active users across platform apps.",
       "Built MFA and cryptographic account lifecycle workflows, reducing unauthorized access attempts by 99.9%.",
       "Integrated Elasticsearch, cutting admin search query latency by 40%.",
       "Migrated legacy backends to serverless, reducing cloud costs by 30% and speeding deploys by 25%.",
       "Delivered Flask, FastAPI, and MongoDB APIs for mobile products with sub-200ms response times.",
-      "Accelerated feature delivery with vibe coding in Cursor and Claude — custom project rules plus QA and backend agents for consistent, reviewable output.",
     ],
   },
   {
-    company: "SeeBiz PVT LTD",
+    company: "Turn Feat AI",
     location: "Lahore, Pakistan",
-    role: "Software Engineer Intern",
-    period: "Jan 2022 – June 2022",
+    role: "Full Stack & Mobile Developer",
+    period: "Jan 2024 – Present",
     highlights: [
-      "Modeled 10+ database schemas and scalable backends with MySQL and MongoDB.",
-      "Implemented JWT auth and input validation across 5+ microservices.",
-      "Supported agile delivery, integration, and debugging with 99.9% uptime during releases.",
+      "Shipped contract and milestone flows: work submission, approvals, revision rounds, reviews, and contract PDFs.",
+      "Built Stripe payments: wallets, withdrawals, receipts, and subscription plans on mobile.",
+      "Implemented Socket.IO chat for 1:1 and project rooms with attachments and push notifications.",
+      "Refactored large screens into hooks and shared theme tokens; cut duplicate API calls across iOS and Android.",
     ],
   },
 ];
@@ -161,13 +156,28 @@ export const featuredProjects: FeaturedProject[] = [
     featured: true,
   },
   {
-    name: "ZeroAds Downloader",
-    stack: ["Next.js", "Android", "Vercel", "YouTube"],
+    name: "PAKEZY Tourism",
+    stack: ["Next.js", "React Native", "FastAPI", "MongoDB", "Maps"],
     summary:
-      "Ad-free YouTube and social media downloader for Android — APK distribution site plus download API, deployed on Vercel.",
-    github: "https://github.com/muhammadrizwaneng/zeroad_downloader",
-    demo: "https://zeroad-downloader.vercel.app",
+      "Pakistan travel platform with destinations, attractions, packages, and maps — Next.js web app on Vercel plus React Native mobile.",
+    github: "https://github.com/muhammadrizwaneng/PAKToursimWeb",
+    demo: "https://pakezy.vercel.app",
+    playStore: "https://play.google.com/store/apps/details?id=com.paktourism",
+    previewImage:
+      "https://play-lh.googleusercontent.com/Ey7TsbNBLnbZ5PQ1Jpfi0wGaqaEH85yAcOO9jBf29WCyPcKSvJ7pcbdpZK5MDWimChOWM5UzYUOwTWy_SoIjuQ=w512-h512",
     statusLabel: "Live on Vercel",
+    featured: true,
+  },
+  {
+    name: "Utility Hub",
+    stack: ["React Native", "Native modules"],
+    summary:
+      "Offline image-to-PDF and compression utilities with native file system bridges.",
+    github: "https://github.com/muhammadrizwaneng/UtilityApp",
+    demo: null,
+    playStore: "https://play.google.com/store/apps/details?id=com.utilityhub.app",
+    previewImage:
+      "https://play-lh.googleusercontent.com/3cMJu--3RfLa3yZidAK9SK9zSwJ4hKLlzY7PICYuEpwUihxjWZsf70rSdpo5fD_UV5l_YzMIoFCWAV2DOV26=w512-h512",
     featured: true,
   },
   {
@@ -185,35 +195,6 @@ export const featuredProjects: FeaturedProject[] = [
     github: "https://github.com/muhammadrizwaneng/irgems-rag-assistant",
     demo: null,
     statusLabel: "In progress",
-    featured: true,
-  },
-  {
-    name: "ApexBid",
-    stack: ["Next.js", "TypeScript", "Auction"],
-    summary:
-      "Online auction web app for listing, bidding, and live auction flows — Next.js frontend work in progress.",
-    github: "https://github.com/muhammadrizwaneng/apexbid",
-    demo: null,
-    statusLabel: "In progress",
-    featured: true,
-  },
-  {
-    name: "Enveda CASMI 2026 — Molecule ID",
-    stack: [
-      "Python",
-      "Machine Learning",
-      "Deep Learning",
-      "Mass Spectrometry",
-      "Cheminformatics",
-      "Kaggle",
-    ],
-    summary:
-      "Active Kaggle challenge: identify small molecules from tandem mass spectra using ML baselines, fingerprint channels, validation sweeps, and ranked retrieval pipelines.",
-    github: null,
-    demo: null,
-    kaggle:
-      "https://www.kaggle.com/competitions/enveda-CASMI26-molecule-id-mass-spectra",
-    statusLabel: "Active competition",
     featured: true,
   },
   {
@@ -242,6 +223,18 @@ export const featuredProjects: FeaturedProject[] = [
     featured: true,
   },
   {
+    name: "Turnfeat.ai",
+    stack: ["React Native", "Node.js", "PostgreSQL", "OpenAI"],
+    summary:
+      "AI freelance marketplace with bidding, escrow, milestones, and skill matching.",
+    github: null,
+    demo: null,
+    playStore: "https://play.google.com/store/apps/details?id=com.turnfeat.ai",
+    previewImage:
+      "https://play-lh.googleusercontent.com/HZkmZ8gKDMvVPWZbOILArMmCcpWyKMxr0KCR3X-y6iHpBLhy3dCjranwX_jh975kWVJIGzTgM1cQncrm2o796Q=w512-h512",
+    featured: true,
+  },
+  {
     name: "SeeCard",
     stack: ["React Native", "REST APIs", "QR"],
     summary:
@@ -265,18 +258,6 @@ export const featuredProjects: FeaturedProject[] = [
     appStore: "https://apps.apple.com/pk/app/seetask/id6742219504",
     previewImage:
       "https://play-lh.googleusercontent.com/r_RJh534slArjIEubL1A69HkVP4PCwhZcEHzR-SGXrjnNxPlZHUjrwTaT-BeFqkdJy6U0yVKAjehChGdnD6yX5Y=w512-h512",
-    featured: true,
-  },
-  {
-    name: "Turnfeat.ai",
-    stack: ["React Native", "Node.js", "PostgreSQL", "OpenAI"],
-    summary:
-      "AI freelance marketplace with bidding, escrow, milestones, and skill matching.",
-    github: null,
-    demo: null,
-    playStore: "https://play.google.com/store/apps/details?id=com.turnfeat.ai",
-    previewImage:
-      "https://play-lh.googleusercontent.com/HZkmZ8gKDMvVPWZbOILArMmCcpWyKMxr0KCR3X-y6iHpBLhy3dCjranwX_jh975kWVJIGzTgM1cQncrm2o796Q=w512-h512",
     featured: true,
   },
   {
@@ -307,29 +288,43 @@ export const featuredProjects: FeaturedProject[] = [
     featured: true,
   },
   {
-    name: "PAKEZY Tourism",
-    stack: ["Next.js", "React Native", "FastAPI", "MongoDB", "Maps"],
+    name: "ZeroAds Downloader",
+    stack: ["Next.js", "Android", "Vercel", "YouTube"],
     summary:
-      "Pakistan travel platform with destinations, attractions, packages, and maps — Next.js web app on Vercel plus React Native mobile.",
-    github: "https://github.com/muhammadrizwaneng/PAKToursimWeb",
-    demo: "https://pakezy.vercel.app",
-    playStore: "https://play.google.com/store/apps/details?id=com.paktourism",
-    previewImage:
-      "https://play-lh.googleusercontent.com/Ey7TsbNBLnbZ5PQ1Jpfi0wGaqaEH85yAcOO9jBf29WCyPcKSvJ7pcbdpZK5MDWimChOWM5UzYUOwTWy_SoIjuQ=w512-h512",
+      "Ad-free YouTube and social media downloader for Android — APK distribution site plus download API, deployed on Vercel.",
+    github: "https://github.com/muhammadrizwaneng/zeroad_downloader",
+    demo: "https://zeroad-downloader.vercel.app",
     statusLabel: "Live on Vercel",
     featured: true,
   },
   {
-    name: "Utility Hub",
-    stack: ["React Native", "Native modules"],
+    name: "Enveda CASMI 2026 — Molecule ID",
+    stack: [
+      "Python",
+      "Machine Learning",
+      "Deep Learning",
+      "Mass Spectrometry",
+      "Cheminformatics",
+      "Kaggle",
+    ],
     summary:
-      "Offline image-to-PDF and compression utilities with native file system bridges.",
-    github: "https://github.com/muhammadrizwaneng/UtilityApp",
+      "Active Kaggle challenge: identify small molecules from tandem mass spectra using ML baselines, fingerprint channels, validation sweeps, and ranked retrieval pipelines.",
+    github: null,
     demo: null,
-    playStore: "https://play.google.com/store/apps/details?id=com.utilityhub.app",
-    previewImage:
-      "https://play-lh.googleusercontent.com/3cMJu--3RfLa3yZidAK9SK9zSwJ4hKLlzY7PICYuEpwUihxjWZsf70rSdpo5fD_UV5l_YzMIoFCWAV2DOV26=w512-h512",
+    kaggle:
+      "https://www.kaggle.com/competitions/enveda-CASMI26-molecule-id-mass-spectra",
+    statusLabel: "Active competition",
     featured: true,
+  },
+  {
+    name: "ApexBid",
+    stack: ["Next.js", "TypeScript", "Auction"],
+    summary:
+      "Online auction web app for listing, bidding, and live auction flows — Next.js frontend work in progress.",
+    github: "https://github.com/muhammadrizwaneng/apexbid",
+    demo: null,
+    statusLabel: "In progress",
+    featured: false,
   },
   {
     name: "AI Sales Analytics",
@@ -338,7 +333,7 @@ export const featuredProjects: FeaturedProject[] = [
       "Demand forecasting and semantic product search with fine-tuned NLP models.",
     github: "https://github.com/muhammadrizwaneng/coding-model",
     demo: null,
-    featured: true,
+    featured: false,
   },
   {
     name: "Smart Shopping (AI)",
@@ -347,8 +342,9 @@ export const featuredProjects: FeaturedProject[] = [
       "AI-assisted e-commerce storefront with modern Next.js UX patterns.",
     github: "https://github.com/muhammadrizwaneng/SmartShopWithAINextRepo",
     demo: null,
-    featured: true,
-  },
+    featured: false,
+  }
+
 ];
 
 export const githubProjects = [
@@ -498,25 +494,44 @@ export const githubProjects = [
   },
 ];
 
-export const education = [
-  {
-    school: "Metawise — ML, DL & NLP",
-    location: "Instructor-led (Abdul Bari Khan)",
-    degree: "Artificial Intelligence (Machine Learning & Deep Learning)",
-    period: "2024 – 2025",
-    note: "Labs and coursework: Python for ML, linear & logistic regression, polynomial regression, k-means, neural networks, CNNs (convolution, VGG, ResNet-50), NLP & text analysis, feature engineering, Azure ML basics, and model evaluation.",
-  },
+export type EducationItem = {
+  school: string;
+  location: string;
+  degree: string;
+  period: string;
+  note?: string;
+};
+
+export const education: EducationItem[] = [
   {
     school: "Gomal University",
     location: "D.I. Khan, KPK",
     degree: "Bachelor of Science in Software Engineering",
     period: "2017 – 2021",
   },
+];
+
+export type CertificationItem = {
+  title: string;
+  issuer: string;
+  period: string;
+  note: string;
+};
+
+/** Certifications / professional training (shown on CV + certificates UI). */
+export const certifications: CertificationItem[] = [
   {
-    school: "Govt. College Boys Fatehpur",
-    location: "Layyah",
-    degree: "FSc (Pre-Engineering)",
-    period: "2015 – 2017",
+    title:
+      "Artificial Intelligence (Machine Learning & Deep Learning) — Professional Training",
+    issuer: "Metawise",
+    period: "2024 – 2025",
+    note: "Neural networks, CNNs (VGG, ResNet-50), NLP, feature engineering, Azure ML.",
+  },
+  {
+    title: "AI, Machine Learning and Data Science",
+    issuer: "PNY Training Center",
+    period: "Mar 2025 – Jun 2025",
+    note: "Four-month instructor-led course covering ML fundamentals, data science workflows, and hands-on projects.",
   },
 ];
 

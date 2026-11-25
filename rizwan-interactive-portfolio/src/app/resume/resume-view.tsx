@@ -7,8 +7,8 @@ import { Download, ArrowLeft } from "lucide-react";
 import { Button } from "@ix/components/ui/button";
 import ResumeDoodle from "./resume-doodle";
 
-/** Same CV as the classic portfolio (one PDF in repo root `public/`). */
-const RESUME_PATH = "/muhammad-rizwan-resume.pdf";
+/** Same CV as the classic portfolio (unique filename avoids stale CDN cache). */
+const RESUME_PATH = "/muhammad-rizwan-cv-2026-11.pdf";
 
 export default function ResumeView() {
   return (
