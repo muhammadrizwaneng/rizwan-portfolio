@@ -49,7 +49,7 @@ export function About() {
                 <span className="text-accent">▹</span> AI-assisted development (Cursor, Claude Code, Windsurf)
               </li>
               <li className="flex gap-2">
-                <span className="text-accent">▹</span> Custom rules, QA & backend agents
+                <span className="text-accent">▹</span> Custom editor rules & QA workflows
               </li>
             </ul>
           </motion.div>
