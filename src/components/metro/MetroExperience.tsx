@@ -279,7 +279,7 @@ export function MetroExperience() {
                 Fast APIs with Node.js, FastAPI/Flask, Elasticsearch, and AWS
               </li>
               <li>
-                Cross-platform React Native apps plus AI agents / vibe coding
+                Cross-platform React Native apps plus AI-assisted development
                 workflows
               </li>
             </ul>

@@ -322,7 +322,7 @@ const projects: Project[] = [
           <Bullets
             items={[
               "Enterprise SSO across multiple apps with JWT sessions and role-based access.",
-              "MFA and cryptographic account lifecycle flows; unauthorized access attempts down 99.9%.",
+              "MFA and secure account lifecycle (JWT signing, password hashing, recovery); blocking 99.9% of unauthorized login attempts.",
             ]}
           />
           <TypographyH3 className="my-4 mt-8">Search &amp; ops</TypographyH3>
@@ -391,7 +391,7 @@ const projects: Project[] = [
           <TypographyH3 className="my-4 mt-8">Code quality</TypographyH3>
           <Bullets
             items={[
-              "Improved code quality and design consistency over 185+ commits: split large screens into hooks and components, moved colours to shared theme tokens, removed duplicate API calls, and restyled screens to match the web app on phone and tablet.",
+              "Improved code quality and design consistency: split large screens into hooks and components, moved colours to shared theme tokens, removed duplicate API calls, and restyled screens to match the web app on phone and tablet.",
             ]}
           />
         </div>
@@ -640,7 +640,7 @@ const RIZWAN_PRODUCTS: Project[] = [
     src: asset("pakezy", "home.png"),
     screenshots: ["home.png"],
     live: "https://pakezy.vercel.app",
-    github: "https://github.com/muhammadrizwaneng/PAKToursimWeb",
+    github: "https://github.com/muhammadrizwaneng/PAKTourismWeb",
     skills: {
       frontend: [S.next, S.reactNative, S.tailwind],
       backend: [S.python, S.mongo],

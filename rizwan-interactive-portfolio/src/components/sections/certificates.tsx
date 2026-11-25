@@ -102,7 +102,7 @@ const CertificatesSection = () => {
   const header = (
     <SectionHeader
       id="certificates"
-      title="Certificates"
+      title="Training & Courses"
       desc="Verified credentials."
       className="static mb-10 md:mb-12 mt-0"
     />

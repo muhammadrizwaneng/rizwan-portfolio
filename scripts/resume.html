@@ -4,116 +4,124 @@
   <meta charset="utf-8" />
   <title>Muhammad Rizwan — Full Stack & Mobile Developer</title>
   <style>
-    @page { size: A4; margin: 0.42in 0.52in; }
+    @page { size: A4; margin: 0.38in 0.48in; }
     * { box-sizing: border-box; }
     body {
       font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
       color: #111827;
-      font-size: 9.5pt;
-      line-height: 1.28;
+      font-size: 9.1pt;
+      line-height: 1.26;
       margin: 0;
     }
     h1 {
-      font-size: 19pt;
+      font-size: 18pt;
       margin: 0 0 2px;
       letter-spacing: -0.02em;
     }
     .title {
-      font-size: 10.5pt;
+      font-size: 10pt;
       font-weight: 600;
       color: #1f2937;
-      margin-bottom: 4px;
+      margin-bottom: 3px;
     }
     .meta {
-      font-size: 8.8pt;
+      font-size: 8pt;
       color: #374151;
-      margin-bottom: 8px;
+      margin-bottom: 6px;
+      line-height: 1.35;
     }
     .meta a { color: #111827; text-decoration: none; }
     h2 {
-      font-size: 9.8pt;
+      font-size: 9.2pt;
       text-transform: uppercase;
       letter-spacing: 0.06em;
       border-bottom: 1.5px solid #111827;
       padding-bottom: 1px;
-      margin: 7px 0 4px;
+      margin: 5px 0 3px;
     }
-    p { margin: 0 0 4px; }
-    .job, .proj { margin-bottom: 5px; }
+    p { margin: 0 0 3px; }
+    .job, .proj { margin-bottom: 3px; }
     .job-head {
       display: flex;
       justify-content: space-between;
-      gap: 12px;
+      gap: 10px;
       font-weight: 700;
     }
     .job-sub {
-      font-size: 9pt;
+      font-size: 8.4pt;
       color: #374151;
       margin: 1px 0 2px;
     }
-    ul { margin: 0; padding-left: 15px; }
+    ul { margin: 0; padding-left: 14px; }
     li { margin-bottom: 1px; }
-    .skills p { margin: 0 0 2px; }
+    .skills p { margin: 0 0 1px; }
     .skills strong { font-weight: 700; }
-    .edu, .cert {
-      margin-bottom: 4px;
+    .edu, .cert, .proj {
+      margin-bottom: 2px;
       break-inside: avoid;
       page-break-inside: avoid;
     }
-    .proj {
-      break-inside: avoid;
-      page-break-inside: avoid;
+    .muted { color: #4b5563; font-size: 8.4pt; }
+    .linkline {
+      font-size: 8pt;
+      color: #1f2937;
     }
-    .muted { color: #4b5563; font-size: 9pt; }
+    .linkline a {
+      color: #111827;
+      text-decoration: underline;
+      text-underline-offset: 1px;
+    }
   </style>
 </head>
 <body>
   <h1>Muhammad Rizwan</h1>
   <div class="title">Full Stack & Mobile Developer</div>
   <div class="meta">
-    Lahore, Pakistan ·
-    <a href="mailto:muhammadrizwaneng@gmail.com">muhammadrizwaneng@gmail.com</a> ·
-    +92 300 0795296 ·
-    <a href="https://rizwan-portfolio-eight.vercel.app">Portfolio</a> ·
-    <a href="https://linkedin.com/in/muhammad-rizwan-fullstack">LinkedIn</a> ·
-    <a href="https://github.com/muhammadrizwaneng">GitHub</a>
+    Lahore, Pakistan · muhammadrizwaneng@gmail.com · +92 300 0795296<br />
+    Portfolio:
+    <a href="https://rizwan-portfolio-eight.vercel.app">rizwan-portfolio-eight.vercel.app</a>
+    · LinkedIn:
+    <a href="https://linkedin.com/in/muhammad-rizwan-fullstack">linkedin.com/in/muhammad-rizwan-fullstack</a>
+    · GitHub:
+    <a href="https://github.com/muhammadrizwaneng">github.com/muhammadrizwaneng</a>
   </div>
 
   <h2>Summary</h2>
   <p>
-    Full Stack &amp; Mobile Developer with 4+ years shipping secure backends, APIs, and React Native apps
-    (Node.js, Next.js, Python/FastAPI). Delivered enterprise SSO and search for 15,000+ users; builds
-    faster with Cursor/Claude-assisted workflows when useful.
+    Full Stack &amp; Mobile Developer with nearly 5 years building secure backends, APIs, and React Native apps
+    (Node.js, Next.js, FastAPI). Delivered enterprise SSO and search for 15,000+ users, and builds AI features
+    with RAG and fine-tuned LLMs.
   </p>
 
   <h2>Professional Experience</h2>
 
   <div class="job">
     <div class="job-head">
-      <span>SeeBiz PVT LTD</span>
+      <span>Executive Software Engineer, SeeBiz PVT LTD</span>
       <span>Jan 2022 – Present</span>
     </div>
     <div class="job-sub">Lahore, Pakistan · Full-time · On-site</div>
     <ul>
       <li>Architected enterprise SSO with Node.js and Next.js for 15,000+ active users across platform apps.</li>
-      <li>Built MFA and cryptographic account lifecycle workflows, reducing unauthorized access attempts by 99.9%.</li>
+      <li>Built MFA and secure account lifecycle flows (JWT signing, password hashing, verification, recovery, deactivation), blocking 99.9% of unauthorized login attempts.</li>
+      <li>Built and shipped SeeCard, a React Native digital business card app (live profiles, QR sharing, catalogs), on Play Store and App Store.</li>
       <li>Integrated Elasticsearch, cutting admin search query latency by 40%.</li>
-      <li>Migrated legacy backends to serverless, reducing cloud costs by 30% and speeding deploys by 25%.</li>
+      <li>Migrated legacy backends to AWS Lambda / serverless, reducing cloud costs by 30% and speeding deploys by 25%.</li>
       <li>Delivered Flask, FastAPI, and MongoDB APIs for mobile products with sub-200ms response times.</li>
     </ul>
   </div>
 
   <div class="job">
     <div class="job-head">
-      <span>Turn Feat AI</span>
+      <span>Software Engineer, Turn Feat AI</span>
       <span>Jan 2024 – Present</span>
     </div>
-    <div class="job-sub">Lahore, Pakistan · Contract · Hybrid</div>
+    <div class="job-sub">Lahore, Pakistan · Contract · Part-time · Hybrid · React Native, Node.js, Stripe</div>
     <ul>
-      <li>Shipped contract and milestone flows: submissions, approvals, revisions, reviews, and contract PDFs.</li>
-      <li>Built Stripe payments: wallets, withdrawals, receipts, and subscription plans on mobile.</li>
+      <li>Shipped contract and milestone flows on React Native (submissions, approvals, revisions, reviews, PDFs).</li>
+      <li>Built Stripe payments on mobile: wallets, withdrawals, receipts, and subscription plans.</li>
       <li>Implemented Socket.IO chat for 1:1 and project rooms with attachments and push notifications.</li>
-      <li>Refactored large screens into hooks and shared theme tokens; cut duplicate API calls across iOS and Android.</li>
+      <li>Refactored large screens into hooks and shared theme tokens; removed duplicate API calls across iOS and Android.</li>
     </ul>
   </div>
 
@@ -121,21 +129,13 @@
 
   <div class="proj">
     <div class="job-head">
-      <span>HiveTalk — Real-time team chat</span>
-      <span>Next.js · Express · Socket.IO · AWS</span>
+      <span>SeeCard — Digital business cards (SeeBiz)</span>
+      <span>React Native · iOS &amp; Android</span>
     </div>
-    <div class="muted">
-      Workspaces, channels, and live Socket.IO messaging (Next.js + Express monorepo) deployed on AWS.
-    </div>
-  </div>
-
-  <div class="proj">
-    <div class="job-head">
-      <span>PAKEZY Tourism — Travel platform (web + mobile)</span>
-      <span>Next.js · React Native · FastAPI</span>
-    </div>
-    <div class="muted">
-      Destinations, packages, and maps — Next.js web on Vercel plus React Native app on Play Store.
+    <div class="muted">Production app: live profile editing, QR sharing, contact save, and product catalogs.</div>
+    <div class="linkline">
+      <a href="https://play.google.com/store/apps/details?id=com.seecard">Play Store</a>
+      · <a href="https://apps.apple.com/pk/app/seecard/id6502513661">App Store</a>
     </div>
   </div>
 
@@ -144,8 +144,33 @@
       <span>Utility Hub — Offline utilities (mobile)</span>
       <span>React Native · Native modules</span>
     </div>
-    <div class="muted">
-      Image-to-PDF and compression tools with native file bridges — live on Play Store.
+    <div class="muted">Image-to-PDF and compression tools with native file bridges — live on Play Store.</div>
+    <div class="linkline">
+      <a href="https://play.google.com/store/apps/details?id=com.utilityhub.app">Play Store</a>
+      · <a href="https://github.com/muhammadrizwaneng/UtilityApp">GitHub</a>
+    </div>
+  </div>
+
+  <div class="proj">
+    <div class="job-head">
+      <span>PAKEZY Tourism — Travel platform (web + mobile)</span>
+      <span>Next.js · React Native · FastAPI</span>
+    </div>
+    <div class="muted">Destinations, packages, and maps — web on Vercel plus React Native on Play Store.</div>
+    <div class="linkline">
+      <a href="https://pakezy.vercel.app">Live</a>
+      · <a href="https://play.google.com/store/apps/details?id=com.paktourism">Play Store</a>
+    </div>
+  </div>
+
+  <div class="proj">
+    <div class="job-head">
+      <span>HiveTalk — Real-time team chat</span>
+      <span>Next.js · Express · Socket.IO · AWS</span>
+    </div>
+    <div class="muted">Workspaces, channels, and live Socket.IO messaging monorepo deployed on AWS.</div>
+    <div class="linkline">
+      <a href="https://github.com/muhammadrizwaneng/HiveTalk">GitHub</a>
     </div>
   </div>
 
@@ -154,32 +179,36 @@
       <span>IRGEMS RAG Assistant — AI / ML</span>
       <span>Python · LangChain · ChromaDB · Streamlit</span>
     </div>
-    <div class="muted">
-      Doc ingest into Chroma + sentence-transformers retrieval; LangChain/Ollama answers in a Streamlit UI.
+    <div class="muted">Doc ingest into Chroma + sentence-transformers retrieval; LangChain/Ollama answers in Streamlit.</div>
+    <div class="linkline">
+      <a href="https://github.com/muhammadrizwaneng/irgems-rag-assistant">GitHub</a>
     </div>
   </div>
 
   <div class="proj">
     <div class="job-head">
       <span>rizwan-code-model — AI / ML (fine-tune)</span>
-      <span>Python · QLoRA · Qwen2.5-Coder</span>
+      <span>Python · QLoRA · Hugging Face · PyTorch</span>
     </div>
-    <div class="muted">
-      QLoRA adapter on curated SFT data (FastAPI, RN, Node); trained on Kaggle T4 for a local coding assistant.
+    <div class="muted">QLoRA adapter on curated SFT data (FastAPI, RN, Node); trained on Kaggle T4 for a local coding assistant.</div>
+    <div class="linkline">
+      <a href="https://github.com/muhammadrizwaneng/coding-model">GitHub</a>
     </div>
   </div>
 
   <h2>Skills</h2>
   <div class="skills">
     <p><strong>Backend:</strong> Node.js, Express, FastAPI, Flask, MongoDB, PostgreSQL, MySQL, Elasticsearch, REST, JWT</p>
-    <p><strong>Mobile:</strong> React Native, Expo, iOS &amp; Android, Push Notifications, Stripe</p>
+    <p><strong>Mobile:</strong> React Native, Expo, Native Modules, iOS &amp; Android, Push Notifications, Stripe, Socket.IO</p>
     <p><strong>Frontend:</strong> React.js, Next.js, TypeScript, Tailwind CSS, HTML/CSS</p>
     <p><strong>Languages:</strong> Python, JavaScript, TypeScript, SQL</p>
-    <p><strong>Cloud / DevOps:</strong> AWS, Azure, Serverless, Docker, Git, CI/CD</p>
-    <p><strong>AI / ML:</strong> LangChain, RAG, QLoRA, Neural Networks, CNNs, NLP, Pandas/NumPy</p>
+    <p><strong>Cloud / DevOps:</strong> AWS, AWS Lambda, Azure, Docker, Git, CI/CD</p>
+    <p><strong>AI / ML:</strong> LangChain, RAG, QLoRA, Hugging Face, PyTorch, NLP, Pandas/NumPy</p>
+    <p><strong>AI-Assisted Development:</strong> Cursor, Claude Code, Windsurf</p>
+    <p><strong>Testing:</strong> Jest, Postman (API testing)</p>
   </div>
 
-  <h2>Certifications</h2>
+  <h2>Training &amp; Courses</h2>
   <div class="cert">
     <div class="job-head">
       <span>Artificial Intelligence (Machine Learning &amp; Deep Learning) — Professional Training</span>

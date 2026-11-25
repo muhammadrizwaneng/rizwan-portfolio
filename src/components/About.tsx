@@ -11,7 +11,7 @@ export function About() {
         <SectionHeading
           eyebrow="About"
           title="Building products that feel fast, secure, and human"
-          description="From enterprise identity platforms to AI-assisted marketplaces, I focus on reliable APIs, thoughtful mobile UX, measurable impact, and agentic delivery with Cursor and Claude."
+          description="From enterprise identity platforms to AI-assisted marketplaces, I focus on reliable APIs, thoughtful mobile UX, measurable impact, and AI-assisted development with Cursor and Claude Code."
         />
 
         <div className="grid gap-6 lg:grid-cols-3">
@@ -40,13 +40,13 @@ export function About() {
                 <span className="text-accent">▹</span> React Native & cross-platform apps
               </li>
               <li className="flex gap-2">
-                <span className="text-accent">▹</span> Search, APIs & serverless backends
+                <span className="text-accent">▹</span> Search, APIs & AWS Lambda backends
               </li>
               <li className="flex gap-2">
                 <span className="text-accent">▹</span> ML, deep learning (CNN/NLP) & LLM integrations
               </li>
               <li className="flex gap-2">
-                <span className="text-accent">▹</span> Vibe coding with Cursor & Claude
+                <span className="text-accent">▹</span> AI-assisted development (Cursor, Claude Code, Windsurf)
               </li>
               <li className="flex gap-2">
                 <span className="text-accent">▹</span> Custom rules, QA & backend agents

@@ -109,7 +109,7 @@ const HeroSection = () => {
                 <p className="mt-3 hidden max-w-md text-base lg:max-w-lg 2xl:mt-5 2xl:max-w-xl 2xl:text-lg min-[1900px]:max-w-2xl min-[1900px]:text-xl leading-relaxed text-neutral-600 dark:text-neutral-400 sm:block">
                   Software engineer building secure backends, mobile apps, and
                   AI-assisted delivery with Node.js, Next.js, React Native, and
-                  Python — plus vibe coding with Cursor and Claude.
+                  Python — plus AI-assisted development with Cursor and Claude Code.
                 </p>
               </BlurIn>
 

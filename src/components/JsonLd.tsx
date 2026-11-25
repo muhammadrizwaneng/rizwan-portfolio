@@ -27,7 +27,7 @@ export function JsonLd() {
       "FastAPI",
       "MongoDB",
       "TypeScript",
-      "Vibe Coding",
+      "AI-Assisted Development",
       "Cursor",
       "Claude",
       "AI Agents",

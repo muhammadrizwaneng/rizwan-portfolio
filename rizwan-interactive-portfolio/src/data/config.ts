@@ -1,9 +1,9 @@
 const config = {
   title: "Muhammad Rizwan | Full Stack & Mobile Developer",
   description: {
-    long: "Portfolio of Muhammad Rizwan, a Full Stack & Mobile Developer with 4+ years experience in Lahore building secure backends, cross-platform mobile apps, and AI-integrated products with Node.js, Next.js, React Native, and Python.",
+    long: "Portfolio of Muhammad Rizwan, a Full Stack & Mobile Developer with nearly 5 years experience in Lahore building secure backends, cross-platform mobile apps, and AI features (RAG, fine-tuned LLMs) with Node.js, Next.js, React Native, and Python.",
     short:
-      "Muhammad Rizwan — Full Stack & Mobile Developer (4+ years) shipping SSO, search, and real-time products for 15K+ users.",
+      "Muhammad Rizwan — Full Stack & Mobile Developer (nearly 5 years) shipping SSO, search, and AI features for 15K+ users.",
   },
   keywords: [
     "Muhammad Rizwan",
@@ -21,8 +21,10 @@ const config = {
     "SeeCard",
     "SeeTask",
     "HiveTalk",
-    "vibe coding",
+    "AI-assisted development",
     "Cursor",
+    "Claude Code",
+    "Windsurf",
   ],
   author: "Muhammad Rizwan",
   email: "muhammadrizwaneng@gmail.com",

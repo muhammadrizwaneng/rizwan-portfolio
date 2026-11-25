@@ -48,9 +48,9 @@ export const GITHUB_PROJECTS: GithubProject[] = [
     statusLabel: "In progress",
   },
   {
-    name: "PAKToursimWeb",
+    name: "PAKTourismWeb",
     language: "TypeScript",
-    url: "https://github.com/muhammadrizwaneng/PAKToursimWeb",
+    url: "https://github.com/muhammadrizwaneng/PAKTourismWeb",
     description: "PAKEZY tourism web app — destinations and packages on Vercel.",
     statusLabel: "Live",
   },

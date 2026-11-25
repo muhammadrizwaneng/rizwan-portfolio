@@ -1,7 +1,7 @@
 export const profile = {
   name: "Muhammad Rizwan",
   title: "Full Stack & Mobile Developer",
-  tagline: "Full Stack & Mobile · Backend · Vibe Coding · AI Agents",
+  tagline: "Full Stack & Mobile · Backend · AI-Assisted Development · AI Agents",
   location: "Lahore, Pakistan",
   email: "muhammadrizwaneng@gmail.com",
   phone: "+92 300 0795296",
@@ -10,12 +10,12 @@ export const profile = {
   githubUsername: "muhammadrizwaneng",
   /** Versioned public path so CDNs/browsers do not keep serving an old PDF. */
   /** Unique path — avoids CDN/browser serving a stale PDF after CV updates. */
-  resumeUrl: "/muhammad-rizwan-cv-2026-11.pdf",
+  resumeUrl: "/muhammad-rizwan-cv-2026-11f.pdf",
   avatar: "https://avatars.githubusercontent.com/u/102026105?v=4",
   summary:
-    "Full Stack & Mobile Developer with 4+ years shipping secure backends, APIs, and React Native apps (Node.js, Next.js, Python/FastAPI). Delivered enterprise SSO and search for 15,000+ users; builds faster with Cursor/Claude-assisted workflows when useful.",
+    "Full Stack & Mobile Developer with nearly 5 years building secure backends, APIs, and React Native apps (Node.js, Next.js, FastAPI). Delivered enterprise SSO and search for 15,000+ users, and builds AI features with RAG and fine-tuned LLMs.",
   stats: [
-    { label: "Years experience", value: "4+" },
+    { label: "Years experience", value: "~5" },
     { label: "Active users served", value: "15K+" },
     { label: "API latency", value: "<200ms" },
     { label: "Public repos", value: "39" },
@@ -61,6 +61,7 @@ export const skillGroups = [
     items: [
       "React Native",
       "Expo",
+      "Native Modules",
       "Push Notifications",
       "Stripe",
       "Socket.IO",
@@ -81,31 +82,37 @@ export const skillGroups = [
     description: "Deployment, observability, and cloud-native delivery.",
     items: [
       "AWS",
+      "AWS Lambda",
       "Azure",
-      "Serverless",
       "Docker",
       "Git",
       "CI/CD",
-      "Postman",
-      "JIRA",
     ],
   },
   {
-    title: "AI / ML & Deep Learning",
+    title: "AI / ML",
     description:
-      "Applied ML/RAG work plus training foundations — CNNs, NLP, and fine-tuning workflows.",
+      "Applied RAG, fine-tuning, and ML tooling used in shipped projects.",
     items: [
       "LangChain / RAG",
       "QLoRA fine-tuning",
-      "Machine Learning",
-      "Deep Learning",
-      "Neural Networks",
-      "CNN / Convolutions",
-      "NLP & Text Analysis",
-      "Feature Engineering",
+      "Hugging Face",
+      "PyTorch",
+      "NLP",
       "Pandas / NumPy",
       "LLM Integrations",
     ],
+  },
+  {
+    title: "AI-Assisted Development",
+    description:
+      "Editor and agent tooling used to ship faster — separate from ML engineering skills.",
+    items: ["Cursor", "Claude Code", "Windsurf"],
+  },
+  {
+    title: "Testing",
+    description: "Unit and API verification in day-to-day delivery.",
+    items: ["Jest", "Postman"],
   },
 ];
 
@@ -113,31 +120,50 @@ export const experience = [
   {
     company: "SeeBiz PVT LTD",
     location: "Lahore, Pakistan",
-    role: "Full Stack & Mobile Developer",
+    role: "Executive Software Engineer",
+    employment: "Full-time",
+    workplace: "On-site",
     period: "Jan 2022 – Present",
     highlights: [
       "Architected enterprise SSO with Node.js and Next.js for 15,000+ active users across platform apps.",
-      "Built MFA and cryptographic account lifecycle workflows, reducing unauthorized access attempts by 99.9%.",
+      "Built MFA and secure account lifecycle flows (JWT signing, password hashing, verification, recovery, deactivation), blocking 99.9% of unauthorized login attempts.",
+      "Built and shipped SeeCard, a React Native digital business card app (live profiles, QR sharing, catalogs), on Play Store and App Store.",
       "Integrated Elasticsearch, cutting admin search query latency by 40%.",
-      "Migrated legacy backends to serverless, reducing cloud costs by 30% and speeding deploys by 25%.",
+      "Migrated legacy backends to AWS Lambda / serverless, reducing cloud costs by 30% and speeding deploys by 25%.",
       "Delivered Flask, FastAPI, and MongoDB APIs for mobile products with sub-200ms response times.",
     ],
   },
   {
     company: "Turn Feat AI",
     location: "Lahore, Pakistan",
-    role: "Full Stack & Mobile Developer",
+    role: "Software Engineer",
+    employment: "Contract · Part-time",
+    workplace: "Hybrid",
     period: "Jan 2024 – Present",
     highlights: [
-      "Shipped contract and milestone flows: work submission, approvals, revision rounds, reviews, and contract PDFs.",
-      "Built Stripe payments: wallets, withdrawals, receipts, and subscription plans on mobile.",
+      "Shipped contract and milestone flows on React Native (submissions, approvals, revisions, reviews, PDFs).",
+      "Built Stripe payments on mobile: wallets, withdrawals, receipts, and subscription plans.",
       "Implemented Socket.IO chat for 1:1 and project rooms with attachments and push notifications.",
-      "Refactored large screens into hooks and shared theme tokens; cut duplicate API calls across iOS and Android.",
+      "Refactored large screens into hooks and shared theme tokens; removed duplicate API calls across iOS and Android.",
     ],
   },
 ];
 
 export const featuredProjects: FeaturedProject[] = [
+  {
+    name: "SeeCard",
+    stack: ["React Native", "REST APIs", "QR"],
+    summary:
+      "SeeBiz production app: digital business cards with live profile editing, QR sharing, contact save, and product catalogs — on Play Store & App Store.",
+    github: null,
+    demo: null,
+    playStore: "https://play.google.com/store/apps/details?id=com.seecard",
+    appStore: "https://apps.apple.com/pk/app/seecard/id6502513661",
+    previewImage:
+      "https://play-lh.googleusercontent.com/ZFH4qLEB1TYkD_bnKb9fXcPJzAB97A4StqINjxefFo1_FqRszVyHL_jHolSp1gxbMsCPBgwwVk9tJ9l0vWRK=w512-h512",
+    statusLabel: "SeeBiz · Live",
+    featured: true,
+  },
   {
     name: "HiveTalk",
     stack: [
@@ -160,7 +186,7 @@ export const featuredProjects: FeaturedProject[] = [
     stack: ["Next.js", "React Native", "FastAPI", "MongoDB", "Maps"],
     summary:
       "Pakistan travel platform with destinations, attractions, packages, and maps — Next.js web app on Vercel plus React Native mobile.",
-    github: "https://github.com/muhammadrizwaneng/PAKToursimWeb",
+    github: "https://github.com/muhammadrizwaneng/PAKTourismWeb",
     demo: "https://pakezy.vercel.app",
     playStore: "https://play.google.com/store/apps/details?id=com.paktourism",
     previewImage:
@@ -232,19 +258,6 @@ export const featuredProjects: FeaturedProject[] = [
     playStore: "https://play.google.com/store/apps/details?id=com.turnfeat.ai",
     previewImage:
       "https://play-lh.googleusercontent.com/HZkmZ8gKDMvVPWZbOILArMmCcpWyKMxr0KCR3X-y6iHpBLhy3dCjranwX_jh975kWVJIGzTgM1cQncrm2o796Q=w512-h512",
-    featured: true,
-  },
-  {
-    name: "SeeCard",
-    stack: ["React Native", "REST APIs", "QR"],
-    summary:
-      "Digital business cards with live profile editing, QR sharing, and phonebook sync.",
-    github: null,
-    demo: null,
-    playStore: "https://play.google.com/store/apps/details?id=com.seecard",
-    appStore: "https://apps.apple.com/pk/app/seecard/id6502513661",
-    previewImage:
-      "https://play-lh.googleusercontent.com/ZFH4qLEB1TYkD_bnKb9fXcPJzAB97A4StqINjxefFo1_FqRszVyHL_jHolSp1gxbMsCPBgwwVk9tJ9l0vWRK=w512-h512",
     featured: true,
   },
   {
@@ -518,7 +531,7 @@ export type CertificationItem = {
   note: string;
 };
 
-/** Certifications / professional training (shown on CV + certificates UI). */
+/** Training & courses (instructor-led — not formal vendor certifications). */
 export const certifications: CertificationItem[] = [
   {
     title:

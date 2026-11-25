@@ -11,8 +11,8 @@ export function Education() {
     <Section id="education">
       <SectionHeading
         eyebrow="Education"
-        title="Education & certifications"
-        description="Degree background plus professional AI / ML training."
+        title="Education & training"
+        description="Degree background plus instructor-led AI / ML courses."
       />
 
       <div className="grid gap-5 md:grid-cols-2">

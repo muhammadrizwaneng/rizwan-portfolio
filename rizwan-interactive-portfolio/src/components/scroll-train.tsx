@@ -19,7 +19,7 @@ const STATIONS = [
   { id: "skills", label: "Tech Stack" },
   { id: "constellation", label: "Skills" },
   { id: "experience", label: "Experience" },
-  { id: "certificates", label: "Certificates" },
+  { id: "certificates", label: "Training" },
   { id: "projects", label: "Projects" },
   { id: "github", label: "GitHub" },
   { id: "contact", label: "Contact" },

@@ -77,7 +77,7 @@ const CONSTELLATIONS: Constellation[] = [
     color: "#fb7185",
     stars: [
       { name: "Git", core: true }, { name: "GitHub" }, { name: "Postman" }, { name: "Jira" },
-      { name: "Cursor", core: true }, { name: "Claude", core: true }, { name: "Vibe Coding", core: true },
+      { name: "Cursor", core: true }, { name: "Claude Code", core: true }, { name: "Windsurf", core: true },
       { name: "Agile / Scrum" },
     ],
   },

@@ -8,7 +8,7 @@ import { Button } from "@ix/components/ui/button";
 import ResumeDoodle from "./resume-doodle";
 
 /** Same CV as the classic portfolio (unique filename avoids stale CDN cache). */
-const RESUME_PATH = "/muhammad-rizwan-cv-2026-11.pdf";
+const RESUME_PATH = "/muhammad-rizwan-cv-2026-11f.pdf";
 
 export default function ResumeView() {
   return (

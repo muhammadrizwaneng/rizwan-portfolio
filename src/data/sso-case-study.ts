@@ -8,8 +8,8 @@ export const ssoCaseStudy = {
     "Multiple product apps needed one secure sign-in experience. Teams faced login friction, inconsistent sessions, and slow admin search across user records.",
   approach: [
     "Designed centralized SSO with Node.js and Next.js for web clients across the product suite.",
-    "Implemented MFA, cryptographic account lifecycle flows, and audit trails for compliance-ready access control.",
-    "Integrated Elasticsearch for admin search and migrated legacy flows to serverless to cut cost and deploy time.",
+    "Implemented MFA and secure account lifecycle flows (JWT signing, password hashing, verification, recovery) with audit trails.",
+    "Integrated Elasticsearch for admin search and migrated legacy flows to AWS Lambda to cut cost and deploy time.",
   ],
   outcomes: [
     { value: "15K+", label: "Active users on unified auth" },

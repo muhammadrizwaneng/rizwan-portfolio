@@ -19,7 +19,7 @@ export function Skills() {
         <SectionHeading
           eyebrow="Skills"
           title="Skills matrix"
-          description="Languages, frontend, backend, cloud tooling, AI/ML foundations, and vibe-coding workflows with Cursor and Claude."
+          description="Languages, frontend, backend, cloud, AI/ML engineering, and AI-assisted development tools (Cursor, Claude Code, Windsurf)."
         />
 
         <div className="grid gap-5 lg:grid-cols-2">

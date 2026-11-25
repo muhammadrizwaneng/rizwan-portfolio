@@ -29,7 +29,7 @@ export const siteUrl = getConfiguredSiteUrl();
 export const siteName = `${profile.name} | Full Stack & Mobile Developer`;
 
 export const seoDescription =
-  "Muhammad Rizwan — Full Stack & Mobile Developer with 4+ years shipping secure backends, APIs, and React Native apps (Node.js, Next.js, Python/FastAPI). Enterprise SSO and search for 15,000+ users. Lahore, Pakistan.";
+  "Muhammad Rizwan — Full Stack & Mobile Developer with nearly 5 years building secure backends, APIs, and React Native apps (Node.js, Next.js, FastAPI). Enterprise SSO and search for 15,000+ users; AI features with RAG and fine-tuned LLMs. Lahore, Pakistan.";
 
 export const seoKeywords = [
   "Muhammad Rizwan",
@@ -46,9 +46,10 @@ export const seoKeywords = [
   "Pakistan software developer",
   "FastAPI",
   "TypeScript",
-  "vibe coding",
+  "AI-assisted development",
   "Cursor",
-  "Claude",
+  "Claude Code",
+  "Windsurf",
   "AI agents",
   "portfolio",
 ];

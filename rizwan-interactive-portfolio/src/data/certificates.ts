@@ -12,7 +12,7 @@ export type Certificate = {
   verifyVia?: string;
 };
 
-/** Matches the Certifications / training block on Muhammad Rizwan's résumé. */
+/** Matches the Training & Courses block on Muhammad Rizwan's résumé. */
 export const CERTIFICATES: Certificate[] = [
   {
     id: "ai-ml-dl-metawise-2024",

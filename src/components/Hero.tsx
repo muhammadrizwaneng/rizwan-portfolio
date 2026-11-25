@@ -47,8 +47,8 @@ export function Hero() {
             className="mt-6 max-w-xl text-lg leading-relaxed text-muted"
           >
             {profile.tagline}. I build secure backends, polished mobile apps, and
-            AI-powered products — accelerating delivery with Cursor, Claude,
-            custom rules, and specialized agents.
+            AI-powered products — accelerating delivery with Cursor, Claude Code,
+            Windsurf, custom rules, and specialized agents.
           </motion.p>
 
           <motion.div
@@ -151,8 +151,8 @@ export function Hero() {
             </div>
 
             <p className="mt-6 rounded-2xl border border-dashed border-border bg-background/30 p-4 text-sm leading-relaxed text-muted">
-              Enterprise SSO · React Native · FastAPI · Cursor · Claude · QA &
-              backend agents
+              Enterprise SSO · React Native · FastAPI · Cursor · Claude Code ·
+              Windsurf
             </p>
           </div>
         </motion.div>

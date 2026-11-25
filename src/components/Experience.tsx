@@ -12,7 +12,7 @@ export function Experience() {
         <SectionHeading
           eyebrow="Experience"
           title="Professional journey"
-          description="4+ years delivering enterprise platforms and mobile products."
+          description="Nearly 5 years delivering enterprise platforms and mobile products."
         />
 
         <div className="relative space-y-8 before:absolute before:inset-y-2 before:left-[17px] before:w-px before:bg-border sm:before:left-[21px]">
@@ -38,6 +38,11 @@ export function Experience() {
                     <p className="mt-1 text-accent">
                       {job.company} · {job.location}
                     </p>
+                    {job.employment || job.workplace ? (
+                      <p className="mt-1 text-xs text-muted">
+                        {[job.employment, job.workplace].filter(Boolean).join(" · ")}
+                      </p>
+                    ) : null}
                   </div>
                   <span className="rounded-full border border-border px-3 py-1 text-xs text-muted">
                     {job.period}
