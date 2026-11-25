@@ -17,54 +17,24 @@ const nextConfig: NextConfig = {
     formats: ["image/avif", "image/webp"],
   },
   async redirects() {
+    // Old CV aliases → single canonical PDF (extra files removed from /public).
+    const toCurrent = "/muhammad-rizwan-cv-2026-11g.pdf";
     return [
-      // Old CV filenames → current résumé (stops stale downloads).
-      {
-        source: "/muhammad-rizwan-cv-2026-11.pdf",
-        destination: "/muhammad-rizwan-cv-2026-11g.pdf",
-        permanent: false,
-      },
-      {
-        source: "/muhammad-rizwan-cv-2026-11b.pdf",
-        destination: "/muhammad-rizwan-cv-2026-11g.pdf",
-        permanent: false,
-      },
-      {
-        source: "/muhammad-rizwan-cv-2026-11c.pdf",
-        destination: "/muhammad-rizwan-cv-2026-11g.pdf",
-        permanent: false,
-      },
-      {
-        source: "/muhammad-rizwan-cv-2026-11d.pdf",
-        destination: "/muhammad-rizwan-cv-2026-11g.pdf",
-        permanent: false,
-      },
-      {
-        source: "/muhammad-rizwan-cv-2026-11e.pdf",
-        destination: "/muhammad-rizwan-cv-2026-11g.pdf",
-        permanent: false,
-      },
-      {
-        source: "/muhammad-rizwan-cv-2026-11f.pdf",
-        destination: "/muhammad-rizwan-cv-2026-11g.pdf",
-        permanent: false,
-      },
-      {
-        source: "/muhammad-rizwan-resume.pdf",
-        destination: "/muhammad-rizwan-cv-2026-11g.pdf",
-        permanent: false,
-      },
-      {
-        source: "/Muhammad_Rizwan_Resume.pdf",
-        destination: "/muhammad-rizwan-cv-2026-11g.pdf",
-        permanent: false,
-      },
-      {
-        source: "/resume.pdf",
-        destination: "/muhammad-rizwan-cv-2026-11g.pdf",
-        permanent: false,
-      },
-    ];
+      "/muhammad-rizwan-resume.pdf",
+      "/Muhammad_Rizwan_Resume.pdf",
+      "/resume.pdf",
+      "/resume-previous.pdf",
+      "/muhammad-rizwan-cv-2026-11.pdf",
+      "/muhammad-rizwan-cv-2026-11b.pdf",
+      "/muhammad-rizwan-cv-2026-11c.pdf",
+      "/muhammad-rizwan-cv-2026-11d.pdf",
+      "/muhammad-rizwan-cv-2026-11e.pdf",
+      "/muhammad-rizwan-cv-2026-11f.pdf",
+    ].map((source) => ({
+      source,
+      destination: toCurrent,
+      permanent: false,
+    }));
   },
   async headers() {
     return [

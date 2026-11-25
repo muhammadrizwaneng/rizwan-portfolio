@@ -611,10 +611,10 @@ const RIZWAN_PRODUCTS: Project[] = [
     id: "hivetalk",
     category: "Web platform",
     title: "HiveTalk",
-    summary: "Real-time team messaging — workspaces, channels, and Socket.IO on AWS.",
+    summary: "Real-time team messaging — workspaces, channels, and Socket.IO.",
     about:
-      "Next.js + Express monorepo with live messaging; demo deployed on AWS.",
-    live: "http://16.178.144.77:3000",
+      "Next.js + Express monorepo with live messaging. Source on GitHub.",
+    live: "#",
     github: "https://github.com/muhammadrizwaneng/HiveTalk",
     skills: {
       frontend: [S.next, S.ts],

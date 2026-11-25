@@ -1,7 +1,7 @@
 export const profile = {
   name: "Muhammad Rizwan",
   title: "Full Stack & Mobile Developer",
-  tagline: "Full Stack & Mobile · Backend · AI-Assisted Development · AI Agents",
+  tagline: "Full Stack & Mobile · Backend · AI-Assisted Development · RAG / LLMs",
   location: "Lahore, Pakistan",
   email: "muhammadrizwaneng@gmail.com",
   phone: "+92 300 0795296",
@@ -18,7 +18,7 @@ export const profile = {
     { label: "Years experience", value: "~5" },
     { label: "Active users served", value: "15K+" },
     { label: "API latency", value: "<200ms" },
-    { label: "Public repos", value: "39" },
+    { label: "Apps on stores", value: "7" },
   ],
 };
 
@@ -127,7 +127,8 @@ export const experience = [
     highlights: [
       "Architected enterprise SSO with Node.js and Next.js for 15,000+ active users across platform apps.",
       "Built MFA and secure account lifecycle flows (JWT signing, password hashing, verification, recovery, deactivation), blocking 99.9% of unauthorized login attempts.",
-      "Built and shipped SeeCard, a React Native digital business card app (live profiles, QR sharing, catalogs), on Play Store and App Store.",
+      "Shipped 4 React Native apps (SeeCard, SeeTask, SeeBiz Marketplace, Krub.ai) on Play Store and App Store.",
+      "Built and shipped SeeCard: live profiles, QR sharing, contact save, and product catalogs.",
       "Integrated Elasticsearch, cutting admin search query latency by 40%.",
       "Migrated legacy backends to AWS Lambda / serverless, reducing cloud costs by 30% and speeding deploys by 25%.",
       "Delivered Flask, FastAPI, and MongoDB APIs for mobile products with sub-200ms response times.",
@@ -175,10 +176,10 @@ export const featuredProjects: FeaturedProject[] = [
       "AWS",
     ],
     summary:
-      "Real-time team messaging with workspaces, channels, and live Socket.IO updates — Next.js frontend and Express API monorepo, deployed on AWS.",
+      "Real-time team messaging with workspaces, channels, and live Socket.IO updates — Next.js frontend and Express API monorepo (source on GitHub).",
     github: "https://github.com/muhammadrizwaneng/HiveTalk",
-    demo: "http://16.178.144.77:3000",
-    statusLabel: "Live on AWS",
+    demo: null,
+    statusLabel: "Open source",
     featured: true,
   },
   {
@@ -204,6 +205,7 @@ export const featuredProjects: FeaturedProject[] = [
     playStore: "https://play.google.com/store/apps/details?id=com.utilityhub.app",
     previewImage:
       "https://play-lh.googleusercontent.com/3cMJu--3RfLa3yZidAK9SK9zSwJ4hKLlzY7PICYuEpwUihxjWZsf70rSdpo5fD_UV5l_YzMIoFCWAV2DOV26=w512-h512",
+    statusLabel: "Live on Play Store",
     featured: true,
   },
   {
@@ -250,14 +252,15 @@ export const featuredProjects: FeaturedProject[] = [
   },
   {
     name: "Turnfeat.ai",
-    stack: ["React Native", "Node.js", "PostgreSQL", "OpenAI"],
+    stack: ["React Native", "Node.js", "Stripe", "Socket.IO"],
     summary:
-      "AI freelance marketplace with bidding, escrow, milestones, and skill matching.",
+      "Freelance marketplace app: contracts, Stripe payments, wallets, and Socket.IO chat — on Play Store.",
     github: null,
-    demo: null,
+    demo: "https://turnfeat.ai/",
     playStore: "https://play.google.com/store/apps/details?id=com.turnfeat.ai",
     previewImage:
       "https://play-lh.googleusercontent.com/HZkmZ8gKDMvVPWZbOILArMmCcpWyKMxr0KCR3X-y6iHpBLhy3dCjranwX_jh975kWVJIGzTgM1cQncrm2o796Q=w512-h512",
+    statusLabel: "Live on Play Store",
     featured: true,
   },
   {
@@ -344,7 +347,7 @@ export const featuredProjects: FeaturedProject[] = [
     stack: ["Python", "BERT", "TAPAS", "Random Forest"],
     summary:
       "Demand forecasting and semantic product search with fine-tuned NLP models.",
-    github: "https://github.com/muhammadrizwaneng/coding-model",
+    github: null,
     demo: null,
     featured: false,
   },
@@ -366,8 +369,8 @@ export const githubProjects = [
     language: "TypeScript",
     url: "https://github.com/muhammadrizwaneng/HiveTalk",
     description:
-      "Real-time team chat monorepo — Next.js, Express, Socket.IO (live on AWS).",
-    statusLabel: "In progress",
+      "Real-time team chat monorepo — Next.js, Express, Socket.IO.",
+    statusLabel: "Open source",
   },
   {
     name: "IRGEMS RAG Assistant",
@@ -383,7 +386,6 @@ export const githubProjects = [
     url: "https://github.com/muhammadrizwaneng/coding-model",
     description:
       "QLoRA adapter on Qwen2.5-Coder — curated SFT data and local FastAPI chat.",
-    statusLabel: "In progress",
   },
   {
     name: "ZeroAds Downloader",
@@ -391,7 +393,7 @@ export const githubProjects = [
     url: "https://github.com/muhammadrizwaneng/zeroad_downloader",
     description:
       "Ad-free YouTube / social downloader — Android APK site + API on Vercel.",
-    statusLabel: "In progress",
+    statusLabel: "Live",
   },
   {
     name: "ApexBid",
@@ -412,28 +414,24 @@ export const githubProjects = [
     language: "Python",
     url: "https://github.com/muhammadrizwaneng/FastAPI-E-Commerce-Platform",
     description: "Scalable e-commerce backend with FastAPI.",
-    statusLabel: "In progress",
   },
   {
     name: "YOLO FastAPI",
     language: "Python",
     url: "https://github.com/muhammadrizwaneng/yolo_fastapi",
     description: "Computer vision API service with YOLO and FastAPI.",
-    statusLabel: "In progress",
   },
   {
     name: "FastAPI ML Service",
     language: "Python",
     url: "https://github.com/muhammadrizwaneng/fastapi-ml-service",
     description: "ML inference service scaffolded with FastAPI.",
-    statusLabel: "In progress",
   },
   {
     name: "Google Authenticator (Node)",
     language: "JavaScript",
     url: "https://github.com/muhammadrizwaneng/google-authenticator-nodejs",
     description: "TOTP 2FA helpers — secret, QR, and token verification in Node.",
-    statusLabel: "In progress",
   },
   {
     name: "Smart Shopping (AI)",
@@ -461,35 +459,41 @@ export const githubProjects = [
     language: "JavaScript",
     url: "https://github.com/muhammadrizwaneng/PakTourism",
     description: "React Native tourism app for destinations and travel flows.",
-    statusLabel: "In progress",
+    statusLabel: "Live",
   },
   {
     name: "Utility Hub",
     language: "TypeScript",
     url: "https://github.com/muhammadrizwaneng/UtilityApp",
     description: "Offline image-to-PDF and compression utilities (React Native).",
-    statusLabel: "In progress",
+    statusLabel: "Live",
+  },
+  {
+    name: "PAKTourismWeb",
+    language: "TypeScript",
+    url: "https://github.com/muhammadrizwaneng/PAKTourismWeb",
+    description: "PAKEZY tourism web — destinations and packages on Vercel.",
+    statusLabel: "Live",
   },
   {
     name: "Plant Disease Detection",
     language: "Jupyter",
     url: "https://github.com/muhammadrizwaneng/Plant-disease-detection",
     description: "ML notebook pipeline for crop disease classification.",
-    statusLabel: "In progress",
+    statusLabel: "Notebook",
   },
   {
     name: "Data Analysis Notebooks",
     language: "Jupyter",
     url: "https://github.com/muhammadrizwaneng/data_analysis_notebook",
     description: "EDA and analytics notebooks from data science practice work.",
-    statusLabel: "In progress",
+    statusLabel: "Notebook",
   },
   {
     name: "TinyGems",
     language: "TypeScript",
     url: "https://github.com/muhammadrizwaneng/tinygems",
     description: "Lightweight TypeScript utility / app project.",
-    statusLabel: "In progress",
   },
   {
     name: "Pixio App",
@@ -506,6 +510,7 @@ export const githubProjects = [
     statusLabel: "In progress",
   },
 ];
+
 
 export type EducationItem = {
   school: string;

@@ -13,8 +13,8 @@ export const GITHUB_PROJECTS: GithubProject[] = [
     language: "TypeScript",
     url: "https://github.com/muhammadrizwaneng/HiveTalk",
     description:
-      "Real-time team chat monorepo — Next.js, Express, Socket.IO (live on AWS).",
-    statusLabel: "In progress",
+      "Real-time team chat monorepo — Next.js, Express, Socket.IO.",
+    statusLabel: "Open source",
   },
   {
     name: "IRGEMS RAG Assistant",
@@ -30,7 +30,6 @@ export const GITHUB_PROJECTS: GithubProject[] = [
     url: "https://github.com/muhammadrizwaneng/coding-model",
     description:
       "QLoRA adapter on Qwen2.5-Coder — trained on Kaggle T4 / Colab-style notebooks.",
-    statusLabel: "In progress",
   },
   {
     name: "ZeroAds Downloader",
@@ -38,7 +37,7 @@ export const GITHUB_PROJECTS: GithubProject[] = [
     url: "https://github.com/muhammadrizwaneng/zeroad_downloader",
     description:
       "Ad-free YouTube / social downloader — Android APK site + API on Vercel.",
-    statusLabel: "In progress",
+    statusLabel: "Live",
   },
   {
     name: "ApexBid",
@@ -66,14 +65,12 @@ export const GITHUB_PROJECTS: GithubProject[] = [
     language: "Python",
     url: "https://github.com/muhammadrizwaneng/FastAPI-E-Commerce-Platform",
     description: "Scalable e-commerce backend with FastAPI.",
-    statusLabel: "In progress",
   },
   {
     name: "yolo_fastapi",
     language: "Python",
     url: "https://github.com/muhammadrizwaneng/yolo_fastapi",
     description: "Computer vision API with YOLO and FastAPI.",
-    statusLabel: "In progress",
   },
   {
     name: "Plant-disease-detection",
@@ -94,7 +91,6 @@ export const GITHUB_PROJECTS: GithubProject[] = [
     language: "JavaScript",
     url: "https://github.com/muhammadrizwaneng/google-authenticator-nodejs",
     description: "TOTP 2FA helpers — secret, QR, and token verification in Node.",
-    statusLabel: "In progress",
   },
 ];
 

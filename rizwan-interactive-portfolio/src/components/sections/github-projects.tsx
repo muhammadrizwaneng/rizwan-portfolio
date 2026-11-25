@@ -39,7 +39,7 @@ const GithubProjectsSection = () => (
             @{config.githubUsername}
           </p>
           <p className="text-sm text-neutral-600 dark:text-neutral-400">
-            39+ public repositories — MERN, React Native, FastAPI, Jupyter
+            Selected repos — Live apps, notebooks, and work in progress
           </p>
         </div>
       </motion.div>

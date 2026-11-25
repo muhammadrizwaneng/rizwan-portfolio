@@ -50,7 +50,8 @@ export const seoKeywords = [
   "Cursor",
   "Claude Code",
   "Windsurf",
-  "AI agents",
+  "RAG",
+  "LLMs",
   "portfolio",
 ];
 

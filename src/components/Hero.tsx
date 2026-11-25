@@ -47,8 +47,8 @@ export function Hero() {
             className="mt-6 max-w-xl text-lg leading-relaxed text-muted"
           >
             {profile.tagline}. I build secure backends, polished mobile apps, and
-            AI-powered products — accelerating delivery with Cursor, Claude Code,
-            Windsurf, custom rules, and specialized agents.
+            AI-powered products with RAG and fine-tuned LLMs — shipping faster
+            with Cursor, Claude Code, and Windsurf.
           </motion.p>
 
           <motion.div

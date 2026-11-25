@@ -30,7 +30,8 @@ export function JsonLd() {
       "AI-Assisted Development",
       "Cursor",
       "Claude",
-      "AI Agents",
+      "RAG",
+      "LLMs",
     ],
   };
 

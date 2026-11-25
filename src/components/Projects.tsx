@@ -146,8 +146,8 @@ export function Projects() {
             <div>
               <h3 className="font-display text-2xl font-semibold">On GitHub</h3>
               <p className="mt-1 text-sm text-muted">
-                Curated public repos — APIs, AI/ML, mobile, and web apps (mostly
-                in progress across 39 repositories).
+                Curated public repos — APIs, AI/ML, mobile, and web apps. Live
+                store apps and unfinished experiments are labeled clearly.
               </p>
             </div>
             <a
