@@ -300,8 +300,7 @@ export const EXPERIENCE: Experience[] = [
     description: [
       "Architected enterprise SSO with Node.js and Next.js for 15,000+ active users across platform apps.",
       "Built MFA and secure account lifecycle flows (JWT signing, password hashing, verification, recovery, deactivation), blocking 99.9% of unauthorized login attempts.",
-      "Shipped 4 React Native apps (SeeCard, SeeTask, SeeBiz Marketplace, Krub.ai) on Play Store and App Store.",
-      "Built and shipped SeeCard: live profiles, QR sharing, contact save, and product catalogs.",
+      "Shipped 4 React Native apps on Play Store and App Store (SeeCard, SeeTask, SeeBiz Marketplace, Krub.ai), including SeeCard's live profiles, QR sharing, and product catalogs.",
       "Integrated Elasticsearch, cutting admin search query latency by 40%.",
       "Migrated legacy backends to AWS Lambda / serverless, reducing cloud costs by 30% and speeding deploys by 25%.",
       "Delivered Flask, FastAPI, and MongoDB APIs for mobile products with sub-200ms response times.",
