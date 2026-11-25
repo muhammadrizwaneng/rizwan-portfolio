@@ -35,10 +35,12 @@ const ProjectsLinks = ({
   live,
   repo,
   kaggle,
+  colab,
 }: {
   live?: string;
   repo?: string;
   kaggle?: string;
+  colab?: string;
 }) => {
   return (
     <div className="flex flex-col md:flex-row flex-wrap items-center justify-start gap-3 my-3 mb-8">
@@ -64,6 +66,19 @@ const ProjectsLinks = ({
         >
           <Button variant={"default"} size={"sm"}>
             Kaggle
+            <ArrowUpRight className="ml-3 w-5 h-5" />
+          </Button>
+        </Link>
+      )}
+      {colab && colab !== "#" && (
+        <Link
+          className="font-mono underline flex gap-2"
+          rel="noopener"
+          target="_new"
+          href={colab}
+        >
+          <Button variant={"default"} size={"sm"}>
+            Google Colab
             <ArrowUpRight className="ml-3 w-5 h-5" />
           </Button>
         </Link>
@@ -276,6 +291,7 @@ export type Project = {
   content: React.ReactNode | any;
   github?: string;
   kaggle?: string;
+  colab?: string;
   /** Optional wallpaper behind the preview, e.g. "/assets/backgrounds/<id>.jpg". */
   bg?: string;
   live: string;
@@ -464,7 +480,12 @@ const simpleProject = (
     return (
       <div>
         <TypographyP className="font-mono text-2xl text-center">{p.summary}</TypographyP>
-        <ProjectsLinks live={p.live} repo={p.github} kaggle={p.kaggle} />
+        <ProjectsLinks
+          live={p.live}
+          repo={p.github}
+          kaggle={p.kaggle}
+          colab={p.colab}
+        />
         <TypographyH3 className="my-4 mt-8">About</TypographyH3>
         <TypographyP className="font-mono">{p.about}</TypographyP>
       </div>
@@ -611,10 +632,10 @@ const RIZWAN_PRODUCTS: Project[] = [
     id: "hivetalk",
     category: "Web platform",
     title: "HiveTalk",
-    summary: "Real-time team messaging — workspaces, channels, and Socket.IO.",
+    summary: "Real-time team messaging — workspaces, channels, and Socket.IO on AWS.",
     about:
-      "Next.js + Express monorepo with live messaging. Source on GitHub.",
-    live: "#",
+      "Next.js + Express monorepo with live messaging; demo deployed on AWS.",
+    live: "http://16.178.144.77:3000",
     github: "https://github.com/muhammadrizwaneng/HiveTalk",
     skills: {
       frontend: [S.next, S.ts],
@@ -768,6 +789,19 @@ const RIZWAN_PRODUCTS: Project[] = [
     live: "#",
     github: "https://github.com/muhammadrizwaneng/apexbid",
     skills: { frontend: [S.next, S.ts], backend: [S.node] },
+  }),
+  simpleProject({
+    id: "ai-sales-analytics",
+    category: "AI / Colab",
+    title: "AI Sales Analytics",
+    summary:
+      "Demand forecasting and semantic product search with fine-tuned NLP models.",
+    about:
+      "Google Colab notebook: BERT / TAPAS / Random Forest for sales analytics and semantic product search.",
+    live: "#",
+    colab:
+      "https://colab.research.google.com/drive/1z8U0wlPD9GiRamBZQikbHsnzkQ3gQEbK?usp=sharing",
+    skills: { frontend: [S.python], backend: [S.python, S.colab] },
   }),
 ];
 

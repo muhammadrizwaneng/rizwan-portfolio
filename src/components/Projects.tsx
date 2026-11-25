@@ -100,6 +100,17 @@ export function Projects() {
                     Kaggle
                   </a>
                 ) : null}
+                {project.colab ? (
+                  <a
+                    href={project.colab}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn-primary inline-flex items-center gap-2 rounded-full px-4 py-2 text-xs"
+                  >
+                    <Globe size={14} />
+                    Google Colab
+                  </a>
+                ) : null}
                 {project.demo ? (
                   <a
                     href={project.demo}
@@ -113,6 +124,7 @@ export function Projects() {
                 ) : null}
                 {!project.demo &&
                 !project.kaggle &&
+                !project.colab &&
                 !project.playStore &&
                 !project.appStore ? (
                   <span className="inline-flex items-center gap-2 rounded-full border border-dashed border-border px-4 py-2 text-xs text-muted">
@@ -130,7 +142,7 @@ export function Projects() {
                     <Code2 size={14} />
                     GitHub
                   </a>
-                ) : project.kaggle ? null : (
+                ) : project.kaggle || project.colab ? null : (
                   <span className="inline-flex items-center gap-2 rounded-full border border-border/60 px-4 py-2 text-xs text-muted">
                     <Code2 size={14} />
                     Private / internal

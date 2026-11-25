@@ -33,6 +33,8 @@ export type FeaturedProject = {
   /** Official app icon from Google Play (high-res CDN) */
   previewImage?: string | null;
   kaggle?: string | null;
+  /** Google Colab notebook */
+  colab?: string | null;
   /** e.g. active Kaggle competition */
   statusLabel?: string | null;
   featured?: boolean;
@@ -176,10 +178,10 @@ export const featuredProjects: FeaturedProject[] = [
       "AWS",
     ],
     summary:
-      "Real-time team messaging with workspaces, channels, and live Socket.IO updates — Next.js frontend and Express API monorepo (source on GitHub).",
+      "Real-time team messaging with workspaces, channels, and live Socket.IO updates — Next.js frontend and Express API monorepo, demo on AWS.",
     github: "https://github.com/muhammadrizwaneng/HiveTalk",
-    demo: null,
-    statusLabel: "Open source",
+    demo: "http://16.178.144.77:3000",
+    statusLabel: "Live on AWS",
     featured: true,
   },
   {
@@ -344,12 +346,15 @@ export const featuredProjects: FeaturedProject[] = [
   },
   {
     name: "AI Sales Analytics",
-    stack: ["Python", "BERT", "TAPAS", "Random Forest"],
+    stack: ["Python", "BERT", "TAPAS", "Random Forest", "Google Colab"],
     summary:
-      "Demand forecasting and semantic product search with fine-tuned NLP models.",
+      "Demand forecasting and semantic product search with fine-tuned NLP models — Google Colab notebook.",
     github: null,
     demo: null,
-    featured: false,
+    colab:
+      "https://colab.research.google.com/drive/1z8U0wlPD9GiRamBZQikbHsnzkQ3gQEbK?usp=sharing",
+    statusLabel: "Google Colab",
+    featured: true,
   },
   {
     name: "Smart Shopping (AI)",
@@ -369,8 +374,8 @@ export const githubProjects = [
     language: "TypeScript",
     url: "https://github.com/muhammadrizwaneng/HiveTalk",
     description:
-      "Real-time team chat monorepo — Next.js, Express, Socket.IO.",
-    statusLabel: "Open source",
+      "Real-time team chat monorepo — Next.js, Express, Socket.IO (demo on AWS).",
+    statusLabel: "Live",
   },
   {
     name: "IRGEMS RAG Assistant",

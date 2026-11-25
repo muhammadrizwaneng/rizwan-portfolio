@@ -13,8 +13,8 @@ export const GITHUB_PROJECTS: GithubProject[] = [
     language: "TypeScript",
     url: "https://github.com/muhammadrizwaneng/HiveTalk",
     description:
-      "Real-time team chat monorepo — Next.js, Express, Socket.IO.",
-    statusLabel: "Open source",
+      "Real-time team chat monorepo — Next.js, Express, Socket.IO (demo on AWS).",
+    statusLabel: "Live",
   },
   {
     name: "IRGEMS RAG Assistant",
